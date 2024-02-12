@@ -8,6 +8,7 @@ import {
   IconButton,
   Card,
 } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [openNav, setOpenNav] = useState(false);
@@ -23,63 +24,81 @@ function Header() {
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography
         as="li"
-        variant="small"
+        variant="medium"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="p-1 font-bold"
       >
-        <a href="#" className="flex items-center">
+        <Link
+          to="homepage"
+          className="flex items-center font-montserrat transition duration-700 ease-in-out hover:text-regal-blue"
+        >
           Anasayfa
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
-        variant="small"
+        variant="medium"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="p-1 font-bold"
       >
-        <a href="#" className="flex items-center">
+        <Link
+          to="about"
+          className="flex items-center font-montserrat transition duration-700 ease-in-out hover:text-regal-blue"
+        >
           Hakkımızda
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
-        variant="small"
+        variant="medium"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="p-1 font-bold"
       >
-        <a href="#" className="flex items-center">
+        <Link
+          to="our-works"
+          className="flex items-center font-montserrat transition duration-700 ease-in-out hover:text-regal-blue"
+        >
           Çalışmalarımız
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
-        variant="small"
+        variant="medium"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="p-1 font-bold"
       >
-        <a href="#" className="flex items-center">
+        <Link
+          to="experiences"
+          className="flex items-center font-montserrat transition duration-700 ease-in-out hover:text-regal-blue"
+        >
           Deneyimlerimiz
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
-        variant="small"
+        variant="medium"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="p-1 font-bold"
       >
-        <a href="#" className="flex items-center">
+        <Link
+          to="quality"
+          className="flex items-center font-montserrat transition duration-700 ease-in-out hover:text-regal-blue"
+        >
           Kalitemiz
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
-        variant="small"
+        variant="medium"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="p-1 font-bold"
       >
-        <a href="#" className="flex items-center">
+        <Link
+          to="vision"
+          className="flex items-center font-montserrat transition duration-700 ease-in-out hover:text-regal-blue"
+        >
           Vizyonumuz
-        </a>
+        </Link>
       </Typography>
     </ul>
   );
@@ -93,7 +112,7 @@ function Header() {
             <div className="flex items-center text-slate-900">
               İletişim:
               <span className="text-sm  text-gray-500 dark:text-white hover:underline">
-                <a href="tel:02124711740" className="flex items-center ml-2">
+                <a href="tel:02124711740" className="flex items-center ml-2 transition duration-700 ease-in-out hover:text-black">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -117,7 +136,7 @@ function Header() {
                 href="mailto:info@emircncotomat.com"
                 className="text-sm  text-gray-500 dark:text-white hover:underline"
               >
-                <span className="flex items-center ml-2 line-clamp-1">
+                <span className="flex items-center ml-2 line-clamp-1 transition duration-700 ease-in-out hover:text-black">
                   <svg
                     v
                     xmlns="http://www.w3.org/2000/svg"
@@ -147,9 +166,9 @@ function Header() {
           <Typography
             as="a"
             href="#"
-            className="mr-4 cursor-pointer py-1.5 font-medium flex items-center space-x-3 rtl:space-x-reverse"
+            className="mr-4 cursor-pointer  font-medium flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img src="../../public/logo.png" className="h-14" alt="Logo" />
+            <img src="../../public/logo.png" className="h-16" alt="Logo" />
           </Typography>
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden lg:block">{navList}</div>
