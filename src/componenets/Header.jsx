@@ -21,10 +21,10 @@ function Header() {
   }, []);
 
   const navList = (
-    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-2">
       <Typography
         as="li"
-        variant="medium"
+        variant="h6"
         color="blue-gray"
         className="p-1 font-bold"
       >
@@ -37,7 +37,7 @@ function Header() {
       </Typography>
       <Typography
         as="li"
-        variant="medium"
+        variant="h6"
         color="blue-gray"
         className="p-1 font-bold"
       >
@@ -50,7 +50,7 @@ function Header() {
       </Typography>
       <Typography
         as="li"
-        variant="medium"
+        variant="h6"
         color="blue-gray"
         className="p-1 font-bold"
       >
@@ -63,7 +63,7 @@ function Header() {
       </Typography>
       <Typography
         as="li"
-        variant="medium"
+        variant="h6"
         color="blue-gray"
         className="p-1 font-bold"
       >
@@ -76,7 +76,7 @@ function Header() {
       </Typography>
       <Typography
         as="li"
-        variant="medium"
+        variant="h6"
         color="blue-gray"
         className="p-1 font-bold"
       >
@@ -89,7 +89,7 @@ function Header() {
       </Typography>
       <Typography
         as="li"
-        variant="medium"
+        variant="h6"
         color="blue-gray"
         className="p-1 font-bold"
       >
@@ -161,7 +161,7 @@ function Header() {
           </div>
         </div>
       </nav>
-      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4">
+      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-3 py-3">
         <div className="flex items-center max-w-screen-xl mx-auto justify-between text-blue-gray-900">
           <Typography
             as="a"

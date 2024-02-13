@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./componenets/Header";
-import Homepage from "./pages/Homepage";
+import Homepage from "./pages/homepage/Homepage";
 import About from "./pages/About";
 import OurWorks from "./pages/OurWorks";
 import Experiences from "./pages/Experiences";
