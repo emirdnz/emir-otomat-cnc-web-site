@@ -21,27 +21,33 @@ function OurWorksSection() {
   const [works, setWorks] = useState([
     {
       img: "https://emircncotomat.com/wp-content/uploads/2017/06/WhatsApp-Image-2022-03-20-at-16.04.20-1-1200x1600.jpeg",
-      title: "Sarı (PİRİNÇ) Malzemeleri",
+      title: "Sarı (PİRİNÇ) Malzemeler",
+      desc: "It is not so much for its beauty that the forest",
     },
     {
       img: "https://emircncotomat.com/wp-content/uploads/2020/03/WhatsApp-Image-2022-03-20-at-16.04.17-2-1200x1600.jpeg",
       title: "Otomat Malzemeleri",
+      desc: "It is not so much for its beauty that the forest",
     },
     {
       img: "https://emircncotomat.com/wp-content/uploads/2017/08/IMG20220521111705-1200x1726.jpg",
-      title: "TIBBİ YEDEK PARÇA ÜRÜNLERİ",
+      title: "Tıbbi Yedek Parça Malzemeleri",
+      desc: "It is not so much for its beauty that the forest",
     },
     {
       img: "https://emircncotomat.com/wp-content/uploads/2022/06/WhatsApp-Image-2021-12-08-at-11.34.30-1200x1600-1.jpg",
       title: "Alüminyum Malzemeler",
+      desc: "It is not so much for its beauty that the forest",
     },
     {
       img: "https://emircncotomat.com/wp-content/uploads/2020/03/IMG20220510074805-1200x1666.jpg",
-      title: "303 PASLANMAZ MALZEMELER",
+      title: "Paslanmaz Malzemeler",
+      desc: "It is not so much for its beauty that the forest",
     },
     {
       img: "https://emircncotomat.com/wp-content/uploads/2022/06/WhatsApp-Image-2022-03-20-at-16.04.14-5-1200x1600.jpeg",
-      title: "YÜKSEK KARBONLU ÇELİK VE  ÇELİK MALZEMELER",
+      title: "Yüksek Karbonlu Çelik Malzemeler",
+      desc: "It is not so much for its beauty that the forest",
     },
   ]);
 
@@ -63,7 +69,7 @@ function OurWorksSection() {
 
   return (
     <>
-      <div className="h-[30rem] flex items-center justify-center bg-blue-gray-50 my-10">
+      <section className="h-[30rem] flex items-center justify-center bg-blue-gray-50 ">
         <Carousel
           className="w-full h-full"
           loop={true}
@@ -110,29 +116,36 @@ function OurWorksSection() {
                   floated={false}
                   shadow={false}
                   color="transparent"
-                  className="m-0 rounded-none w-full h-full"
+                  className="m-0 rounded-l-none w-full sm:w-1/2 h-full"
                   onClick={(e) => handleOpen(e)}
                 >
                   <img
-                    className="object-cover sm:object-cover  h-full w-full"
+                    className="object-cover h-full w-full"
                     src={work.img}
                     alt={work.title}
                   />
                 </CardHeader>
-                <CardBody className="p-3 hidden sm:flex flex-col items-center text-center justify-evenly w-full ">
+                <CardBody className="p-3 hidden sm:flex flex-col items-center text-center justify-center w-1/2 ">
                   <Typography
-                    className="my-2 font-montserrat font-extrabold block"
+                    className="my-2 font-montserrat font-extrabold block text-primary-blue"
                     variant="h4"
                     color="blue-gray"
                   >
                     {work.title}
+                  </Typography>
+                  <Typography
+                    className="font-montserrat font-extrabold block"
+                    variant="h6"
+                    color="blue-gray"
+                  >
+                    {work.desc}
                   </Typography>
                 </CardBody>
               </Card>
             </div>
           ))}
         </Carousel>
-      </div>
+      </section>
       <Dialog open={open} handler={handleOpen}>
         <DialogBody>
           <img

@@ -4,13 +4,13 @@ import { Carousel, Typography, Button } from "@material-tailwind/react";
 function HomeCarousel() {
   const [data, setData] = useState([
     {
-      img: "https://emircncotomat.com/wp-content/uploads/2022/03/01.jpg",
+      img: "https://emircncotomat.com/wp-content/uploads/2022/06/anasayfa-1.jpg",
       title: "Tecrübe",
       desc: "40 Yıllık Tecrübemizle Sizlere Hizmet Veriyoruz",
       alt: "imagealt",
     },
     {
-      img: "https://emircncotomat.com/wp-content/uploads/2022/03/01.jpg",
+      img: "https://vamer.com.tr/images/main-slider/image-1.jpg",
       title: "Tecrübe",
       desc: "1986’DAN BERİ PROFESYONEL CNC OTOMAT TEDARİKÇİSİYİZ",
       alt: "imagealt",
@@ -24,7 +24,7 @@ function HomeCarousel() {
   ]);
 
   return (
-    <>
+    <section>
       <Carousel className="h-[30rem]" loop={true} autoplay={true} autoplayDelay={5000}>
         {data.map((item, index) => (
           <div key={index} className="relative h-full w-full">
@@ -33,7 +33,7 @@ function HomeCarousel() {
               alt={item.alt}
               className="h-full w-full object-cover"
             />
-            <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
+            <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/50">
               <div className="w-3/4 text-center md:w-2/4">
                 <Typography
                   variant="h4"
@@ -54,7 +54,7 @@ function HomeCarousel() {
           </div>
         ))}
       </Carousel>
-    </>
+    </section>
   );
 }
 

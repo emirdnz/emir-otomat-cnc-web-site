@@ -6,7 +6,7 @@ import About from "./pages/About";
 import OurWorks from "./pages/OurWorks";
 import Experiences from "./pages/Experiences";
 import Quality from "./pages/Quality";
-import Vision from "./pages/Vision";
+import Footer from "./componenets/Footer";
 
 function App() {
   return (
@@ -21,12 +21,11 @@ function App() {
           <Route path="/our-works" element={<OurWorks />} />
           <Route path="/experiences" element={<Experiences />} />
           <Route path="/quality" element={<Quality />} />
-          <Route path="/vision" element={<Vision />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
 }
 
 export default App;
- 

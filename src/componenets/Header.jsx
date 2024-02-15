@@ -30,7 +30,7 @@ function Header() {
       >
         <Link
           to="homepage"
-          className="flex items-center font-montserrat transition duration-700 ease-in-out hover:text-regal-blue"
+          className="flex items-center font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
         >
           Anasayfa
         </Link>
@@ -43,7 +43,7 @@ function Header() {
       >
         <Link
           to="about"
-          className="flex items-center font-montserrat transition duration-700 ease-in-out hover:text-regal-blue"
+          className="flex items-center font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
         >
           Hakkımızda
         </Link>
@@ -56,7 +56,7 @@ function Header() {
       >
         <Link
           to="our-works"
-          className="flex items-center font-montserrat transition duration-700 ease-in-out hover:text-regal-blue"
+          className="flex items-center font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
         >
           Çalışmalarımız
         </Link>
@@ -69,7 +69,7 @@ function Header() {
       >
         <Link
           to="experiences"
-          className="flex items-center font-montserrat transition duration-700 ease-in-out hover:text-regal-blue"
+          className="flex items-center font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
         >
           Deneyimlerimiz
         </Link>
@@ -82,22 +82,9 @@ function Header() {
       >
         <Link
           to="quality"
-          className="flex items-center font-montserrat transition duration-700 ease-in-out hover:text-regal-blue"
+          className="flex items-center font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
         >
           Kalitemiz
-        </Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="h6"
-        color="blue-gray"
-        className="p-1 font-bold"
-      >
-        <Link
-          to="vision"
-          className="flex items-center font-montserrat transition duration-700 ease-in-out hover:text-regal-blue"
-        >
-          Vizyonumuz
         </Link>
       </Typography>
     </ul>
@@ -109,17 +96,18 @@ function Header() {
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4 leading-8">
           <div></div>
           <div className="flex items-center space-x-6 rtl:space-x-reverse">
-            <div className="flex items-center text-slate-900">
+            <div className="flex items-center text-primary-blue">
               İletişim:
               <span className="text-sm  text-gray-500 dark:text-white hover:underline">
-                <a href="tel:02124711740" className="flex items-center ml-2 transition duration-700 ease-in-out hover:text-black">
+                <a
+                  href="tel:02124711740"
+                  className="flex items-center ml-2 transition duration-700 ease-in-out hover:text-primary-blue"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-4 h-4 mr-1"
+                    className="w-4 h-4 mr-1 fill-primary-blue"
                   >
                     <path
                       strokeLinecap="round"
@@ -136,15 +124,15 @@ function Header() {
                 href="mailto:info@emircncotomat.com"
                 className="text-sm  text-gray-500 dark:text-white hover:underline"
               >
-                <span className="flex items-center ml-2 line-clamp-1 transition duration-700 ease-in-out hover:text-black">
+                <span className="flex items-center ml-2 line-clamp-1 transition duration-700 ease-in-out hover:text-primary-blue">
                   <svg
                     v
                     xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
+                    fill="#427fda"
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-4 h-4 mr-1"
+                    stroke="white"
+                    className="w-5 h-5 mr-1"
                   >
                     <path
                       strokeLinecap="round"

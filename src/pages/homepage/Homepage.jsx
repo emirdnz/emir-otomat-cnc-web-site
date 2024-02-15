@@ -8,9 +8,13 @@ function Homepage() {
   return (
     <>
       <div className="">
+        {/* Carousel Section */}
         <HomeCarousel />
+        {/* About Section */}
         <AboutSection />
+        {/* OurWorks Section */}
         <OurWorksSection />
+        {/* Experience Section */}
         <ExperienceSection />
       </div>
     </>
