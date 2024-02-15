@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function Experiences() {
   return (
-    <div>Experiences</div>
-  )
+    <div>
+     Experiences
+    </div>
+  );
 }
 
-export default Experiences
+export default Experiences;

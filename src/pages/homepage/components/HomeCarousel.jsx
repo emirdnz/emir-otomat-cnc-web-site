@@ -1,5 +1,6 @@
 import {useState} from "react";
-import { Carousel, Typography, Button } from "@material-tailwind/react";
+import {  Typography, Button } from "@material-tailwind/react";
+import {Carousel} from "flowbite-react"
 
 function HomeCarousel() {
   const [data, setData] = useState([
@@ -25,7 +26,7 @@ function HomeCarousel() {
 
   return (
     <section>
-      <Carousel className="h-[30rem]" loop={true} autoplay={true} autoplayDelay={5000}>
+      <Carousel className="h-[30rem]" loop={true} autoplay={true} autoplayDelay={5000} pauseOnHover={true}>
         {data.map((item, index) => (
           <div key={index} className="relative h-full w-full">
             <img

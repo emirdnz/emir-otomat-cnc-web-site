@@ -37,11 +37,9 @@ function AboutSection() {
             >
               İleri teknolojiyle donatılmış 1986'dan beri sektördeki
               uzmanlığımızla, Emir Otomat CNC olarak müşteri isteklerine en
-              uygun çözümleri sunuyoruz. Mobilya Sektörü, Ev Aletleri, Tıbbi
-              Malzemeler, Aydınlatma Parçaları, Otomotiv Parçaları, Klima
-              Parçaları, Doğalgaz Parçaları ve Savunma Sanayisi gibi çeşitli
-              sektörlere özel çözümler üretiyoruz.<Link className="text-primary-blue" to="/about"> Hakkımızda.</Link>
+              uygun çözümleri sunuyoruz.
             </Typography>
+            <Link className="text-primary-blue" to="/about"> Devamı →</Link>
           </CardBody>
         </Card>
       </section>

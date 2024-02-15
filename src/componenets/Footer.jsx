@@ -52,7 +52,7 @@ function Footer() {
                     Çalışmalarımız
                   </a>
                 </li>
-                <li>
+                <li className="mb-4">
                   <a
                     href="https://discord.gg/4eeurUVvTy"
                     className="hover:underline"

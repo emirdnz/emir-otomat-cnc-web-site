@@ -22,71 +22,71 @@ function Header() {
 
   const navList = (
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-2">
-      <Typography
-        as="li"
-        variant="h6"
-        color="blue-gray"
-        className="p-1 font-bold"
+      <Link
+        to="homepage"
+        className="flex items-center "
       >
-        <Link
-          to="homepage"
-          className="flex items-center font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
+        <Typography
+          as="li"
+          variant="h6"
+          color="blue-gray"
+          className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
         >
           Anasayfa
-        </Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="h6"
-        color="blue-gray"
-        className="p-1 font-bold"
+        </Typography>
+      </Link>
+      <Link
+        to="about"
+        className="flex items-center "
       >
-        <Link
-          to="about"
-          className="flex items-center font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
+        <Typography
+          as="li"
+          variant="h6"
+          color="blue-gray"
+          className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
         >
           Hakkımızda
-        </Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="h6"
-        color="blue-gray"
-        className="p-1 font-bold"
+        </Typography>
+      </Link>
+      <Link
+        to="our-works"
+        className="flex items-center "
       >
-        <Link
-          to="our-works"
-          className="flex items-center font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
+        <Typography
+          as="li"
+          variant="h6"
+          color="blue-gray"
+          className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
         >
           Çalışmalarımız
-        </Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="h6"
-        color="blue-gray"
-        className="p-1 font-bold"
+        </Typography>
+      </Link>
+      <Link
+        to="experiences"
+        className="flex items-center "
       >
-        <Link
-          to="experiences"
-          className="flex items-center font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
+        <Typography
+          as="li"
+          variant="h6"
+          color="blue-gray"
+          className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
         >
           Deneyimlerimiz
-        </Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="h6"
-        color="blue-gray"
-        className="p-1 font-bold"
+        </Typography>
+      </Link>
+      <Link
+        to="quality"
+        className="flex items-center "
       >
-        <Link
-          to="quality"
-          className="flex items-center font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
+        <Typography
+          as="li"
+          variant="h6"
+          color="blue-gray"
+          className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
         >
           Kalitemiz
-        </Link>
-      </Typography>
+        </Typography>
+      </Link>
     </ul>
   );
 
@@ -151,15 +151,14 @@ function Header() {
       </nav>
       <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-3 py-3">
         <div className="flex items-center max-w-screen-xl mx-auto justify-between text-blue-gray-900">
-          <Typography
-            as="a"
-            href="#"
+          <Link
+            to="/"
             className="mr-4 cursor-pointer  font-medium flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img src="../../public/logo.png" className="h-16" alt="Logo" />
-          </Typography>
+          </Link>
           <div className="flex items-center gap-4">
-            <div className="mr-4 hidden lg:block">{navList}</div>
+            <div className="hidden lg:block">{navList}</div>
             <IconButton
               variant="text"
               className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"

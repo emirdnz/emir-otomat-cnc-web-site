@@ -14,6 +14,11 @@
   }
 }
 
+.swiper-slide-active> img{
+  transform: scale(1.2);
+  transition: transform 1.5s ease;
+
+}
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

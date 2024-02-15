@@ -12,10 +12,10 @@ function Homepage() {
         <HomeCarousel />
         {/* About Section */}
         <AboutSection />
-        {/* OurWorks Section */}
-        <OurWorksSection />
         {/* Experience Section */}
         <ExperienceSection />
+        {/* OurWorks Section */}
+        <OurWorksSection />
       </div>
     </>
   );

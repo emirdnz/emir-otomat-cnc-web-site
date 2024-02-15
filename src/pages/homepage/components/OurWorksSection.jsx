@@ -14,42 +14,62 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
+// Import Swiper styles
+import "swiper/css";
+
 function OurWorksSection() {
   const [autoplay, setAutoplay] = useState(true);
   const [open, setOpen] = useState(false);
   const [selectedImg, setSelectedImg] = useState(null);
+  const [slides, setSlides] = useState(window.innerWidth >= 1000 ? 2.5 : 1.5);
   const [works, setWorks] = useState([
     {
-      img: "https://emircncotomat.com/wp-content/uploads/2017/06/WhatsApp-Image-2022-03-20-at-16.04.20-1-1200x1600.jpeg",
+      img: "../../../../public/products/pirinc.png",
       title: "Sarı (PİRİNÇ) Malzemeler",
       desc: "It is not so much for its beauty that the forest",
     },
     {
-      img: "https://emircncotomat.com/wp-content/uploads/2020/03/WhatsApp-Image-2022-03-20-at-16.04.17-2-1200x1600.jpeg",
+      img: "../../../../public/products/otomat.png",
       title: "Otomat Malzemeleri",
       desc: "It is not so much for its beauty that the forest",
     },
     {
-      img: "https://emircncotomat.com/wp-content/uploads/2017/08/IMG20220521111705-1200x1726.jpg",
+      img: "../../../../public/products/tibbi.png",
       title: "Tıbbi Yedek Parça Malzemeleri",
       desc: "It is not so much for its beauty that the forest",
     },
     {
-      img: "https://emircncotomat.com/wp-content/uploads/2022/06/WhatsApp-Image-2021-12-08-at-11.34.30-1200x1600-1.jpg",
+      img: "../../../../public/products/aluminyum.png",
       title: "Alüminyum Malzemeler",
       desc: "It is not so much for its beauty that the forest",
     },
     {
-      img: "https://emircncotomat.com/wp-content/uploads/2020/03/IMG20220510074805-1200x1666.jpg",
+      img: "../../../../public/products/paslanmaz.png",
       title: "Paslanmaz Malzemeler",
       desc: "It is not so much for its beauty that the forest",
     },
     {
-      img: "https://emircncotomat.com/wp-content/uploads/2022/06/WhatsApp-Image-2022-03-20-at-16.04.14-5-1200x1600.jpeg",
+      img: "../../../../public/products/pixelcut-export.png",
       title: "Yüksek Karbonlu Çelik Malzemeler",
       desc: "It is not so much for its beauty that the forest",
     },
   ]);
+
+  useEffect(() => {
+    window.addEventListener(
+      "resize",
+      () => window.innerWidth >= 1000 && setSlides(2.5)
+    );
+    window.addEventListener(
+      "resize",
+      () => window.innerWidth < 1000 && setSlides(1.5)
+    );
+  }, []);
 
   useEffect(() => {
     if (open) {
@@ -69,8 +89,58 @@ function OurWorksSection() {
 
   return (
     <>
-      <section className="h-[30rem] flex items-center justify-center bg-blue-gray-50 ">
-        <Carousel
+      <section className="h-[30rem] w-full flex flex-col md:flex-row items-center justify-center bg-blue-gray-50 ">       
+        <div className="w-full md:w-1/2 flex flex-col items-center md:items-end text-center md:text-end md:pr-5">
+          <Typography
+            variant="h4"
+            className="flex justify-center md:justify-end max-w-lg h-full w-full font-montserrat font-bold pb-2 md:pb-10"
+          >
+            Çalışmalarımız
+          </Typography>
+          <Typography
+            variant="h6"
+            className="hidden md:flex justify-end max-w-lg h-full w-full font-montserrat "
+          >
+            Mobilya Sektörü, Ev Aletleri, Tıbbi Malzemeler, Aydınlatma
+            Parçaları, Otomotiv Parçaları, Klima Parçaları, Doğalgaz Parçaları
+            ve Savunma Sanayisi gibi çeşitli sektörlere özel çözümler
+            üretiyoruz.
+          </Typography>
+        </div>
+        <div className="w-full md:w-1/2 h-5/6 md:h-full flex justify-center items-center">
+          <Swiper
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+            }}
+            loop={true}
+            modules={[Autoplay]}
+            spaceBetween={10}
+            slidesPerView={slides}
+            onSlideChange={() => console.log("slide change")}
+            onSwiper={(swiper) => console.log(swiper)}
+            className="w-full h-full p-2 pl-0 cursor-grab"
+          >
+            {works.map((work, i) => (
+              <SwiperSlide
+                autoplay={true}
+                className="bg-white h-full rounded-md"
+                key={i}
+              >
+                <img
+                  className="h-full w-full object-cover"
+                  src={work.img}
+                  onClick={(e) => handleOpen(e)}
+                  alt={work.title}
+                />
+                <div className="relative bottom-14 leading-4  font-extrabold mx-3  text-black text-center">
+                  {work.title}
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+        {/* <Carousel
           className="w-full h-full"
           loop={true}
           autoplay={autoplay}
@@ -116,7 +186,7 @@ function OurWorksSection() {
                   floated={false}
                   shadow={false}
                   color="transparent"
-                  className="m-0 rounded-l-none w-full sm:w-1/2 h-full"
+                  className="m-0 rounded-l-none w-full h-full"
                   onClick={(e) => handleOpen(e)}
                 >
                   <img
@@ -144,13 +214,13 @@ function OurWorksSection() {
               </Card>
             </div>
           ))}
-        </Carousel>
+        </Carousel> */}
       </section>
-      <Dialog open={open} handler={handleOpen}>
-        <DialogBody>
+      <Dialog className="flex items-center justify-center duration-700" open={open} handler={handleOpen}>
+        <DialogBody className="max-w-xl max-h-xl">
           <img
             alt="nature"
-            className=" w-full rounded-lg object-cover object-center"
+            className="  rounded-lg object-cover object-center"
             src={selectedImg}
           />
         </DialogBody>
