@@ -25,7 +25,7 @@ function HomeCarousel() {
   ]);
 
   return (
-    <section>
+    <section id="carousel">
       <Carousel className="h-[30rem]" loop={true} autoplay={true} autoplayDelay={5000} pauseOnHover={true}>
         {data.map((item, index) => (
           <div key={index} className="relative h-full w-full">

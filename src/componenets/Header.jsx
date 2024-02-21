@@ -23,7 +23,7 @@ function Header() {
   const navList = (
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-2">
       <Link
-        to="homepage"
+        to="home"
         className="flex items-center "
       >
         <Typography
@@ -75,7 +75,7 @@ function Header() {
         </Typography>
       </Link>
       <Link
-        to="quality"
+        to="contactus"
         className="flex items-center "
       >
         <Typography
@@ -84,7 +84,7 @@ function Header() {
           color="blue-gray"
           className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
         >
-          Kalitemiz
+          İletişim
         </Typography>
       </Link>
     </ul>
@@ -93,7 +93,7 @@ function Header() {
   return (
     <>
       <nav className=" border-b-2 border-slate-200 bg-slate-100 dark:bg-gray-900">
-        <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4 leading-8">
+        <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-2 leading-8">
           <div></div>
           <div className="flex items-center space-x-6 rtl:space-x-reverse">
             <div className="flex items-center text-primary-blue">

@@ -7,7 +7,7 @@ import ExperienceSection from "./components/ExperienceSection";
 function Homepage() {
   return (
     <>
-      <div className="">
+      <div>
         {/* Carousel Section */}
         <HomeCarousel />
         {/* About Section */}
