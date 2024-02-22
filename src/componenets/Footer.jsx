@@ -5,7 +5,7 @@ import logo from "../../public/favicon.png";
 
 function Footer() {
   return (
-    <footer className=" bg-blue-gray-900 text-white">
+    <footer className=" bg-[#232a34] text-white">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
