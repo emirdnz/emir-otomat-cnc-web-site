@@ -90,7 +90,7 @@ function AboutSection() {
               <Typography
                 variant="lead"
                 color="gray"
-                className=" font-normal overflow-scroll no-scrollbar min-h max-w-lg pb-10 font-montserrat text-md"
+                className=" font-normal overflow-scroll no-scrollbar min-h max-w-lg pb-10 font-montserrat text-md text-pretty "
               >
                 1986 yılında Deniz Otomat Otomotiv Limited Şirketi olarak
                 Unkapanı'nda kurulan Emir CNC Otomat, sektördeki liderliğini

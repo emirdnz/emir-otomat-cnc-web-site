@@ -80,7 +80,7 @@ function About() {
                       opacity: 1,
                       transition: { duration: 1.4, ease: "easeOut" },
                       y: 0,
-                    }}
+                    }} viewport={{}}
                   >
                     <div className="group-hover:text-primary-blue group-hover:text-lg group-hover:font-extrabold transition-all ease-in-out duration-500">
                       Uygun Fiyat
@@ -103,7 +103,7 @@ function About() {
                       transition: { duration: 1.4, ease: "easeOut" },
                       y: 0,
                     }}
-                    
+                     viewport={{}}
                   >
                     <div className="group-hover:text-primary-blue group-hover:text-lg group-hover:font-extrabold transition-all ease-in-out duration-500">
                       Kalite
@@ -126,7 +126,7 @@ function About() {
                       transition: { duration: 1.4, ease: "easeOut" },
                       y: 0,
                     }}
-                    
+                     viewport={{ once: true }}
                   >
                     <div className="group-hover:text-primary-blue group-hover:text-lg group-hover:font-extrabold transition-all ease-in-out duration-500">
                       Memnuniyet
