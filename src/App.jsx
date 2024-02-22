@@ -11,6 +11,8 @@ import Quality from "./pages/Quality";
 import Footer from "./componenets/Footer";
 import ContactUs from "./pages/ContactUs";
 
+import ScrollToTop from "./componenets/ScrollToTop";
+
 function App() {
   const [loading, setLoading] = useState(false);
   const location = useLocation();
@@ -19,6 +21,7 @@ function App() {
     <div className="font-montserrat font-medium">
       {/* {window.location.pathname == "/" ? null : <Navbar />} */}
       <Header />
+      <ScrollToTop />
 
       {loading ? (
         <div className="flex justify-center items-center  h-[80vh] ">
