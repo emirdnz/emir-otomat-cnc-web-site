@@ -77,7 +77,7 @@ function Footer() {
           <span className="text-sm  sm:text-center ">
             © 2024{" "}
             <a
-              href="https://www.linkedin.com/company/emirotomatcnc/"
+              href="https://emircncotomat.com/"
               className="hover:underline"
             >
               EMİR OTOMAT CNC
@@ -86,7 +86,7 @@ function Footer() {
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0">
             <a
-              href="https://emircncotomat.com/"
+              href="https://www.linkedin.com/company/emirotomatcnc/"
               className=" hover:dark:hover:text-white"
             >
               <svg
