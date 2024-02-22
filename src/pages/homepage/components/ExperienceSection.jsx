@@ -18,7 +18,7 @@ function ExperienceSection() {
             </Typography>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:flex md:flex-row md:item-center md:h-full md:border-y-2">
-            <div className="md:flex md:flex-col p-10 py-14 mx-4 sm:m-0 border-2 md:border-r-2 md:border-l-0 md:border-y-0 md:w-full">
+            <div className="md:flex md:flex-col p-10 py-14 mx-4 sm:m-0 group border-2 md:border-r-2 md:border-l-0 md:border-y-0 md:w-full">
               <div>
                 <span>
                   <svg
@@ -26,6 +26,7 @@ function ExperienceSection() {
                     viewBox="0 0 192.756 192.756"
                     width={40}
                     height={40}
+                    className="group-hover:fill-primary-blue transition-all duration-700 ease-out"
                   >
                     <g fillRule="evenodd" clipRule="evenodd">
                       <path fill="#fff" d="M0 0h192.756v192.756H0V0z" />
@@ -52,23 +53,17 @@ function ExperienceSection() {
                 </h3>
               </div>
             </div>
-            <div className="md:flex md:flex-col p-10 py-14 mx-4 sm:m-0 border-2 md:border-r-2 md:border-l-0 md:border-y-0  md:w-full">
+            <div className="md:flex md:flex-col p-10 py-14 mx-4 sm:m-0 group border-2 md:border-r-2 md:border-l-0 md:border-y-0  md:w-full">
               <div>
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                    xmlSpace="preserve"
-                    width={40}
-                    height={40}
-                  >
-                    <image
-                      xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAA0dJREFUaEPtmFnITVEUx38fQilFhhLCA4k8IMODsQwpJKQ8kciDl88QpUwhSoZSIg9epEwJJZSxSEqZpciDIQpRypBh/2vd2umes/e599yp7nr5vtvZ+7/Wf6+91l5rtdDg0tLg9tMkUGsPNj3QaB7oA/QDOgQM/w48Bz5UmmDsFZoObAOGZzDoD3AJWAM8yrAv09IYAjJgJ5Scsb4Bc4DLmSyLXBwiMA244Bmvq/EQ+BLA7w4MBdraOq0fDLyLtCt6WYjAXWCkod0EFmQwQtftDKC4kewGVkVbFrkwjUAv4I3h/AAGAG8jcQvLZrq4OWs/FNSDMu4PLk8jMBa4ZQj3gBEeWlegN/AgRUMbYB+wwtb8BfYCqwEFeJIMA14Dn4LWBwJzInDVQK4Bk+x/Gf8U6AGsB7YnKJoPHC/ybR5wKmGP8LYC7y1mPodIpHkgicB4R+a6AYvg5AQlG9wBbS7ybSOwJWHPFe+gJjjsG5Ug4BML4Rf7LlKbgBCOPC7Pp0opHggpDulsEvBPqFwP+MH9/8mXEgOKKXlYUpUrlEZA2eZEkfs0FzidcM/qioDegV2u7Gj1jNVrrNoq6R2oKwIFu3+7tCkyMrpQGyUFel0SUEk9xUprFYdpUpcE2ltlqp7gZyMSCL0L/vdcPTDOe8pVSquEkCSVGFkMrUoMqCq8b5rUxOh3QxHoAny0ilX9QGe7ww3jAZ32M68JmWHtpU/gJXAoj7tjGMusccrlJRbIDmCtgas3FompwMUcjU6CUspVCk6VUE88EHjsmox2hiLjFwKLQsA5fD8CLA7hhAho/2FgiQG9cldGvbJyu2S/Kw00NslLOnktqN6M/qE+PIZAN2sh9dcXdUvqmvIW4SqFSzSPWpemIIaA9i8tEqyzXKN/Lm/rgdk2jhH0V6Bv2hwqloDW3XZZaLQZrOw0JDBdKJWbCr8nXvZbCexJAosloCB+YadR8Ihio1KidHrQwDVi0UzqVzFlsQSUeY4agMaLGpnob6WkoysAT3pTcOk/Vg6BO8CoSlkbgSv9Y8ohoDm/Bra1EunvWQ4BzTiXe/m/mkT0HhxwQ+bz5RCopsGZdMUGcSbQai5uEqjmaTdjoNan3fRAPXrgH4NGwjG2UVeLAAAAAElFTkSuQmCC"
-                      width={40}
-                      height={40}
-                    />
-                  </svg>
-                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={40}
+                  height={40}
+                  viewBox="0 0 48 48"
+                  className="group-hover:fill-primary-blue transition-all duration-700 ease-out"
+                >
+                  <path d="M9.4 5.9C3.5 9.5 2.5 17.7 6.5 29.5c1.6 5 2.2 8.4 1.8 10.9L7.7 44h18.2c17.6 0 18.1-.1 18.1-2 0-1.2-.9-3.8-2-6-1.5-3-2-5.9-2-12 0-4.7.4-8 1-8 1.5 0 1.2-2.9-.4-4.6C38.9 9.8 36 9.5 36 11c0 2.1-5.7 1-8.1-1.6-5.2-5.6-12.7-7-18.5-3.5zm11.7 3.2c1.1.5 1.7 1.4 1.4 2-.8 1.2-6.5 1.2-6.5-.1 0-1.5-2.9-1.2-4.6.4C9.8 13.1 9.5 16 11 16c.6 0 1 3.3.9 8.2l-.1 8.3L10 27c-2.7-8.1-2.6-13.5.5-16.5 2.6-2.7 7.2-3.3 10.6-1.4zm.9 9.1c.1 2.7 2.2 5.8 4 5.8 1.8 0 3.9-3.1 4-5.8 0-1.8.6-2.2 3-2.2h3v16H16V16h3c2.4 0 3 .4 3 2.2z" />
+                </svg>
               </div>
               <div className="mt-1">
                 <h3>
@@ -80,13 +75,14 @@ function ExperienceSection() {
                 </h3>
               </div>
             </div>
-            <div className="md:flex md:flex-col p-10 py-14 mx-4 sm:m-0 border-2 md:border-r-2 md:border-l-0 md:border-y-0 md:w-full">
+            <div className="md:flex md:flex-col p-10 py-14 mx-4 sm:m-0 group border-2 md:border-r-2 md:border-l-0 md:border-y-0 md:w-full">
               <div>
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={40}
                     height={40}
+                    className="group-hover:fill-primary-blue transition-all duration-700 ease-out"
                     viewBox="0 0 40 40"
                   >
                     <path d="M11.3 4.7 3 9.4v20.5l8.5 5.1 8.5 5.1 8.5-5.1 8.5-5.1V9.4l-8.3-4.7C24.1 2.1 20.1 0 19.9 0c-.2.1-4.1 2.2-8.6 4.7zm17.3 1.5 7.4 4.2v18.5l-7.5 4.5c-4.2 2.5-8 4.6-8.5 4.6s-4.3-2.1-8.5-4.6L4 28.9V10.4l7.3-4.1c3.9-2.3 7.8-4.2 8.6-4.2.7-.1 4.7 1.8 8.7 4.1z" />
@@ -104,13 +100,14 @@ function ExperienceSection() {
                 </h3>
               </div>
             </div>
-            <div className="md:flex md:flex-col p-10 py-14 mx-4 sm:m-0 border-2 md:border-none md:w-full">
+            <div className="md:flex md:flex-col p-10 py-14 mx-4 sm:m-0 group border-2 md:border-none md:w-full">
               <div>
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={40}
                     height={40}
+                    className="group-hover:fill-primary-blue transition-all duration-700 ease-out"
                     viewBox="0 0 40 40"
                   >
                     <path d="M11.8 9.6C5 14.1 4 15.3 6 16.5c.8.5.7 1.1-.1 2.1-.9 1.1-.9 1.7 0 2.8.8 1 .9 1.6.1 2.1-.5.3-1 1-1 1.5 0 1 13.5 10 15 10s15-9 15-10c0-.5-.5-1.2-1-1.5-.8-.5-.7-1.1.1-2.1.9-1.1.9-1.7 0-2.8-.8-1-.9-1.6-.1-2.1.5-.3 1-1 1-1.6 0-1.2-13.6-9.9-15.3-9.8-.6 0-4.2 2.1-7.9 4.5zm14.1 1.5c2.8 1.8 5.1 3.5 5.1 3.8 0 .3-2.5 2.1-5.5 3.9L20 22.1l-5.5-3.3c-3-1.8-5.3-3.6-5.2-4 .3-1 9-6.6 10.4-6.7.6-.1 3.4 1.3 6.2 3zm-10.7 11 4.8 3.1 4.8-3.1c5.1-3.2 6.2-3.6 6.2-2.3 0 .4-2.5 2.3-5.5 4.1L20 27.2l-5.5-3.3c-3-1.8-5.5-3.7-5.5-4.1 0-1.3 1.1-.9 6.2 2.3zm-.2 5 5 3.1 5-3.1c5.4-3.3 6-3.6 6-2.2 0 .9-9.6 7.1-11 7.1-1.4 0-11-6.2-11-7.1 0-1.4.6-1.1 6 2.2z" />
@@ -119,8 +116,11 @@ function ExperienceSection() {
               </div>
               <div className="mt-2">
                 <h3>
-                  <span>Bitirme ve 
-                    <br />maskeleme</span>
+                  <span>
+                    Bitirme ve
+                    <br />
+                    maskeleme
+                  </span>
                 </h3>
               </div>
             </div>

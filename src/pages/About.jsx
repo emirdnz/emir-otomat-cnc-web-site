@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import AboutSection from "./homepage/components/AboutSection";
 
+import { motion, useScroll } from "framer-motion";
+
 import {
   Card,
   CardHeader,
@@ -9,6 +11,8 @@ import {
 } from "@material-tailwind/react";
 
 function About() {
+  const { scrollYProgress } = useScroll();
+
   const [select, setSelect] = useState("vision");
   const [check, setCheck] = useState(true);
 
@@ -26,9 +30,14 @@ function About() {
     <section className="flex items-center justify-center flex-col mt-10">
       <div className="w-full">
         <h1 className="text-2xl font-semibold mb-8 text-primary-blue w-full">
-          <div className="w-full text-center">
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ ease: "linear", duration: 1.5 }}
+            className="w-full text-center"
+          >
             / <span className="text-black">Hakkımızda</span>
-          </div>
+          </motion.div>
         </h1>
         <div className="h-96 w-full">
           <img
@@ -41,7 +50,16 @@ function About() {
       <AboutSection />
       <section className="h-full md:h-[30rem] flex flex-col items-center justify-center">
         <div className="h-full w-full md:max-w-screen-xl md:flex flex-col justify-center item-center">
-          <div className="flex justify-center items-center h-3/4">
+          <motion.div
+            initial={{ opacity: 0, y: -40 }}
+            whileInView={{
+              opacity: 1,
+              transition: { duration: 1.4, ease: "easeOut" },
+              y: 0,
+            }}
+            viewport={{ once: true }}
+            className="flex justify-center items-center h-3/4"
+          >
             <Typography
               variant="h1"
               color="gray"
@@ -51,12 +69,19 @@ function About() {
                 Hedeflerimiz
               </span>
             </Typography>
-          </div>
+          </motion.div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:flex md:flex-row md:item-center md:h-full md:border-y-2">
             <div className="md:flex group md:flex-col p-12  sm:m-0 border-2 md:border-r-2 md:border-l-0 md:border-y-0 md:w-full">
               <div className="mt-2">
                 <h3>
-                  <div>
+                  <motion.div
+                    initial={{ opacity: 0, y: -40 }}
+                    whileInView={{
+                      opacity: 1,
+                      transition: { duration: 1.4, ease: "easeOut" },
+                      y: 0,
+                    }}
+                  >
                     <div className="group-hover:text-primary-blue group-hover:text-lg group-hover:font-extrabold transition-all ease-in-out duration-500">
                       Uygun Fiyat
                     </div>
@@ -64,14 +89,22 @@ function About() {
                       Piyasalara uygun fiyat politikamız, müşterilerimize
                       rekabet avantajı sağlar.
                     </div>
-                  </div>
+                  </motion.div>
                 </h3>
               </div>
             </div>
             <div className="md:flex group md:flex-col p-12  sm:m-0 border-2 md:border-r-2 md:border-l-0 md:border-y-0  md:w-full">
               <div className="mt-1 ">
                 <h3>
-                  <div>
+                  <motion.div
+                    initial={{ opacity: 0, y: -40 }}
+                    whileInView={{
+                      opacity: 1,
+                      transition: { duration: 1.4, ease: "easeOut" },
+                      y: 0,
+                    }}
+                    
+                  >
                     <div className="group-hover:text-primary-blue group-hover:text-lg group-hover:font-extrabold transition-all ease-in-out duration-500">
                       Kalite
                     </div>
@@ -79,14 +112,22 @@ function About() {
                       Malzeme kalitemiz, global standartlara uygun olarak
                       sertifikalandırılmıştır.
                     </div>
-                  </div>
+                  </motion.div>
                 </h3>
               </div>
             </div>
             <div className="md:flex group md:flex-col p-12  sm:m-0 border-2 md:border-x-0 md:border-y-0 md:w-full">
               <div className="mt-2">
                 <h3>
-                  <div>
+                  <motion.div
+                    initial={{ opacity: 0, y: -40 }}
+                    whileInView={{
+                      opacity: 1,
+                      transition: { duration: 1.4, ease: "easeOut" },
+                      y: 0,
+                    }}
+                    
+                  >
                     <div className="group-hover:text-primary-blue group-hover:text-lg group-hover:font-extrabold transition-all ease-in-out duration-500">
                       Memnuniyet
                     </div>
@@ -94,7 +135,7 @@ function About() {
                       Müşteri memnuniyeti, en önemli çalışma prensiplerimizden
                       biridir.
                     </div>
-                  </div>
+                  </motion.div>
                 </h3>
               </div>
             </div>
