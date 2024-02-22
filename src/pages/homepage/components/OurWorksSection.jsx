@@ -36,32 +36,32 @@ function OurWorksSection() {
   const [slides, setSlides] = useState(window.innerWidth >= 1000 ? 2.5 : 1.5);
   const [works, setWorks] = useState([
     {
-      img: { pirinc },
+      img: pirinc,
       title: "Sarı (PİRİNÇ) Malzemeler",
       desc: "It is not so much for its beauty that the forest",
     },
     {
-      img: { otomat },
+      img: otomat,
       title: "Otomat Malzemeleri",
       desc: "It is not so much for its beauty that the forest",
     },
     {
-      img: { tibbi },
+      img: tibbi,
       title: "Tıbbi Yedek Parça Malzemeleri",
       desc: "It is not so much for its beauty that the forest",
     },
     {
-      img: { aluminyum },
+      img: aluminyum,
       title: "Alüminyum Malzemeler",
       desc: "It is not so much for its beauty that the forest",
     },
     {
-      img: { paslanmaz },
+      img: paslanmaz,
       title: "Paslanmaz Malzemeler",
       desc: "It is not so much for its beauty that the forest",
     },
     {
-      img: { yuksekKarbon },
+      img: yuksekKarbon,
       title: "Yüksek Karbonlu Çelik Malzemeler",
       desc: "It is not so much for its beauty that the forest",
     },
