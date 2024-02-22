@@ -14,6 +14,13 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 
+import pirinc from "../../../../public/products/pirinc.png";
+import otomat from "../../../../public/products/otomat.png";
+import tibbi from "../../../../public/products/tibbi.png";
+import aluminyum from "../../../../public/products/aluminyum.png";
+import paslanmaz from "../../../../public/products/paslanmaz.png";
+import yuksekKarbon from "../../../../public/products/pixelcut-export.png";
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -29,32 +36,32 @@ function OurWorksSection() {
   const [slides, setSlides] = useState(window.innerWidth >= 1000 ? 2.5 : 1.5);
   const [works, setWorks] = useState([
     {
-      img: "../../../../public/products/pirinc.png",
+      img: { pirinc },
       title: "Sarı (PİRİNÇ) Malzemeler",
       desc: "It is not so much for its beauty that the forest",
     },
     {
-      img: "../../../../public/products/otomat.png",
+      img: { otomat },
       title: "Otomat Malzemeleri",
       desc: "It is not so much for its beauty that the forest",
     },
     {
-      img: "../../../../public/products/tibbi.png",
+      img: { tibbi },
       title: "Tıbbi Yedek Parça Malzemeleri",
       desc: "It is not so much for its beauty that the forest",
     },
     {
-      img: "../../../../public/products/aluminyum.png",
+      img: { aluminyum },
       title: "Alüminyum Malzemeler",
       desc: "It is not so much for its beauty that the forest",
     },
     {
-      img: "../../../../public/products/paslanmaz.png",
+      img: { paslanmaz },
       title: "Paslanmaz Malzemeler",
       desc: "It is not so much for its beauty that the forest",
     },
     {
-      img: "../../../../public/products/pixelcut-export.png",
+      img: { yuksekKarbon },
       title: "Yüksek Karbonlu Çelik Malzemeler",
       desc: "It is not so much for its beauty that the forest",
     },
@@ -89,7 +96,7 @@ function OurWorksSection() {
 
   return (
     <>
-      <section className="h-[30rem] w-full flex flex-col md:flex-row items-center justify-center bg-blue-gray-50 ">       
+      <section className="h-[30rem] w-full flex flex-col md:flex-row items-center justify-center bg-blue-gray-50 ">
         <div className="w-full md:w-1/2 flex flex-col items-center md:items-end text-center md:text-end md:pr-5">
           <Typography
             variant="h4"
@@ -216,7 +223,11 @@ function OurWorksSection() {
           ))}
         </Carousel> */}
       </section>
-      <Dialog className="flex items-center justify-center duration-700" open={open} handler={handleOpen}>
+      <Dialog
+        className="flex items-center justify-center duration-700"
+        open={open}
+        handler={handleOpen}
+      >
         <DialogBody className="max-w-xl max-h-xl">
           <img
             alt="nature"

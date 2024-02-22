@@ -10,6 +10,8 @@ import {
 } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 
+import logo from "../../public/logo.png";
+
 function Header() {
   const [openNav, setOpenNav] = useState(false);
 
@@ -22,10 +24,7 @@ function Header() {
 
   const navList = (
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-2">
-      <Link
-        to="home"
-        className="flex items-center "
-      >
+      <Link to="home" className="flex items-center ">
         <Typography
           as="li"
           variant="h6"
@@ -35,10 +34,7 @@ function Header() {
           Anasayfa
         </Typography>
       </Link>
-      <Link
-        to="about"
-        className="flex items-center "
-      >
+      <Link to="about" className="flex items-center ">
         <Typography
           as="li"
           variant="h6"
@@ -48,10 +44,7 @@ function Header() {
           Hakkımızda
         </Typography>
       </Link>
-      <Link
-        to="our-works"
-        className="flex items-center "
-      >
+      <Link to="our-works" className="flex items-center ">
         <Typography
           as="li"
           variant="h6"
@@ -61,10 +54,7 @@ function Header() {
           Çalışmalarımız
         </Typography>
       </Link>
-      <Link
-        to="experiences"
-        className="flex items-center "
-      >
+      <Link to="experiences" className="flex items-center ">
         <Typography
           as="li"
           variant="h6"
@@ -74,10 +64,7 @@ function Header() {
           Deneyimlerimiz
         </Typography>
       </Link>
-      <Link
-        to="contactus"
-        className="flex items-center "
-      >
+      <Link to="contactus" className="flex items-center ">
         <Typography
           as="li"
           variant="h6"
@@ -155,7 +142,7 @@ function Header() {
             to="/"
             className="mr-4 cursor-pointer  font-medium flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img src="../../public/logo.png" className="h-16" alt="Logo" />
+            <img src={logo} className="h-16" alt="Logo" />
           </Link>
           <div className="flex items-center gap-4">
             <div className="hidden lg:block">{navList}</div>
@@ -209,7 +196,7 @@ function Header() {
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img src="../../public/logo.png" className="h-14" alt="Logo" />
+            <img src={logo} className="h-14" alt="Logo" />
           </a>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <button
@@ -290,7 +277,7 @@ function Header() {
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img src="../../public/logo.png" className="h-14" alt="Logo" />
+            <img src={logo} className="h-14" alt="Logo" />
           </a>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <button

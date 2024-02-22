@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import logo from "../../public/favicon.png";
+
 function Footer() {
   return (
     <footer className=" bg-blue-gray-900 text-white">
@@ -9,7 +11,7 @@ function Footer() {
           <div className="mb-6 md:mb-0">
             <a href="" className="flex items-center">
               <img
-                src="../../public/favicon.png"
+                src={logo}
                 className="h-24 me-3"
                 alt="Logo"
               />
