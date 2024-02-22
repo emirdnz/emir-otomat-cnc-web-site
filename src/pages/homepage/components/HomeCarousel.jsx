@@ -11,7 +11,7 @@ function HomeCarousel() {
       alt: "imagealt",
     },
     {
-      img: "https://vamer.com.tr/images/main-slider/image-1.jpg",
+      img: "https://emircncotomat.com/wp-content/uploads/2023/02/industry-img-3.jpg",
       title: "Tecrübe",
       desc: "1986’DAN BERİ PROFESYONEL CNC OTOMAT TEDARİKÇİSİYİZ",
       alt: "imagealt",
