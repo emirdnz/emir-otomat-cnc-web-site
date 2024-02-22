@@ -15,7 +15,7 @@ function Footer() {
                 className="h-24 me-3"
                 alt="Logo"
               />
-              <span class="self-center text-xl text-center relative -left-5 leading-6 font-semibold whitespace-nowrap dark:text-white">
+              <span className="self-center text-xl text-center relative -left-5 leading-6 font-semibold whitespace-nowrap dark:text-white">
                 EMİR
                 <br />
                 OTOMAT

@@ -117,7 +117,7 @@ function OurWorksSection() {
         <div className="w-full md:w-1/2 h-5/6 md:h-full flex justify-center items-center">
           <Swiper
             autoplay={{
-              delay: 5000,
+              delay: 1000,
               disableOnInteraction: false,
             }}
             loop={true}

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import {
   Navbar,
-  MobileNav,
+  Collapse,
   Typography,
   Button,
   IconButton,
@@ -185,7 +185,7 @@ function Header() {
             </IconButton>
           </div>
         </div>
-        <MobileNav open={openNav}>{navList}</MobileNav>
+        <Collapse open={openNav}>{navList}</Collapse>
       </Navbar>
 
       {/* <nav
