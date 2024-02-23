@@ -5,7 +5,7 @@ import "./App.css";
 import Header from "./componenets/Header";
 import Homepage from "./pages/homepage/Homepage";
 import About from "./pages/About";
-import OurWorks from "./pages/OurWorks";
+import OurWorks from "./pages/OurWorks/OurWorks";
 import Experiences from "./pages/Experiences";
 import Quality from "./pages/Quality";
 import Footer from "./componenets/Footer";

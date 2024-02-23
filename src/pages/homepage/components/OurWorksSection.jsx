@@ -14,12 +14,12 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 
-import pirinc from "../../../../public/products/pirinc.png";
-import otomat from "../../../../public/products/otomat.png";
-import tibbi from "../../../../public/products/tibbi.png";
-import aluminyum from "../../../../public/products/aluminyum.png";
-import paslanmaz from "../../../../public/products/paslanmaz.png";
-import yuksekKarbon from "../../../../public/products/pixelcut-export.png";
+import pirinc from "../../../assets/products/pirinc.png";
+import otomat from "../../../assets/products/otomat.png";
+import tibbi from "../../../assets/products/tibbi.png";
+import aluminyum from "../../../assets/products/aluminyum.png";
+import paslanmaz from "../../../assets/products/paslanmaz.png";
+import yuksekKarbon from "../../../assets/products/yuksek-karbonlu-celik.png";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -38,32 +38,32 @@ function OurWorksSection() {
     {
       img: pirinc,
       title: "Sarı (PİRİNÇ) Malzemeler",
-      desc: "It is not so much for its beauty that the forest",
+      desc: "Açıklama",
     },
     {
       img: otomat,
       title: "Otomat Malzemeleri",
-      desc: "It is not so much for its beauty that the forest",
+      desc: "Açıklama",
     },
     {
       img: tibbi,
-      title: "Tıbbi Yedek Parça Malzemeleri",
-      desc: "It is not so much for its beauty that the forest",
+      title: "Plastik Malzemeler",
+      desc: "Açıklama",
     },
     {
       img: aluminyum,
       title: "Alüminyum Malzemeler",
-      desc: "It is not so much for its beauty that the forest",
+      desc: "Açıklama",
     },
     {
       img: paslanmaz,
       title: "Paslanmaz Malzemeler",
-      desc: "It is not so much for its beauty that the forest",
+      desc: "Açıklama",
     },
     {
       img: yuksekKarbon,
-      title: "Yüksek Karbonlu Çelik Malzemeler",
-      desc: "It is not so much for its beauty that the forest",
+      title: "Yüksek Karbonlu Çelik",
+      desc: "Açıklama",
     },
   ]);
 
@@ -96,7 +96,7 @@ function OurWorksSection() {
 
   return (
     <>
-      <section className="h-[30rem] w-full flex flex-col md:flex-row items-center justify-center bg-blue-gray-50 ">
+      <section className="h-full md:h-[30rem] w-full flex flex-col md:flex-row items-center justify-center bg-blue-gray-50 ">
         <div className="w-full md:w-1/2 flex flex-col items-center md:items-end text-center md:text-end md:pr-5">
           <Typography
             variant="h4"
@@ -138,9 +138,9 @@ function OurWorksSection() {
                   className="h-full w-full object-cover"
                   src={work.img}
                   onClick={(e) => handleOpen(e)}
-                  alt={work.title}
+                  alt={work.desc}
                 />
-                <div className="relative bottom-14 leading-4  font-extrabold mx-3  text-black text-center">
+                <div className="relative bottom-10 md:bottom-14 leading-3 md:leading-4 font-bold md:font-extrabold mx-3 overflow-hidden line-clamp-1  text-black text-center">
                   {work.title}
                 </div>
               </SwiperSlide>

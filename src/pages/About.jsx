@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import AboutSection from "./homepage/components/AboutSection";
 
+import cover from '../assets/2004.jpg'
+
 import { motion, useScroll } from "framer-motion";
 
 import {
@@ -33,18 +35,14 @@ function About() {
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ ease: "linear", duration: 1.5 }}
+            transition={{ ease: "easeInOut", duration: 1 }}
             className="w-full text-center"
           >
-            / <span className="text-black">Hakkımızda</span>
+            // <span className="text-black">Hakkımızda</span>
           </motion.div>
         </h1>
         <div className="h-96 w-full">
-          <img
-            className="object-cover h-full w-full"
-            src="https://emircncotomat.com/wp-content/uploads/2022/03/2003.jpg"
-            alt=""
-          />
+          <img className="object-cover h-full w-full" src={cover} alt="" />
         </div>
       </div>
       <AboutSection />
@@ -54,7 +52,7 @@ function About() {
             initial={{ opacity: 0, y: -40 }}
             whileInView={{
               opacity: 1,
-              transition: { duration: 1.4, ease: "easeOut" },
+              transition: { duration: 1, ease: "easeInOut" },
               y: 0,
             }}
             viewport={{ once: true }}
@@ -78,14 +76,15 @@ function About() {
                     initial={{ opacity: 0, y: -40 }}
                     whileInView={{
                       opacity: 1,
-                      transition: { duration: 1.4, ease: "easeOut" },
+                      transition: { duration: 1.2, ease: "easeInOut" },
                       y: 0,
-                    }} viewport={{}}
+                    }}
+                    viewport={{ once: true }}
                   >
-                    <div className="group-hover:text-primary-blue group-hover:text-lg group-hover:font-extrabold transition-all ease-in-out duration-500">
+                    <div className="leading-10 group-hover:text-primary-blue group-hover:text-lg group-hover:font-extrabold transition-all ease-in-out duration-500">
                       Uygun Fiyat
                     </div>
-                    <div className=" group-hover:font-semibold transition-all ease-in-out duration-500 ">
+                    <div className="group-hover:font-semibold transition-all ease-in-out duration-500 ">
                       Piyasalara uygun fiyat politikamız, müşterilerimize
                       rekabet avantajı sağlar.
                     </div>
@@ -100,12 +99,12 @@ function About() {
                     initial={{ opacity: 0, y: -40 }}
                     whileInView={{
                       opacity: 1,
-                      transition: { duration: 1.4, ease: "easeOut" },
+                      transition: { duration: 1.5, ease: "easeInOut" },
                       y: 0,
                     }}
-                     viewport={{}}
+                    viewport={{ once: true }}
                   >
-                    <div className="group-hover:text-primary-blue group-hover:text-lg group-hover:font-extrabold transition-all ease-in-out duration-500">
+                    <div className="leading-10 group-hover:text-primary-blue group-hover:text-lg group-hover:font-extrabold transition-all ease-in-out duration-500">
                       Kalite
                     </div>
                     <div className=" group-hover:font-semibold transition-all ease-in-out duration-500 ">
@@ -123,12 +122,12 @@ function About() {
                     initial={{ opacity: 0, y: -40 }}
                     whileInView={{
                       opacity: 1,
-                      transition: { duration: 1.4, ease: "easeOut" },
+                      transition: { duration: 1.8, ease: "easeInOut" },
                       y: 0,
                     }}
-                     viewport={{ once: true }}
+                    viewport={{ once: true }}
                   >
-                    <div className="group-hover:text-primary-blue group-hover:text-lg group-hover:font-extrabold transition-all ease-in-out duration-500">
+                    <div className="leading-10 group-hover:text-primary-blue group-hover:text-lg group-hover:font-extrabold transition-all ease-in-out duration-500">
                       Memnuniyet
                     </div>
                     <div className=" group-hover:font-semibold transition-all ease-in-out duration-500 ">
@@ -142,7 +141,7 @@ function About() {
           </div>
         </div>
       </section>
-      <section className="h-96  flex-col flex items-center justify-center w-full bg-blue-gray-50">
+      <section className="h-[500px] md:h-[400px]  flex-col flex items-center justify-center w-full bg-blue-gray-50">
         <Card className="h-full overflow-hidden flex flex-col pt-10 w-full shadow-transparent rounded-none bg-blue-gray-50">
           <CardHeader
             floated={false}
@@ -151,7 +150,13 @@ function About() {
             className="m-0 rounded-none hidden md:flex justify-center bg-blue-gray-50  w-full text-4xl"
           >
             <h1 className="text-center font-bold max-w-lg text-pretty">
-              <span
+              <motion.span
+                initial={{ opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  transition: { duration: 1.4, ease: "easeInOut" },
+                }}
+                viewport={{ once: true }}
                 onClick={() => setSelect("vision")}
                 className={`text-primary-blue cursor-pointer underline transition-colors duration-[1500ms] ${
                   select == "vision"
@@ -160,9 +165,15 @@ function About() {
                 }`}
               >
                 Vizyon
-              </span>{" "}
+              </motion.span>{" "}
               ve{" "}
-              <span
+              <motion.span
+                initial={{ opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  transition: { duration: 2.4, ease: "easeInOut" },
+                }}
+                viewport={{ once: true }}
                 onClick={() => setSelect("mission")}
                 className={`text-primary-blue cursor-pointer underline transition-colors duration-[1500ms] ${
                   select == "mission"
@@ -171,15 +182,21 @@ function About() {
                 }`}
               >
                 Misyon
-              </span>
+              </motion.span>
             </h1>
           </CardHeader>
-          <CardBody className="p-1 md:pl-0 md:pt-16 flex flex-col items-center w-full">
+          <CardBody className="p-1  flex flex-col items-center w-full">
             <Typography
               variant="h1"
               className="text-center md:hidden font-montserrat font-bold max-w-lg text-pretty mb-2 text-4xl"
             >
-              <span
+              <motion.span
+                initial={{ opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  transition: { duration: 1.4, ease: "easeInOut" },
+                }}
+                viewport={{ once: true }}
                 onClick={() => setSelect("vision")}
                 className={`text-primary-blue cursor-pointer underline transition-colors duration-[1500ms] ${
                   select == "vision"
@@ -188,9 +205,15 @@ function About() {
                 }`}
               >
                 Vizyon
-              </span>{" "}
+              </motion.span>{" "}
               ve{" "}
-              <span
+              <motion.span
+                initial={{ opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  transition: { duration: 2.4, ease: "easeInOut" },
+                }}
+                viewport={{ once: true }}
                 onClick={() => setSelect("mission")}
                 className={`text-primary-blue cursor-pointer underline transition-colors duration-[1500ms] ${
                   select == "mission"
@@ -199,21 +222,19 @@ function About() {
                 }`}
               >
                 Misyon
-              </span>
+              </motion.span>
             </Typography>
             <Typography
               variant="lead"
               color="gray"
-              className="font-normal overflow-scroll no-scrollbar md:max-w-xl font-montserrat text-md"
+              className="font-normal mt-14 overflow-scroll no-scrollbar md:max-w-xl font-montserrat text-md"
             >
               <div
                 className={`absolute left-5 right-5 md:left-0 md:right-0 mx-auto md:max-w-3xl md:text-xl/6  ${
                   select == "vision" ? " opacity-100" : "invisible opacity-0 "
-                } transition-all duration-[2000ms] ease-in-out`}
+                } transition-all duration-[1500ms] ease-in-out`}
               >
-                <div className="text-primary-blue font-light hidden md:block">
-                  Vizyonumuz
-                </div>
+                <div className="text-primary-blue font-light ">Vizyonumuz</div>
                 Sektörde öncü bir marka olarak tanınan, global standartlarda
                 kaliteli ürünleri ve hizmetleri ile müşteri memnuniyetini her
                 zaman ön planda tutan bir kuruluştur. En güncel teknolojileri
@@ -226,11 +247,9 @@ function About() {
               <div
                 className={`absolute left-5 right-5 md:left-0 md:right-0 mx-auto md:max-w-3xl md:text-xl/6  ${
                   select == "mission" ? " opacity-100" : "invisible opacity-0 "
-                } transition-all duration-[2000ms] ease-in-out`}
+                } transition-all duration-[1500ms] ease-in-out`}
               >
-                <div className="text-primary-blue font-light hidden md:block">
-                  Misyonumuz
-                </div>
+                <div className="text-primary-blue font-light ">Misyonumuz</div>
                 Endüstriyel alanda yüksek kaliteli CNC otomat makineleri üretimi
                 ve tedariki ile müşterilerine katma değer sağlamayı amaçlar.
                 Misyonumuz, müşterilerimize uygun fiyatlı, yüksek performanslı
