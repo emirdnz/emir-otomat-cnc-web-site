@@ -54,6 +54,16 @@ function Header() {
           Çalışmalarımız
         </Typography>
       </Link>
+      <Link to="certificates" className="flex items-center ">
+        <Typography
+          as="li"
+          variant="h6"
+          color="blue-gray"
+          className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
+        >
+          Sertifikalar
+        </Typography>
+      </Link>
       <Link to="career" className="flex items-center ">
         <Typography
           as="li"

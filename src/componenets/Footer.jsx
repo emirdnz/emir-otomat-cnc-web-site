@@ -10,11 +10,7 @@ function Footer() {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="" className="flex items-center">
-              <img
-                src={logo}
-                className="h-24 me-3"
-                alt="Logo"
-              />
+              <img src={logo} className="h-24 me-3" alt="Logo" />
               <span className="self-center text-xl text-center relative -left-5 leading-6 font-semibold whitespace-nowrap dark:text-white">
                 EMİR
                 <br />
@@ -26,48 +22,46 @@ function Footer() {
           </div>
           <div className="grid grid-cols-2 gap-8 md:gap-6 md:grid-cols-2">
             <div>
-              <h2 className="mb-6 text-sm font-semibold uppercase ">
+              <h2 className="mb-6 text-md font-semibold uppercase">
                 Kurumsal
               </h2>
-              <ul className="  font-medium">
+              <ul className="font-medium">
                 <li className="mb-4">
-                  <Link to="about" className="hover:underline">
+                  <Link to="about" className="hover:underline text-xs">
                     Hakkımızda
                   </Link>
                 </li>
+
                 <li className="mb-4">
-                <Link to="contactus" className="hover:underline">
+                  <Link to="contactus" className="hover:underline text-xs">
                     İletişim
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold uppercase ">Üretim</h2>
-              <ul className="  font-medium">
+              <h2 className="mb-6 text-md font-semibold uppercase ">Üretim</h2>
+              <ul className="font-medium">
                 <li className="mb-4">
-                  <a
-                    href=""
-                    className="hover:underline "
-                  >
+                  <Link to="our-works" className="hover:underline text-xs ">
                     Çalışmalarımız
-                  </a>
+                  </Link>
                 </li>
+
                 <li className="mb-4">
-                  <a
-                    href=""
-                    className="hover:underline"
-                  >
-                    Deneyimlerimiz
-                  </a>
+                  <Link to="certificates" className="hover:underline text-xs">
+                    Sertifikalar
+                  </Link>
                 </li>
+              </ul>
+            </div>
+            <div>
+              <h2 className="mb-6 text-md font-semibold uppercase ">Kariyer</h2>
+              <ul className="font-medium">
                 <li className="mb-4">
-                  <a
-                    href=""
-                    className="hover:underline"
-                  >
-                    Kalitemiz
-                  </a>
+                  <Link to="career" className="hover:underline text-xs">
+                    Başvuru Formu
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -77,10 +71,7 @@ function Footer() {
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm  sm:text-center ">
             © 2024{" "}
-            <a
-              href="https://emircncotomat.com/"
-              className="hover:underline"
-            >
+            <a href="https://emircncotomat.com/" className="hover:underline text-xs">
               EMİR OTOMAT CNC
             </a>
             . Tüm Hakları Saklıdır.

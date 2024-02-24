@@ -7,7 +7,7 @@ import Homepage from "./pages/homepage/Homepage";
 import About from "./pages/about/About";
 import OurWorks from "./pages/ourworks/OurWorks";
 import Career from "./pages/Career";
-import Quality from "./pages/Quality";
+import Certificates from "./pages/Certificates";
 import Footer from "./componenets/Footer";
 import ContactUs from "./pages/ContactUs";
 
@@ -34,8 +34,8 @@ function App() {
             <Route path="/home" element={<Homepage />} />
             <Route path="/about" element={<About />} />
             <Route path="/our-works" element={<OurWorks />} />
+            <Route path="/certificates" element={<Certificates />} />
             <Route path="/career" element={<Career />} />
-            <Route path="/quality" element={<Quality />} />
             <Route path="/contactus" element={<ContactUs />} />
           </Routes>
           <Footer />
