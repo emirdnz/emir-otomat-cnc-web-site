@@ -61,7 +61,7 @@ function Header() {
           color="blue-gray"
           className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
         >
-          Deneyimlerimiz
+          Kariyer
         </Typography>
       </Link>
       <Link to="contactus" className="flex items-center ">
