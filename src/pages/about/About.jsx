@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 
 import Goals from "./components/Goals";
 import VisionMission from "./components/VisionMission";
+import History from "./components/History";
 
 function About() {
   return (
@@ -33,8 +34,9 @@ function About() {
       </div>
       {/* components */}
       <AboutSection />
-      <Goals />
+      <History />
       <VisionMission />
+      <Goals />
       {/* components */}
     </section>
   );
