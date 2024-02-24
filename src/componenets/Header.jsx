@@ -54,7 +54,7 @@ function Header() {
           Çalışmalarımız
         </Typography>
       </Link>
-      <Link to="experiences" className="flex items-center ">
+      <Link to="career" className="flex items-center ">
         <Typography
           as="li"
           variant="h6"

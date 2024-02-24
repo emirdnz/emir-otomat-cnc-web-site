@@ -1,10 +1,5 @@
-import { useEffect, useState } from "react";
-import AboutSection from "./homepage/components/AboutSection";
-
-import cover from '../assets/2004.jpg'
-
-import { motion, useScroll } from "framer-motion";
-
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import {
   Card,
   CardHeader,
@@ -12,9 +7,7 @@ import {
   Typography,
 } from "@material-tailwind/react";
 
-function About() {
-  const { scrollYProgress } = useScroll();
-
+function VisionMission() {
   const [select, setSelect] = useState("vision");
   const [check, setCheck] = useState(true);
 
@@ -29,118 +22,7 @@ function About() {
   }, [select]);
 
   return (
-    <section className="flex items-center justify-center flex-col mt-10">
-      <div className="w-full">
-        <h1 className="text-2xl font-semibold mb-8 text-primary-blue w-full">
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ ease: "easeInOut", duration: 1 }}
-            className="w-full text-center"
-          >
-            // <span className="text-black">Hakkımızda</span>
-          </motion.div>
-        </h1>
-        <div className="h-96 w-full">
-          <img className="object-cover h-full w-full" loading="lazy" src={cover} alt="" />
-        </div>
-      </div>
-      <AboutSection />
-      <section className="h-full md:h-[30rem] flex flex-col items-center justify-center">
-        <div className="h-full w-full md:max-w-screen-xl md:flex flex-col justify-center item-center">
-          <motion.div
-            initial={{ opacity: 0, y: -40 }}
-            whileInView={{
-              opacity: 1,
-              transition: { duration: 1, ease: "easeInOut" },
-              y: 0,
-            }}
-            viewport={{ once: true }}
-            className="flex justify-center items-center h-3/4"
-          >
-            <Typography
-              variant="h1"
-              color="gray"
-              className="mb-4 text-2xl md:text-3xl lg:text-4xl font-montserrat text-end font-light"
-            >
-              <span className="font-semibold text-primary-blue">
-                Hedeflerimiz
-              </span>
-            </Typography>
-          </motion.div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:flex md:flex-row md:item-center md:h-full md:border-y-2">
-            <div className="md:flex group md:flex-col p-12  sm:m-0 border-2 md:border-r-2 md:border-l-0 md:border-y-0 md:w-full">
-              <div className="mt-2">
-                <h3>
-                  <motion.div
-                    initial={{ opacity: 0, y: -40 }}
-                    whileInView={{
-                      opacity: 1,
-                      transition: { duration: 1.2, ease: "easeInOut" },
-                      y: 0,
-                    }}
-                    viewport={{ once: true }}
-                  >
-                    <div className="leading-10 group-hover:text-primary-blue group-hover:text-lg group-hover:font-extrabold transition-all ease-in-out duration-500">
-                      Uygun Fiyat
-                    </div>
-                    <div className="group-hover:font-semibold transition-all ease-in-out duration-500 ">
-                      Piyasalara uygun fiyat politikamız, müşterilerimize
-                      rekabet avantajı sağlar.
-                    </div>
-                  </motion.div>
-                </h3>
-              </div>
-            </div>
-            <div className="md:flex group md:flex-col p-12  sm:m-0 border-2 md:border-r-2 md:border-l-0 md:border-y-0  md:w-full">
-              <div className="mt-1 ">
-                <h3>
-                  <motion.div
-                    initial={{ opacity: 0, y: -40 }}
-                    whileInView={{
-                      opacity: 1,
-                      transition: { duration: 1.5, ease: "easeInOut" },
-                      y: 0,
-                    }}
-                    viewport={{ once: true }}
-                  >
-                    <div className="leading-10 group-hover:text-primary-blue group-hover:text-lg group-hover:font-extrabold transition-all ease-in-out duration-500">
-                      Kalite
-                    </div>
-                    <div className=" group-hover:font-semibold transition-all ease-in-out duration-500 ">
-                      Malzeme kalitemiz, global standartlara uygun olarak
-                      sertifikalandırılmıştır.
-                    </div>
-                  </motion.div>
-                </h3>
-              </div>
-            </div>
-            <div className="md:flex group md:flex-col p-12  sm:m-0 border-2 md:border-x-0 md:border-y-0 md:w-full">
-              <div className="mt-2">
-                <h3>
-                  <motion.div
-                    initial={{ opacity: 0, y: -40 }}
-                    whileInView={{
-                      opacity: 1,
-                      transition: { duration: 1.8, ease: "easeInOut" },
-                      y: 0,
-                    }}
-                    viewport={{ once: true }}
-                  >
-                    <div className="leading-10 group-hover:text-primary-blue group-hover:text-lg group-hover:font-extrabold transition-all ease-in-out duration-500">
-                      Memnuniyet
-                    </div>
-                    <div className=" group-hover:font-semibold transition-all ease-in-out duration-500 ">
-                      Müşteri memnuniyeti, en önemli çalışma prensiplerimizden
-                      biridir.
-                    </div>
-                  </motion.div>
-                </h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <>
       <section className="h-[500px] md:h-[400px]  flex-col flex items-center justify-center w-full bg-blue-gray-50">
         <Card className="h-full overflow-hidden flex flex-col pt-10 w-full shadow-transparent rounded-none bg-blue-gray-50">
           <CardHeader
@@ -263,8 +145,8 @@ function About() {
           </CardBody>
         </Card>
       </section>
-    </section>
+    </>
   );
 }
 
-export default About;
+export default VisionMission;

@@ -19,6 +19,8 @@ function Footer() {
                 EMİR
                 <br />
                 OTOMAT
+                <br />
+                CNC
               </span>
             </a>
           </div>

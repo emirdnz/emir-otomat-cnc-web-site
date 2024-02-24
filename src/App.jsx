@@ -4,9 +4,9 @@ import { Spinner } from "@material-tailwind/react";
 import "./App.css";
 import Header from "./componenets/Header";
 import Homepage from "./pages/homepage/Homepage";
-import About from "./pages/About";
+import About from "./pages/about/About";
 import OurWorks from "./pages/ourworks/OurWorks";
-import Experiences from "./pages/Experiences";
+import Career from "./pages/Career";
 import Quality from "./pages/Quality";
 import Footer from "./componenets/Footer";
 import ContactUs from "./pages/ContactUs";
@@ -34,7 +34,7 @@ function App() {
             <Route path="/home" element={<Homepage />} />
             <Route path="/about" element={<About />} />
             <Route path="/our-works" element={<OurWorks />} />
-            <Route path="/experiences" element={<Experiences />} />
+            <Route path="/career" element={<Career />} />
             <Route path="/quality" element={<Quality />} />
             <Route path="/contactus" element={<ContactUs />} />
           </Routes>
