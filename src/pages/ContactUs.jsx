@@ -1,6 +1,6 @@
 import React from "react";
 
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
 
 import cover from "../assets/2003.jpg";
 
@@ -9,7 +9,7 @@ function ContactUs() {
     <div className="flex items-center justify-center flex-col my-10">
       <div className="w-full">
         <h1 className="text-2xl font-semibold mb-8 text-primary-blue w-full">
-        <motion.div
+          <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ ease: "easeInOut", duration: 1 }}
@@ -19,11 +19,7 @@ function ContactUs() {
           </motion.div>
         </h1>
         <div className="h-96 w-full">
-          <img
-            className=" object-cover h-full w-full"
-            src={cover}
-            alt=""
-          />
+          <img className=" object-cover h-full w-full" src={cover} alt="" />
         </div>
       </div>
       <div className="flex flex-wrap mt-10 max-w-screen-xl">
@@ -93,39 +89,16 @@ function ContactUs() {
           </div>
         </div>
       </div>
-      <div
+      <iframe
+        width={1024}
+        height={400}
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.0634952086625!2d28.8058756!3d41.0676047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa56cdfc65fcf%3A0x2ed9bd14688ece58!2sEmir%20Otomat%20CNC!5e0!3m2!1str!2str!4v1708778990915!5m2!1str!2str"
         style={{
-          maxWidth: "100%",
-          overflow: "hidden",
-          color: "red",
-          width: 1024,
-          height: 400,
+          border: 0,
         }}
-      >
-        <div
-          id="my-map-display"
-          style={{ height: "100%", width: "100%", maxWidth: "100%" }}
-        >
-          <iframe
-            style={{ height: "100%", width: "100%", border: 0 }}
-            frameBorder={0}
-            src="https://www.google.com/maps/embed/v1/place?q=İkitelli+Osb+Mahallesi+İkitelli+Demirciler+Sanayi+Sitesi,+B6+Blok+134+Sokak,+İkitelli+Osb/Başakşehir/İstanbu&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-          />
-        </div>
-        <a
-          className="the-googlemap-enabler"
-          href="https://www.bootstrapskins.com/themes"
-          id="inject-map-data"
-        >
-          premium bootstrap themes
-        </a>
-        <style
-          dangerouslySetInnerHTML={{
-            __html:
-              "#my-map-display img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}",
-          }}
-        />
-      </div>
+      />
     </div>
   );
 }
