@@ -84,7 +84,7 @@ function Header() {
           <div></div>
           <div className="flex items-center space-x-6 rtl:space-x-reverse">
             <div className="flex items-center text-primary-blue">
-              İletişim:
+             
               <span className="text-sm  text-gray-500 dark:text-white hover:underline">
                 <a
                   href="tel:02124711740"
