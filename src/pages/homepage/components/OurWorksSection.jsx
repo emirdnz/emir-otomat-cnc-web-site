@@ -1,19 +1,9 @@
 import { useEffect, useState } from "react";
 import {
-  Carousel,
   Typography,
-  Card,
-  CardHeader,
-  CardBody,
-  Button,
   Dialog,
-  DialogHeader,
   DialogBody,
-  DialogFooter,
-  Avatar,
-  IconButton,
 } from "@material-tailwind/react";
-import { motion } from "framer-motion";
 
 import pirinc from "../../../assets/products/pirinc.png";
 import otomat from "../../../assets/products/otomat.png";
@@ -25,7 +15,7 @@ import yuksekKarbon from "../../../assets/products/yuksek-karbonlu-celik.png";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
