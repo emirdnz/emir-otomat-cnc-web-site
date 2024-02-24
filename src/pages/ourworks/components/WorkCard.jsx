@@ -1,10 +1,12 @@
-import React from "react";
+import { useState } from "react";
 
 import {
   Card,
   CardHeader,
   CardBody,
   Typography,
+  Dialog,
+  DialogBody,
 } from "@material-tailwind/react";
 
 import { motion, useScroll } from "framer-motion";
@@ -12,10 +14,21 @@ import { motion, useScroll } from "framer-motion";
 function WorkCard(props) {
   const { scrollYProgress } = useScroll();
 
+  const [open, setOpen] = useState(false);
+  const [selectedImg, setSelectedImg] = useState(null);
+
+  const handleOpen = (e) => {
+    if (e.target) {
+      setSelectedImg(e.target.currentSrc);
+    }
+
+    setOpen((cur) => !cur);
+  };
+
   return (
     <>
       <motion.section
-        initial={{  x: -100 }}
+        initial={{ x: -100 }}
         whileInView={{
           opacity: 1,
           transition: { duration: 0.7, ease: "easeInOut" },
@@ -46,6 +59,7 @@ function WorkCard(props) {
                   }`}
                   src={image}
                   alt={props.data.desc}
+                  onClick={(e) => handleOpen(e)}
                 />
               ))}
             </div>
@@ -68,6 +82,18 @@ function WorkCard(props) {
           </CardBody>
         </Card>
       </motion.section>
+      
+       <Dialog size="xl" open={open} handler={handleOpen}>
+        
+        <DialogBody>
+          <img
+            alt="nature"
+            className="h-[48rem] w-full rounded-lg object-cover object-center"
+            src={selectedImg}
+          />
+        </DialogBody>
+        
+      </Dialog>
     </>
   );
 }
