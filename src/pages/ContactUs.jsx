@@ -2,6 +2,8 @@ import React from "react";
 
 import {motion} from 'framer-motion'
 
+import cover from "../assets/2003.jpg";
+
 function ContactUs() {
   return (
     <div className="flex items-center justify-center flex-col my-10">
@@ -19,7 +21,7 @@ function ContactUs() {
         <div className="h-96 w-full">
           <img
             className=" object-cover h-full w-full"
-            src="https://emircncotomat.com/wp-content/uploads/2022/03/2003.jpg"
+            src={cover}
             alt=""
           />
         </div>
