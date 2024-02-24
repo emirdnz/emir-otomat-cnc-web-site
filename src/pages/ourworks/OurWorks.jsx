@@ -103,7 +103,7 @@ function OurWorks() {
           </motion.div>
         </h1>
         <div className="h-96 w-full">
-          <img className="object-cover h-full w-full" src={cover} loading="lazy" alt="" />
+          <img className="object-cover h-full w-full" src={cover}  alt="" />
         </div>
       </div>
       <section className="grid grid-cols-1 justify-items-center">
