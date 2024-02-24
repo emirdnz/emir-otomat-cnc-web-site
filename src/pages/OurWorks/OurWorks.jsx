@@ -9,7 +9,7 @@ import aluminyum from "../../assets/products/aluminyum.png";
 import paslanmaz from "../../assets/products/paslanmaz.png";
 import yuksekKarbon from "../../assets/products/yuksek-karbonlu-celik.png";
 
-import cover from "../../assets/2003.jpg";
+import cover from "../../assets/2005.jpg";
 
 import {
   Card,
@@ -19,36 +19,61 @@ import {
   Dialog,
   DialogBody,
 } from "@material-tailwind/react";
+import WorkCard from "./components/WorkCard";
 const data = [
   {
     name: "Sarı Pirinç",
     description: "Sarı pirinç malzeme",
-    imageLink: pirinc,
+    images: [
+      "https://emircncotomat.com/wp-content/uploads/2017/06/WhatsApp-Image-2022-03-20-at-16.04.20-1-1200x1600.jpeg",
+      "https://emircncotomat.com/wp-content/uploads/2022/06/WhatsApp-Image-2022-03-20-at-16.04.18-2-1200x1600.jpeg",
+      "https://emircncotomat.com/wp-content/uploads/2022/06/WhatsApp-Image-2022-03-20-at-16.04.18-2-1200x1600.jpeg",
+    ],
   },
   {
     name: "Otomat Malzemeleri",
     description: "Otomat malzeme",
-    imageLink: otomat,
+    images: [
+      "https://emircncotomat.com/wp-content/uploads/2020/03/WhatsApp-Image-2022-03-20-at-16.04.17-2-1200x1600.jpeg",
+      "https://emircncotomat.com/wp-content/uploads/2022/06/IMG20220510075013-1200x1600.jpg",
+      "https://emircncotomat.com/wp-content/uploads/2022/06/WhatsApp-Image-2022-03-20-at-16.04.17-4-1200x1600.jpeg",
+    ],
   },
   {
     name: "Tıbbi Yedek Parça",
     description: "Plastik malzeme",
-    imageLink: tibbi,
+    images: [
+      "https://emircncotomat.com/wp-content/uploads/2017/08/IMG20220521111705-1200x1726.jpg",
+      "https://emircncotomat.com/wp-content/uploads/2017/08/IMG20220521111709-1200x1526.jpg",
+      "https://emircncotomat.com/wp-content/uploads/2017/08/IMG20220521111709-1200x1526.jpg",
+    ],
   },
   {
     name: "Alüminyum Malzemeler",
     description: "Alüminyum malzeme",
-    imageLink: aluminyum,
+    images: [
+      "https://emircncotomat.com/wp-content/uploads/2022/06/WhatsApp-Image-2021-12-08-at-11.34.30-1200x1600-1.jpg",
+      "https://emircncotomat.com/wp-content/uploads/2022/06/WhatsApp-Image-2021-12-08-at-11.34.30-1-1200x1600-1.jpg",
+      "https://emircncotomat.com/wp-content/uploads/2017/09/IMG20220510074910-1200x1600.jpg",
+    ],
   },
   {
     name: "Paslanmaz Malzemeler",
     description: "Paslanmaz malzeme",
-    imageLink: paslanmaz,
+    images: [
+      "https://emircncotomat.com/wp-content/uploads/2020/03/IMG20220510074805-1200x1666.jpg",
+      "https://emircncotomat.com/wp-content/uploads/2022/06/WhatsApp-Image-2022-03-20-at-16.04.14-2-1200x1600.jpeg",
+      "https://emircncotomat.com/wp-content/uploads/2022/06/WhatsApp-Image-2022-03-20-at-16.04.14-2-1200x1600.jpeg",
+    ],
   },
   {
     name: "Yüksek Karbonlu Çelik",
     description: "Yüksek karbonlu çelik malzeme",
-    imageLink: yuksekKarbon,
+    images: [
+      "https://emircncotomat.com/wp-content/uploads/2017/07/IMG20220521112006-1200x924.jpg",
+      "https://emircncotomat.com/wp-content/uploads/2022/06/WhatsApp-Image-2022-03-20-at-16.04.14-5-1200x1600.jpeg",
+      "https://emircncotomat.com/wp-content/uploads/2022/06/IMG20220521112326-1200x678.jpg",
+    ],
   },
 ];
 
@@ -65,83 +90,28 @@ function OurWorks() {
   };
 
   return (
-    <>
-      <section className="flex items-center justify-center flex-col mt-10">
-        <div className="w-full">
-          <h1 className="text-2xl font-semibold mb-8 text-primary-blue w-full">
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ ease: "easeInOut", duration: 1 }}
-              className="w-full text-center"
-            >
-              // <span className="text-black">Çalışmalarımız</span>
-            </motion.div>
-          </h1>
-          <div className="h-96 w-full">
-            <img
-              className="object-cover h-full w-full"
-              src={cover}
-              alt=""
-            />
-          </div>
-        </div>
-        <section className="my-16 h-full flex flex-col items-center justify-center">
+    <section className="mt-10">
+      <div className="w-full">
+        <h1 className="text-2xl font-semibold mb-8 text-primary-blue w-full">
           <motion.div
-            initial={{ opacity: 0, y: -40 }}
-            whileInView={{
-              opacity: 1,
-              transition: { duration: 1, ease: "easeInOut" },
-              y: 0,
-            }}
-            viewport={{ once: true }}
-            className="flex justify-center items-center h-3/4"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ ease: "easeInOut", duration: 1 }}
+            className="w-full text-center"
           >
-            <Typography
-              variant="h1"
-              color="gray"
-              className="mb-4 text-2xl md:text-3xl lg:text-4xl font-montserrat text-end font-light"
-            >
-              <span className="font-semibold text-primary-blue">
-                Ürünler
-              </span>
-            </Typography>
+            // <span className="text-black">Çalışmalarımız</span>
           </motion.div>
-          <div className="h-full w-full md:max-w-screen-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-            {data.map((item, index) => (
-              <Card className="m-2" key={index}>
-                <CardBody>
-                  <div className="h-60 w-full">
-                    <img
-                      className="object-cover h-full w-full hover:scale-125 duration-700 cursor-pointer rounded-lg"
-                      src={item.imageLink}
-                      alt=""
-                      onClick={(e) => handleOpen(e)}
-                    />
-                  </div>
-                  <Typography className="text-center" color="gray">
-                    {item.description}
-                  </Typography>
-                </CardBody>
-              </Card>
-            ))}
-          </div>
-        </section>
+        </h1>
+        <div className="h-96 w-full">
+          <img className="object-cover h-full w-full" src={cover} loading="lazy" alt="" />
+        </div>
+      </div>
+      <section className="grid grid-cols-1 justify-items-center">
+        {data.map((work, i) => (
+          <WorkCard key={i} index={i} data={work} />
+        ))}
       </section>
-      <Dialog
-        className="flex items-center justify-center duration-700"
-        open={open}
-        handler={handleOpen}
-      >
-        <DialogBody className="max-w-xl max-h-xl">
-          <img
-            alt="nature"
-            className="  rounded-lg object-cover object-center"
-            src={selectedImg}
-          />
-        </DialogBody>
-      </Dialog>
-    </>
+    </section>
   );
 }
 

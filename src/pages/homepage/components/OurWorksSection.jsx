@@ -13,6 +13,7 @@ import {
   Avatar,
   IconButton,
 } from "@material-tailwind/react";
+import { motion } from "framer-motion";
 
 import pirinc from "../../../assets/products/pirinc.png";
 import otomat from "../../../assets/products/otomat.png";
@@ -95,15 +96,29 @@ function OurWorksSection() {
   };
 
   return (
-    <>
-      <section className="h-full md:h-[30rem] w-full flex flex-col md:flex-row items-center justify-center bg-blue-gray-50 ">
-        <div className="w-full md:w-1/2 flex flex-col items-center md:items-end text-center md:text-end md:pr-5">
-          <Typography
-            variant="h4"
-            className="flex justify-center md:justify-end max-w-lg h-full w-full font-montserrat font-bold pb-2 md:pb-10"
-          >
+    <section className="h-full md:h-[38rem] w-full flex flex-col">
+      <div
+        initial={{ opacity: 0, y: -40 }}
+        whileInView={{
+          opacity: 1,
+          transition: { duration: 1, ease: "easeInOut" },
+          y: 0,
+        }}
+        viewport={{ once: true }}
+        className="flex justify-center items-center h-1/4 pt-4  md:py-6 md:mt-6 bg-blue-gray-50 w-full !leading-8"
+      >
+        <Typography
+          variant="h1"
+          color="gray"
+          className="text-2xl md:text-3xl lg:text-4xl font-montserrat text-end font-light"
+        >
+          <span className="font-semibold text-primary-blue">
             Çalışmalarımız
-          </Typography>
+          </span>
+        </Typography>
+      </div>
+      <section className="h-3/4 flex flex-col md:flex-row items-center justify-center bg-blue-gray-50">
+        <div className="w-full md:w-1/2 flex flex-col items-center md:items-end text-center md:text-end md:pr-5">
           <Typography
             variant="h6"
             className="hidden md:flex justify-end max-w-lg h-full w-full font-montserrat "
@@ -236,7 +251,7 @@ function OurWorksSection() {
           />
         </DialogBody>
       </Dialog>
-    </>
+    </section>
   );
 }
 

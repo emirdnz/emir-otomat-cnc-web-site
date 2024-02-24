@@ -42,7 +42,7 @@ function About() {
           </motion.div>
         </h1>
         <div className="h-96 w-full">
-          <img className="object-cover h-full w-full" src={cover} alt="" />
+          <img className="object-cover h-full w-full" loading="lazy" src={cover} alt="" />
         </div>
       </div>
       <AboutSection />

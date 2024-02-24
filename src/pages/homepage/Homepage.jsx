@@ -1,8 +1,9 @@
-import { useState } from "react";
 import HomeCarousel from "./components/HomeCarousel";
 import AboutSection from "./components/AboutSection";
 import OurWorksSection from "./components/OurWorksSection";
 import ExperienceSection from "./components/ExperienceSection";
+import { motion } from "framer-motion";
+import { Typography } from "@material-tailwind/react";
 
 function Homepage() {
   return (
@@ -15,6 +16,7 @@ function Homepage() {
         {/* Experience Section */}
         <ExperienceSection />
         {/* OurWorks Section */}
+        
         <OurWorksSection />
       </div>
     </>

@@ -5,7 +5,7 @@ import { Typography } from "@material-tailwind/react";
 function ExperienceSection() {
   return (
     <>
-      <section className="h-full md:h-[30rem] flex flex-col items-center justify-center my-10">
+      <section className="h-full md:h-[30rem] flex flex-col items-center justify-center my-16 md:my-0">
         <div className="h-full w-full md:max-w-screen-xl md:flex flex-col justify-center item-center">
           <div className="flex justify-center items-center h-full">
             <Typography
