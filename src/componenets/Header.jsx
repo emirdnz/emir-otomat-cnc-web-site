@@ -24,7 +24,7 @@ function Header() {
 
   const navList = (
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-2">
-      <Link to="home" className="flex items-center ">
+      <Link to="home" className="flex items-center mx-2">
         <Typography
           as="li"
           variant="h6"
@@ -34,7 +34,7 @@ function Header() {
           Anasayfa
         </Typography>
       </Link>
-      <Link to="about" className="flex items-center ">
+      <Link to="about" className="flex items-center mx-2">
         <Typography
           as="li"
           variant="h6"
@@ -44,7 +44,7 @@ function Header() {
           Hakkımızda
         </Typography>
       </Link>
-      <Link to="our-works" className="flex items-center ">
+      <Link to="our-works" className="flex items-center mx-2">
         <Typography
           as="li"
           variant="h6"
@@ -54,17 +54,17 @@ function Header() {
           Çalışmalarımız
         </Typography>
       </Link>
-      <Link to="certificates" className="flex items-center ">
+      <Link to="certificates" className="flex items-center mx-2">
         <Typography
           as="li"
           variant="h6"
           color="blue-gray"
           className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
         >
-          Sertifikalar
+          Kalite
         </Typography>
       </Link>
-      <Link to="career" className="flex items-center ">
+      <Link to="career" className="flex items-center mx-2">
         <Typography
           as="li"
           variant="h6"
@@ -74,7 +74,7 @@ function Header() {
           Kariyer
         </Typography>
       </Link>
-      <Link to="contactus" className="flex items-center ">
+      <Link to="contactus" className="flex items-center mx-2">
         <Typography
           as="li"
           variant="h6"

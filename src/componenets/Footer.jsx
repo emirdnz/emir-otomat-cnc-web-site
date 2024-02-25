@@ -11,7 +11,7 @@ function Footer() {
           <div className="mb-6 md:mb-0">
             <a href="" className="flex items-center">
               <img src={logo} className="h-24 me-3" alt="Logo" />
-              <span className="self-center text-xl text-center relative -left-5 leading-6 font-semibold whitespace-nowrap dark:text-white">
+              <span className="self-center text-xl text-center relative left-[-64px] top-[17px] leading-6 font-semibold whitespace-nowrap dark:text-white">
                 EMİR
                 <br />
                 OTOMAT
@@ -20,10 +20,10 @@ function Footer() {
               </span>
             </a>
           </div>
-          <div className="grid grid-cols-2 gap-8 md:gap-6 md:grid-cols-2">
-            <div>
-              <h2 className="mb-6 text-md font-semibold uppercase">
-                Kurumsal
+          <div className="grid grid-cols-3 gap-8 md:gap-6 md:grid-cols-3">
+            <div className="border-r-2 pr-6 border-opacity-40 border-[#7f8b9c]">
+              <h2 className="mb-6 text-md font-semibold  pb-1 border-b-2 border-primary-blue">
+                KURUMSAL
               </h2>
               <ul className="font-medium">
                 <li className="mb-4">
@@ -39,8 +39,8 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div>
-              <h2 className="mb-6 text-md font-semibold uppercase ">Üretim</h2>
+            <div className="border-r-2 pr-6 border-opacity-40 border-[#7f8b9c]">
+              <h2 className="mb-6 text-md font-semibold  pb-1 border-b-2 border-primary-blue">ÜRETİM</h2>
               <ul className="font-medium">
                 <li className="mb-4">
                   <Link to="our-works" className="hover:underline text-xs ">
@@ -50,13 +50,13 @@ function Footer() {
 
                 <li className="mb-4">
                   <Link to="certificates" className="hover:underline text-xs">
-                    Sertifikalar
+                    Kalite
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-md font-semibold uppercase ">Kariyer</h2>
+              <h2 className="mb-6 text-md font-semibold  pb-1 border-b-2 border-primary-blue">KARİYER</h2>
               <ul className="font-medium">
                 <li className="mb-4">
                   <Link to="career" className="hover:underline text-xs">
@@ -74,7 +74,7 @@ function Footer() {
             <a href="https://emircncotomat.com/" className="hover:underline text-xs">
               EMİR OTOMAT CNC
             </a>
-            . Tüm Hakları Saklıdır.
+            
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0">
             <a

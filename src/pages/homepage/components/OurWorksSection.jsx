@@ -111,7 +111,7 @@ function OurWorksSection() {
         <div className="w-full md:w-1/2 flex flex-col items-center md:items-end text-center md:text-end md:pr-5">
           <Typography
             variant="h6"
-            className="hidden md:flex justify-end max-w-lg h-full w-full font-montserrat "
+            className="hidden text-xl md:flex justify-end max-w-lg h-full w-full font-montserrat "
           >
             Mobilya Sektörü, Ev Aletleri, Tıbbi Malzemeler, Aydınlatma
             Parçaları, Otomotiv Parçaları, Klima Parçaları, Doğalgaz Parçaları

@@ -5,23 +5,23 @@ import {Carousel} from "flowbite-react"
 function HomeCarousel() {
   const [data, setData] = useState([
     {
-      img: "https://emircncotomat.com/wp-content/uploads/2022/06/anasayfa-1.jpg",
-      title: "Tecrübe",
-      desc: "40 Yıllık Tecrübemizle Sizlere Hizmet Veriyoruz",
-      alt: "imagealt",
-    },
-    {
       img: "https://emircncotomat.com/wp-content/uploads/2023/02/industry-img-3.jpg",
       title: "Tecrübe",
       desc: "1986’DAN BERİ PROFESYONEL CNC OTOMAT TEDARİKÇİSİYİZ",
       alt: "imagealt",
     },
     {
-      img: "https://emircncotomat.com/wp-content/uploads/2022/03/01.jpg",
-      title: "The Beauty of Nature",
-      desc: "It is not so much for its beauty that the forest",
+      img: "https://emircncotomat.com/wp-content/uploads/2022/06/anasayfa-1.jpg",
+      title: "Tecrübe",
+      desc: "40 Yıllık Tecrübemizle Sizlere Hizmet Veriyoruz",
       alt: "imagealt",
     },
+    // {
+    //   img: "https://emircncotomat.com/wp-content/uploads/2022/03/01.jpg",
+    //   title: "The Beauty of Nature",
+    //   desc: "It is not so much for its beauty that the forest",
+    //   alt: "imagealt",
+    // },
   ]);
 
   return (

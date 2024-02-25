@@ -92,18 +92,20 @@ function AboutSection() {
                 color="gray"
                 className=" font-normal overflow-scroll no-scrollbar min-h max-w-lg pb-10 font-montserrat text-md text-pretty "
               >
-                1986 yılında Deniz Otomat Otomotiv Limited Şirketi olarak
-                Unkapanı'nda kurulan Emir CNC Otomat, sektördeki liderliğini
-                güçlendirmeye devam ediyor. 2004 yılında Ikitelli Demirciler
-                Sanayi sitesine taşınarak unvanını GÖRKEM OTOMAT OTOMOTİV VE
-                ENDÜSTRİYEL YAN SANAYİ TİCARET LİMİTED ŞİRKETİ olarak
-                değiştirdik. Endüstri 4.0 teknolojisini 2013 yılında firmamıza
-                entegre ettik ve 2014 yılında CNC Otomat Makinalarını makina
-                parkurumuza kattık. 2018 yılında ISO9001:2015 Uluslararası
-                Standart Kalite Sertifikasını alarak kalitemizi taçlandırdık.
-                2021'de gerçekleşen firma değişikliği ve unvan değişikliğiyle
-                şirketimizin adı EMİR OTOMAT CNC MAKİNA SANAYİ VE TİCARET
-                LİMİTED ŞİRKETİ olarak güncellendi.
+                1986 Yılında kurulan firmamız sektörde profesyonel çalışmaları
+                ile hizmetine devam etmektedir. 
+                <br />
+                Firmamız kurulduğundan beri
+                sektörde lider firmalara profesyonel tedarikçi olmaya devam
+                etmektedir. <br />Firmamız her zaman üretimle birlikte en güncel
+                teknolojiler ile makina parkurlarını ve üretim kalitesini her
+                zaman profesyonel ekibimiz ile geçmişten bugüne devam
+                ettirmektedir. <br />Firmamız İndex, Revolver, CNC TORNA
+                makinalarımız ile tedarikçiniz yolunda üretimlere devam
+                ettirmekle birlikte Mobilya Sektörü, Ev Aletleri, Tıbbi
+                Malzemeler, Aydınlatma Parçaları, Otomotiv Parçaları, Klima
+                Parçaları, Doğalgaz Parçaları Ve Savunma Sanayisi vb.
+                Sektörlere Tedarikçi olmaktadır.
               </Typography>
             </CardBody>
           </Card>
