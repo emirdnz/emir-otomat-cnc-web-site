@@ -117,9 +117,9 @@ function ExperienceSection() {
               <div className="mt-2">
                 <h3>
                   <span>
-                    Bitirme ve
+                    Hızlı çözüm
                     <br />
-                    maskeleme
+                    ve lojistik süreç
                   </span>
                 </h3>
               </div>
