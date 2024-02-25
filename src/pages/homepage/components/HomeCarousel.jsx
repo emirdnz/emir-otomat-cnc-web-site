@@ -5,13 +5,13 @@ import {Carousel} from "flowbite-react"
 function HomeCarousel() {
   const [data, setData] = useState([
     {
-      img: "https://emircncotomat.com/wp-content/uploads/2023/02/industry-img-3.jpg",
+      img: "https://emircncotomat.com/wp-content/uploads/2022/06/anasayfa-1.jpg",
       title: "Tecrübe",
       desc: "1986’DAN BERİ PROFESYONEL CNC OTOMAT TEDARİKÇİSİYİZ",
       alt: "imagealt",
     },
     {
-      img: "https://emircncotomat.com/wp-content/uploads/2022/06/anasayfa-1.jpg",
+      img: "https://emircncotomat.com/wp-content/uploads/2023/02/industry-img-3.jpg",
       title: "Tecrübe",
       desc: "40 Yıllık Tecrübemizle Sizlere Hizmet Veriyoruz",
       alt: "imagealt",
