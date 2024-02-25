@@ -58,18 +58,18 @@ function AboutSection() {
           </Card>
         </section>
       ) : (
-        <section className=" h-full md:h-96  flex-col flex items-center justify-center w-full ">
+        <section className=" h-full md:h-[450px]  flex-col flex items-center justify-center w-full ">
           <Card className="h-full overflow-hidden flex flex-row justify-center w-full shadow-transparent rounded-none">
             <CardHeader
               floated={false}
               shadow={false}
               color="transparent"
-              className="m-0 rounded-none hidden md:flex justify-center md:justify-end bg-blue-gray-50 pr-5 pt-16 w-full h-full text-4xl text-primary-blue"
+              className="m-0 rounded-none hidden md:flex justify-center md:justify-end bg-blue-gray-50 pr-5 pt-36 w-full h-full text-4xl text-primary-blue"
             >
-              <h1 className="text-center md:text-end font-bold max-w-lg text-pretty">
+              <h1 className="text-center w-full md:text-end font-bold max-w-lg text-pretty">
                 EMİR OTOMAT CNC{" "}
-                <span className="text-gray-800 font-semibold text-pretty">
-                  Güvenilir Tedarikçiniz - İleri Teknoloji, Güçlü Çözümler
+                <span className="text-gray-800  font-semibold text-pretty leading-[50px] ">
+                  Güvenilir Tedarikçiniz <br /> İleri Teknoloji<br /> Güçlü Çözümler
                 </span>
                 <br />
                 <Link
@@ -93,18 +93,31 @@ function AboutSection() {
                 className=" font-normal overflow-scroll no-scrollbar min-h max-w-lg pb-10 font-montserrat text-md text-pretty "
               >
                 1986 Yılında kurulan firmamız sektörde profesyonel çalışmaları
-                ile hizmetine devam etmektedir. 
+                ile hizmetine devam etmektedir.
                 <br />
-                Firmamız kurulduğundan beri
-                sektörde lider firmalara profesyonel tedarikçi olmaya devam
-                etmektedir. <br />Firmamız her zaman üretimle birlikte en güncel
-                teknolojiler ile makina parkurlarını ve üretim kalitesini her
-                zaman profesyonel ekibimiz ile geçmişten bugüne devam
-                ettirmektedir. <br />Firmamız İndex, Revolver, CNC TORNA
+                <br />
+                Firmamız kurulduğundan beri sektörde{" "}
+                <span className="font-bold">
+                  lider firmalara profesyonel tedarikçi
+                </span>{" "}
+                olmaya devam etmektedir. <br />
+                <br />
+                Firmamız her zaman üretimle birlikte en güncel teknolojiler ile
+                makina parkurlarını ve üretim kalitesini her zaman profesyonel
+                ekibimiz ile geçmişten bugüne devam ettirmektedir. <br />
+                <br />
+                Firmamız{" "}
+                <span className="font-bold">
+                  {" "}
+                  İndex, Revolver, CNC Otomat
+                </span>{" "}
                 makinalarımız ile tedarikçiniz yolunda üretimlere devam
-                ettirmekle birlikte Mobilya Sektörü, Ev Aletleri, Tıbbi
-                Malzemeler, Aydınlatma Parçaları, Otomotiv Parçaları, Klima
-                Parçaları, Doğalgaz Parçaları Ve Savunma Sanayisi vb.
+                ettirmekle birlikte{" "}
+                <span className="font-bold">
+                  Mobilya Sektörü, Ev Aletleri, Tıbbi Malzemeler, Aydınlatma
+                  Parçaları, Otomotiv Parçaları, Klima Parçaları, Doğalgaz
+                  Parçaları Ve Savunma Sanayisi vb.
+                </span>{" "}
                 Sektörlere Tedarikçi olmaktadır.
               </Typography>
             </CardBody>
