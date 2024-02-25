@@ -112,7 +112,7 @@ function Header() {
                     />
                   </svg>
                   <span className="line-clamp-1 min-w-24 md:min-w-24 mr-1">
-                    +90 (212) 471 17 40
+                    +90 (212) 671 17 40
                   </span>
                 </a>
               </span>
