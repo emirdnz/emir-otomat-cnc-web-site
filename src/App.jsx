@@ -12,6 +12,8 @@ import Footer from "./componenets/Footer";
 import ContactUs from "./pages/ContactUs";
 
 import ScrollToTop from "./componenets/ScrollToTop";
+import Machines from "./pages/Machines";
+import Quality from "./pages/Quality"
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -34,8 +36,11 @@ function App() {
             <Route path="/home" element={<Homepage />} />
             <Route path="/about" element={<About />} />
             <Route path="/our-works" element={<OurWorks />} />
+            <Route path="/machines" element={<Machines />} />
             <Route path="/certificates" element={<Certificates />} />
+            <Route path="/quality" element={<Quality />} />
             <Route path="/career" element={<Career />} />
+            <Route path="/internship" element={<Career />} />
             <Route path="/contactus" element={<ContactUs />} />
           </Routes>
           <Footer />

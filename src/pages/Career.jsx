@@ -4,6 +4,10 @@ import cover from "../assets/2006.jpg";
 import { motion } from "framer-motion";
 
 function Career() {
+  const location = window.location.pathname;
+
+  console.log(location);
+
   return (
     <div className="mt-10">
       <div className="w-full">
@@ -29,7 +33,11 @@ function Career() {
             transition={{ ease: "easeInOut", duration: 1 }}
             className="w-full text-center"
           >
-            <span className="text-black">İş Başvuru Formu</span>
+            <span className="text-black">
+              {location == "/career"
+                ? "İş Başvuru Formu"
+                : "Staj Başvuru Formu"}
+            </span>
           </motion.div>
         </h1>
       </div>
@@ -41,7 +49,11 @@ function Career() {
           allowTransparency="true"
           allowFullScreen="true"
           allow="geolocation; microphone; camera"
-          src="https://form.jotform.com/240543348653963"
+          src={
+            location == "/career"
+              ? "https://form.jotform.com/240543893849975"
+              : "https://form.jotform.com/240543348653963"
+          }
           frameBorder={0}
           style={{
             width: "1px",

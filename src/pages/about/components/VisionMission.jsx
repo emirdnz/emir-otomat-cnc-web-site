@@ -39,6 +39,7 @@ function VisionMission() {
                   transition: { duration: 1.4, ease: "easeInOut" },
                 }}
                 viewport={{ once: true }}
+                onMouseEnter={() => setSelect("vision")}
                 onClick={() => setSelect("vision")}
                 className={`text-primary-blue cursor-pointer underline transition-colors duration-[1500ms] ${
                   select == "vision"
@@ -56,6 +57,7 @@ function VisionMission() {
                   transition: { duration: 2.4, ease: "easeInOut" },
                 }}
                 viewport={{ once: true }}
+                onMouseEnter={() => setSelect("mission")}
                 onClick={() => setSelect("mission")}
                 className={`text-primary-blue cursor-pointer underline transition-colors duration-[1500ms] ${
                   select == "mission"
@@ -79,6 +81,7 @@ function VisionMission() {
                   transition: { duration: 1.4, ease: "easeInOut" },
                 }}
                 viewport={{ once: true }}
+                onMouseEnter={() => setSelect("vision")}
                 onClick={() => setSelect("vision")}
                 className={`text-primary-blue cursor-pointer underline transition-colors duration-[1500ms] ${
                   select == "vision"
@@ -96,6 +99,7 @@ function VisionMission() {
                   transition: { duration: 2.4, ease: "easeInOut" },
                 }}
                 viewport={{ once: true }}
+                onMouseEnter={() => setSelect("vision")}
                 onClick={() => setSelect("mission")}
                 className={`text-primary-blue cursor-pointer underline transition-colors duration-[1500ms] ${
                   select == "mission"

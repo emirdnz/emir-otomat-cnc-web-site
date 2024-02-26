@@ -10,8 +10,8 @@ function Footer() {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="" className="flex items-center">
-              <img src={logo} className="h-24 me-3" alt="Logo" />
-              <span className="self-center text-xl text-center relative left-[-64px] top-[17px] leading-6 font-semibold whitespace-nowrap dark:text-white">
+              <img src={logo} className="h-[80px] me-3" alt="Logo" />
+              <span className="self-center text-xl text-center relative -left-5 leading-6 font-semibold whitespace-nowrap dark:text-white">
                 EMİR
                 <br />
                 OTOMAT
@@ -40,7 +40,9 @@ function Footer() {
               </ul>
             </div>
             <div className="border-r-2 pr-6 border-opacity-40 border-[#7f8b9c]">
-              <h2 className="mb-6 text-md font-semibold  pb-1 border-b-2 border-primary-blue">ÜRETİM</h2>
+              <h2 className="mb-6 text-md font-semibold  pb-1 border-b-2 border-primary-blue">
+                ÜRETİM
+              </h2>
               <ul className="font-medium">
                 <li className="mb-4">
                   <Link to="our-works" className="hover:underline text-xs ">
@@ -50,17 +52,29 @@ function Footer() {
 
                 <li className="mb-4">
                   <Link to="certificates" className="hover:underline text-xs">
-                    Kalite
+                    Sertifikalar
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link to="certificates" className="hover:underline text-xs">
+                    Parkurlarımız
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-md font-semibold  pb-1 border-b-2 border-primary-blue">KARİYER</h2>
+              <h2 className="mb-6 text-md font-semibold  pb-1 border-b-2 border-primary-blue">
+                KARİYER
+              </h2>
               <ul className="font-medium">
                 <li className="mb-4">
                   <Link to="career" className="hover:underline text-xs">
-                    Başvuru Formu
+                    İş Başvuru
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link to="career" className="hover:underline text-xs">
+                    Staj Başvuru
                   </Link>
                 </li>
               </ul>
@@ -71,12 +85,14 @@ function Footer() {
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm  sm:text-center ">
             © 2024{" "}
-            <a href="https://emircncotomat.com/" className="hover:underline text-xs">
+            <a
+              href="https://emircncotomat.com/"
+              className="hover:underline text-xs"
+            >
               EMİR OTOMAT CNC
             </a>
-            
           </span>
-          <div className="flex mt-4 sm:justify-center sm:mt-0">
+          <div className="flex mt-4 items-center justify-center sm:mt-0">
             <a
               href="https://www.linkedin.com/company/emirotomatcnc/"
               className=" hover:dark:hover:text-white"
@@ -91,6 +107,16 @@ function Footer() {
               </svg>
               <span className="sr-only">LinkedIn page</span>
             </a>
+            {/* <div className="scale-75 opacity-70">
+              <span className="text-xs">Design by</span>
+              <a
+                href="https://ozanalikayaci.me/"
+                className=" hover:dark:hover:text-white text-sm ml-1"
+                target="_blank"
+              >
+                Ozan
+              </a>
+            </div> */}
           </div>
         </div>
       </div>

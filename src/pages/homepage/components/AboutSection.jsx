@@ -80,7 +80,7 @@ function AboutSection() {
                 </Link>
               </h1>
             </CardHeader>
-            <CardBody className="p-0 pl-5 pt-6 pb-6 md:pt-16 md:pb-0 my-auto flex flex-col items-center md:items-start justify-evenly w-full">
+            <CardBody className="p-0 pl-5 pt-6 pb-6 md:pt-5 md:pb-0 my-auto flex flex-col items-center md:items-start justify-evenly w-full">
               <Typography
                 variant="h3"
                 className="text-center md:hidden font-montserrat md:text-end font-bold max-w-lg text-pretty text-primary-blue mb-2"

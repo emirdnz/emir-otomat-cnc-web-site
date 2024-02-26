@@ -7,6 +7,10 @@ import {
   Button,
   IconButton,
   Card,
+  Menu,
+  MenuHandler,
+  MenuList,
+  MenuItem,
 } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 
@@ -44,36 +48,157 @@ function Header() {
           Hakkımızda
         </Typography>
       </Link>
-      <Link to="our-works" className="flex items-center mx-2">
-        <Typography
-          as="li"
-          variant="h6"
-          color="blue-gray"
-          className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
-        >
-          Çalışmalarımız
-        </Typography>
-      </Link>
-      <Link to="certificates" className="flex items-center mx-2">
-        <Typography
-          as="li"
-          variant="h6"
-          color="blue-gray"
-          className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
-        >
-          Kalite
-        </Typography>
-      </Link>
-      <Link to="career" className="flex items-center mx-2">
-        <Typography
-          as="li"
-          variant="h6"
-          color="blue-gray"
-          className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
-        >
-          Kariyer
-        </Typography>
-      </Link>
+      <Menu className=" hidden lg:block" allowHover>
+        <MenuHandler>
+          <Typography
+            as="li"
+            variant="h6"
+            color="blue-gray"
+            className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue hover:fill-primary-blue mx-2"
+          >
+            
+              Çalışmalarımız
+              {/* <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width={20}
+                height={20}
+                className="ml-1"
+                viewBox="0 0 50 50"
+              >
+                <path d="M15.5 4.4C9.5 7.2 6.8 10 4.1 16 .5 23.9 2.2 34.3 8.3 40.9 11.6 44.5 19.8 48 25 48c5.2 0 13.4-3.5 16.7-7.1 3.4-3.7 6.3-11 6.3-15.9 0-5.2-3.5-13.4-7.1-16.7C37.2 4.9 29.9 2 25 2c-2.7 0-6.5 1-9.5 2.4zm18 1.5c12.8 5.8 16.4 22.3 7.2 32.8-10.1 11.5-28.3 8.8-34.8-5.2C-2 16.4 16.3-1.9 33.5 5.9z" />
+                <path d="M14 21.8c0 .4 2.5 3.2 5.5 6.2l5.5 5.5 5.7-5.7c3.1-3.2 5.4-6.1 5-6.5-.4-.4-3 1.5-5.7 4.2l-5 4.9-4.8-4.7c-4.6-4.6-6.2-5.6-6.2-3.9z" />
+              </svg> */}
+            
+          </Typography>
+        </MenuHandler>
+        <MenuList>
+          <MenuItem>
+            <Link to="our-works" className="flex items-center mx-2">
+              <Typography
+                as="li"
+                variant="h6"
+                color="blue-gray"
+                className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
+              >
+                Ürünler
+              </Typography>
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="machines" className="flex items-center mx-2">
+              <Typography
+                as="li"
+                variant="h6"
+                color="blue-gray"
+                className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
+              >
+                Makine Parkurumuz
+              </Typography>
+            </Link>
+          </MenuItem>
+        </MenuList>
+      </Menu>
+      <Menu className=" hidden lg:block" allowHover>
+        <MenuHandler>
+          <Typography
+            as="li"
+            variant="h6"
+            color="blue-gray"
+            className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue hover:fill-primary-blue mx-2"
+          >
+            
+              Kalite
+              {/* <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width={20}
+                height={20}
+                className="ml-1"
+                viewBox="0 0 50 50"
+              >
+                <path d="M15.5 4.4C9.5 7.2 6.8 10 4.1 16 .5 23.9 2.2 34.3 8.3 40.9 11.6 44.5 19.8 48 25 48c5.2 0 13.4-3.5 16.7-7.1 3.4-3.7 6.3-11 6.3-15.9 0-5.2-3.5-13.4-7.1-16.7C37.2 4.9 29.9 2 25 2c-2.7 0-6.5 1-9.5 2.4zm18 1.5c12.8 5.8 16.4 22.3 7.2 32.8-10.1 11.5-28.3 8.8-34.8-5.2C-2 16.4 16.3-1.9 33.5 5.9z" />
+                <path d="M14 21.8c0 .4 2.5 3.2 5.5 6.2l5.5 5.5 5.7-5.7c3.1-3.2 5.4-6.1 5-6.5-.4-.4-3 1.5-5.7 4.2l-5 4.9-4.8-4.7c-4.6-4.6-6.2-5.6-6.2-3.9z" />
+              </svg> */}
+            
+          </Typography>
+        </MenuHandler>
+        <MenuList>
+          <MenuItem>
+            <Link to="certificates" className="flex items-center mx-2">
+              <Typography
+                as="li"
+                variant="h6"
+                color="blue-gray"
+                className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
+              >
+                Sertifikalar
+              </Typography>
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="quality" className="flex items-center mx-2">
+              <Typography
+                as="li"
+                variant="h6"
+                color="blue-gray"
+                className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
+              >
+                Kalite Parkurumuz
+              </Typography>
+            </Link>
+          </MenuItem>
+        </MenuList>
+      </Menu>
+      <Menu className=" hidden lg:block" allowHover>
+        <MenuHandler>
+          <Typography
+            as="li"
+            variant="h6"
+            color="blue-gray"
+            className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue hover:fill-primary-blue mx-2"
+          >
+            
+              Kariyer
+              {/* <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width={20}
+                height={20}
+                className="ml-1"
+                viewBox="0 0 50 50"
+              >
+                <path d="M15.5 4.4C9.5 7.2 6.8 10 4.1 16 .5 23.9 2.2 34.3 8.3 40.9 11.6 44.5 19.8 48 25 48c5.2 0 13.4-3.5 16.7-7.1 3.4-3.7 6.3-11 6.3-15.9 0-5.2-3.5-13.4-7.1-16.7C37.2 4.9 29.9 2 25 2c-2.7 0-6.5 1-9.5 2.4zm18 1.5c12.8 5.8 16.4 22.3 7.2 32.8-10.1 11.5-28.3 8.8-34.8-5.2C-2 16.4 16.3-1.9 33.5 5.9z" />
+                <path d="M14 21.8c0 .4 2.5 3.2 5.5 6.2l5.5 5.5 5.7-5.7c3.1-3.2 5.4-6.1 5-6.5-.4-.4-3 1.5-5.7 4.2l-5 4.9-4.8-4.7c-4.6-4.6-6.2-5.6-6.2-3.9z" />
+              </svg> */}
+            
+          </Typography>
+        </MenuHandler>
+        <MenuList>
+          <MenuItem>
+            <Link to="career" className="flex items-center mx-2">
+              <Typography
+                as="li"
+                variant="h6"
+                color="blue-gray"
+                className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
+              >
+                İş Başvuru Formu
+              </Typography>
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="internship" className="flex items-center mx-2">
+              <Typography
+                as="li"
+                variant="h6"
+                color="blue-gray"
+                className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
+              >
+                Staj Başvuru Formu
+              </Typography>
+            </Link>
+          </MenuItem>
+        </MenuList>
+      </Menu>
+
       <Link to="contactus" className="flex items-center mx-2">
         <Typography
           as="li"
@@ -96,7 +221,7 @@ function Header() {
             <div className="flex items-center text-primary-blue">
               <span className="text-sm  text-gray-500 dark:text-white hover:underline">
                 <a
-                  href="tel:02124711740"
+                  href="tel:02126711740"
                   className="flex items-center ml-2 transition duration-700 ease-in-out hover:text-primary-blue"
                 >
                   <svg

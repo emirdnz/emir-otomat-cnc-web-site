@@ -34,7 +34,7 @@ function ContactUs() {
           <div className="text-3xl text-primary-blue my-5">Tel No</div>
           <div className="flex flex-row items-center">
             <a
-              href="tel:02124711740"
+              href="tel:02126711740"
               className="flex items-center transition duration-700 ease-in-out hover:text-primary-blue"
             >
               <svg
@@ -50,7 +50,7 @@ function ContactUs() {
                 />
               </svg>
               <span className="line-clamp-1 min-w-26 mr-1">
-                +90 (212) 471 17 40
+                +90 (212) 671 17 40
               </span>
             </a>
           </div>
