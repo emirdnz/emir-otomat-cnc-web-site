@@ -1,53 +1,47 @@
-import {useState} from "react";
+import { useState } from "react";
 
 import cover from "../assets/2007.jpg";
-import {Dialog, DialogBody } from "@material-tailwind/react";
+import { Dialog, DialogBody } from "@material-tailwind/react";
+
+import photo1 from "../assets/machines/1.jpg";
+import photo2 from "../assets/machines/2.jpg";
+import photo3 from "../assets/machines/3.jpg";
+import photo4 from "../assets/machines/4.jpg";
+import photo5 from "../assets/machines/5.jpg";
+import photo6 from "../assets/machines/6.jpg";
+import photo7 from "../assets/machines/7.jpg";
 
 import { motion } from "framer-motion";
 
 function Machines() {
   const data = [
     {
-      imgelink:
-        "https://lh3.googleusercontent.com/p/AF1QipPKSrZspcfjeiKINOIlJdNErQ0bf6jeygg4MLtv=s680-w680-h510",
+      imgelink: photo1,
     },
     {
-      imgelink:
-        "https://lh3.googleusercontent.com/p/AF1QipOcCWgHtcygzCUaOOFi9MAnUkrV6qbGKocqk59u=s680-w680-h510",
+      imgelink: photo2,
     },
     {
-      imgelink:
-        "https://lh3.googleusercontent.com/p/AF1QipNbG4HSluPb2mN1ok6sjaTAy1Wq-7HDIxDHGPhI=s680-w680-h510",
+      imgelink: photo3,
     },
     {
-      imgelink:
-        "https://lh3.googleusercontent.com/p/AF1QipP0ej9nlwiE1tbIz8xzTf_yrPrUuTBJ4f8GOHvy=s680-w680-h510",
+      imgelink: photo4,
     },
     {
-      imgelink:
-        "https://lh3.googleusercontent.com/p/AF1QipNEp519dnfLyVJDtfc4fUZXOawYw4-XYp_9JRvO=s680-w680-h510",
+      imgelink: photo5,
     },
 
     {
-      imgelink:
-        "https://lh3.googleusercontent.com/p/AF1QipPmNl6dGpvc_ZVfnIcctFacy_VcDx3dD4ts1AXs=s680-w680-h510",
+      imgelink: photo6,
     },
     {
-      imgelink:
-        "https://lh3.googleusercontent.com/p/AF1QipOFVVupCKIhItjhZGP6AKGxOp4dA-yPo0kGFb94=s680-w680-h510",
-    },
-    {
-      imgelink:
-        "https://lh3.googleusercontent.com/p/AF1QipO9prIYniL-0hEUMOikBA9Suaf0L4e2VQAKrcu7=s680-w680-h510",
+      imgelink: photo7,
     },
   ];
 
-  const [active, setActive] = useState(
-    "https://lh3.googleusercontent.com/p/AF1QipO9prIYniL-0hEUMOikBA9Suaf0L4e2VQAKrcu7=s680-w680-h510"
-  );
+  const [active, setActive] = useState(photo1);
   const [open, setOpen] = useState(false);
   const [selectedImg, setSelectedImg] = useState(null);
-
 
   const handleOpen = (e) => {
     if (e.target) {
@@ -80,7 +74,6 @@ function Machines() {
             className="h-auto w-full max-w-full rounded-lg object-cover object-center md:h-[480px]"
             src={active}
             alt=""
-            
           />
         </div>
         <div className="grid grid-cols-8 gap-2">
@@ -97,7 +90,6 @@ function Machines() {
         </div>
       </div>
       <Dialog size="xl" open={open} handler={handleOpen}>
-        
         <DialogBody>
           <img
             alt="nature"
@@ -105,7 +97,6 @@ function Machines() {
             src={selectedImg}
           />
         </DialogBody>
-        
       </Dialog>
     </section>
   );
