@@ -1,25 +1,39 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import logo from "../../public/favicon.png";
+import logo from "../../public/logo2.png";
 
 function Footer() {
   return (
     <footer className=" bg-[#232a34] text-white">
-      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 lg:px-0">
         <div className="md:flex md:justify-between">
-          <div className="mb-6 md:mb-0">
+          <div className="mb-6 md:mb-0 flex flex-row md:block">
             <a href="" className="flex items-center">
-              <img src={logo} className="h-[80px] me-3" alt="Logo" />
-              <span className="self-center text-xl text-center relative -left-5 leading-6 font-semibold whitespace-nowrap dark:text-white">
-                EMİR
-                <br />
-                OTOMAT
-                <br />
-                CNC
-              </span>
+              <img src={logo} className="h-[64px] me-3" alt="Logo" />
             </a>
+            <div>
+              <div className=" w-52 opacity-45 text-sm m-2 mt-5">
+                İkitelli Osb Mahallesi <br /> B6 Blok 134 Sokak,
+                Başakşehir/İstanbul
+              </div>
+              <div className=" w-52 text-gray-400 text-sm mx-2 hover:underline">
+                Tel:
+                <a href="tel:02126711740">
+                  <span className="text-white ml-2">+90 (212) 671 17 40</span>
+                </a>
+              </div>
+              <div className=" w-52 text-gray-400 text-sm m-2 mb-0  hover:underline">
+                Mail:
+                <a href="mailto:info@emircncotomat.com">
+                  <span className="text-white ml-2">
+                    info@emircncotomat.com
+                  </span>
+                </a>
+              </div>
+            </div>
           </div>
+          <div></div>
           <div className="grid grid-cols-3 gap-8 md:gap-6 md:grid-cols-3">
             <div className="border-r-2 pr-6 border-opacity-40 border-[#7f8b9c]">
               <h2 className="mb-6 text-md font-semibold  pb-1 border-b-2 border-primary-blue">
@@ -56,8 +70,13 @@ function Footer() {
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <Link to="certificates" className="hover:underline text-xs">
-                    Parkurlarımız
+                  <Link to="machines" className="hover:underline text-xs">
+                    Makine Parkurumuz
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link to="quality" className="hover:underline text-xs">
+                    Kalite Parkurumuz
                   </Link>
                 </li>
               </ul>
@@ -81,8 +100,8 @@ function Footer() {
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <div className="sm:flex sm:items-center sm:justify-between">
+        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-2" />
+        <div className="sm:flex sm:items-center sm:justify-between px-2">
           <span className="text-sm  sm:text-center ">
             © 2024{" "}
             <a
