@@ -78,14 +78,14 @@ function Quality() {
                 Anasayfa
               </Button>
             </Link>
-            <Link to="/certificates" className="pb-2">
+            <Link to="/our-works" className="pb-2">
               <Button
                 className="normal-case text-md mb-2"
                 variant="gradient"
                 onClick={handleOpen}
                 fullWidth
               >
-                Sertifikalar
+                Ürünler
               </Button>
             </Link>
             <Link to="/machines">
