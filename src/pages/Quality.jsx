@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import cover from "../assets/2003.jpg";
+import cover from "../assets/2008.jpg";
 
 import { Link } from "react-router-dom";
 
