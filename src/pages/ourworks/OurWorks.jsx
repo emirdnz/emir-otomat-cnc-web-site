@@ -2,12 +2,28 @@ import { useEffect, useState } from "react";
 
 import { motion, useScroll } from "framer-motion";
 
-import pirinc from "../../assets/products/pirinc.png";
-import otomat from "../../assets/products/otomat.png";
-import tibbi from "../../assets/products/tibbi.png";
-import aluminyum from "../../assets/products/aluminyum.png";
-import paslanmaz from "../../assets/products/paslanmaz.png";
-import yuksekKarbon from "../../assets/products/yuksek-karbonlu-celik.png";
+import photo11 from "../../assets/products-main/1-1.jpeg";
+import photo12 from "../../assets/products-main/1-2.jpeg";
+
+import photo21 from "../../assets/products-main/2-1.jpeg";
+import photo22 from "../../assets/products-main/2-2.jpg";
+import photo23 from "../../assets/products-main/2-3.jpeg";
+
+import photo31 from "../../assets/products-main/3-1.jpg";
+import photo32 from "../../assets/products-main/3-2.jpg";
+
+import photo41 from "../../assets/products-main/4-1.jpg";
+import photo42 from "../../assets/products-main/4-2.jpg";
+import photo43 from "../../assets/products-main/4-3.jpg";
+
+import photo51 from "../../assets/products-main/5-1.jpg";
+import photo52 from "../../assets/products-main/5-2.jpeg";
+
+import photo61 from "../../assets/products-main/6-1.jpg";
+import photo62 from "../../assets/products-main/6-2.jpeg";
+import photo63 from "../../assets/products-main/6-3.jpg";
+
+
 
 import cover from "../../assets/2005.jpg";
 
@@ -25,54 +41,51 @@ const data = [
     name: "Sarı Pirinç",
     description: "Sarı pirinç malzeme",
     images: [
-      "https://emircncotomat.com/wp-content/uploads/2017/06/WhatsApp-Image-2022-03-20-at-16.04.20-1-1200x1600.jpeg",
-      "https://emircncotomat.com/wp-content/uploads/2022/06/WhatsApp-Image-2022-03-20-at-16.04.18-2-1200x1600.jpeg",
-      "https://emircncotomat.com/wp-content/uploads/2022/06/WhatsApp-Image-2022-03-20-at-16.04.18-2-1200x1600.jpeg",
+      photo11,
+      photo12,
     ],
   },
   {
     name: "Otomat Malzemeleri",
     description: "Otomat malzeme",
     images: [
-      "https://emircncotomat.com/wp-content/uploads/2020/03/WhatsApp-Image-2022-03-20-at-16.04.17-2-1200x1600.jpeg",
-      "https://emircncotomat.com/wp-content/uploads/2022/06/IMG20220510075013-1200x1600.jpg",
-      "https://emircncotomat.com/wp-content/uploads/2022/06/WhatsApp-Image-2022-03-20-at-16.04.17-4-1200x1600.jpeg",
+      photo21,
+      photo22,
+      photo23,
     ],
   },
   {
     name: "Tıbbi Yedek Parça",
     description: "Plastik malzeme",
     images: [
-      "https://emircncotomat.com/wp-content/uploads/2017/08/IMG20220521111705-1200x1726.jpg",
-      "https://emircncotomat.com/wp-content/uploads/2017/08/IMG20220521111709-1200x1526.jpg",
-      "https://emircncotomat.com/wp-content/uploads/2017/08/IMG20220521111709-1200x1526.jpg",
+      photo31,
+      photo32,
     ],
   },
   {
     name: "Alüminyum Malzemeler",
     description: "Alüminyum malzeme",
     images: [
-      "https://emircncotomat.com/wp-content/uploads/2022/06/WhatsApp-Image-2021-12-08-at-11.34.30-1200x1600-1.jpg",
-      "https://emircncotomat.com/wp-content/uploads/2022/06/WhatsApp-Image-2021-12-08-at-11.34.30-1-1200x1600-1.jpg",
-      "https://emircncotomat.com/wp-content/uploads/2017/09/IMG20220510074910-1200x1600.jpg",
+      photo41,
+      photo42,
+      photo43,
     ],
   },
   {
     name: "Paslanmaz Malzemeler",
     description: "Paslanmaz malzeme",
     images: [
-      "https://emircncotomat.com/wp-content/uploads/2020/03/IMG20220510074805-1200x1666.jpg",
-      "https://emircncotomat.com/wp-content/uploads/2022/06/WhatsApp-Image-2022-03-20-at-16.04.14-2-1200x1600.jpeg",
-      "https://emircncotomat.com/wp-content/uploads/2022/06/WhatsApp-Image-2022-03-20-at-16.04.14-2-1200x1600.jpeg",
+      photo51,
+      photo52,
     ],
   },
   {
     name: "Yüksek Karbonlu Çelik",
     description: "Yüksek karbonlu çelik malzeme",
     images: [
-      "https://emircncotomat.com/wp-content/uploads/2017/07/IMG20220521112006-1200x924.jpg",
-      "https://emircncotomat.com/wp-content/uploads/2022/06/WhatsApp-Image-2022-03-20-at-16.04.14-5-1200x1600.jpeg",
-      "https://emircncotomat.com/wp-content/uploads/2022/06/IMG20220521112326-1200x678.jpg",
+      photo61,
+      photo62,
+      photo63,
     ],
   },
 ];

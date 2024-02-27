@@ -11,6 +11,7 @@ import {
 
 import { motion, useScroll } from "framer-motion";
 
+
 function WorkCard(props) {
   const { scrollYProgress } = useScroll();
 
@@ -49,13 +50,13 @@ function WorkCard(props) {
             className="m-0 rounded-none flex justify-center items-center md:justify-end w-full h-full text-4xl text-primary-blue"
           >
             <div
-              className={`grid grid-cols-2 grid-rows-4 grid-flow-col gap-2 h-80 sm:h-96 py-2`}
+              className={`grid grid-cols-6 grid-flow-col gap-2 h-80 order-last sm:h-96 py-2`}
             >
               {props.data.images.map((image, i) => (
                 <img
                   key={i}
                   className={`object-cover h-full w-[470px] hover:opacity-75 cursor-pointer transition-all duration-700 ${
-                    i === 0 ? "row-span-4" : "row-span-2"
+                   props.data.images.length == 2 ? "col-span-3" : "col-span-2"
                   }`}
                   src={image}
                   alt={props.data.desc}
@@ -83,12 +84,12 @@ function WorkCard(props) {
         </Card>
       </motion.section>
       
-       <Dialog size="xl" open={open} handler={handleOpen}>
+       <Dialog className="flex items-center justify-center transition-all duration-500" size="md" open={open} handler={handleOpen}>
         
-        <DialogBody>
+        <DialogBody className="">
           <img
             alt="nature"
-            className="h-[48rem] w-full rounded-lg object-cover object-center"
+            className="rounded-lg object-contain"
             src={selectedImg}
           />
         </DialogBody>
