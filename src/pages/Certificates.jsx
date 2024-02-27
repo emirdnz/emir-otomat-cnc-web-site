@@ -68,7 +68,7 @@ function Certificates() {
             </Typography>
           </CardBody>
           <CardFooter className="pt-0">
-            <Link to="/certificates" className="pb-2">
+            <Link to="/home" className="pb-2">
               <Button
                 className="normal-case text-md mb-2"
                 variant="gradient"
