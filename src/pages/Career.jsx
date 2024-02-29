@@ -3,11 +3,9 @@ import cover from "../assets/2006.jpg";
 
 import { motion } from "framer-motion";
 
+import image from "../assets/career.jpg";
+
 function Career() {
-  const location = window.location.pathname;
-
-  console.log(location);
-
   return (
     <div className="mt-10">
       <div className="w-full">
@@ -23,6 +21,38 @@ function Career() {
         </h1>
         <div className="h-96 w-full">
           <img className=" object-cover h-full w-full" src={cover} alt="" />
+        </div>
+      </div>
+      <div className="flex justify-center ">
+        <div className=" max-w-screen-lg flex justify-center items-center">
+          <div className="max-w-[480px] hidden md:block">
+            <img src={image} alt="" />
+          </div>
+          <div className="m-10 md:my-10">
+            Sektördeki konumumuzu koruyarak, güncel teknolojilere
+            odaklanarak ve müşteri memnuniyetini ön planda tutarak markamızı
+            daha da ileri taşımak için birlikte çalışalım.
+            <h3 className="text-sm font-bold my-4 w-full">
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ ease: "easeInOut", duration: 1 }}
+                className="w-full"
+              >
+                <span className="text-black">
+                  Çalışma arkadaşlarımızda aradığımız özellikler
+                </span>
+              </motion.div>
+            </h3>
+            Yeniliklere açık, araştırmacı bir ruha sahip, düzenli çalışmayı
+            benimseyen ve takım odaklı çalışma anlayışında olan çalışma
+            arkadaşları arıyoruz.
+            <br />
+            <br />
+            Eğer siz de bu niteliklere sahipseniz ve ekibimize katılmak
+            istiyorsanız, aşağıdaki formu doldurarak iş veya staj başvurusunda
+            bulunubilirsiniz.
+          </div>
         </div>
       </div>
       <div>
@@ -48,20 +78,14 @@ function Career() {
           onload="window.parent.scrollTo(0,0)"
           allowTransparency="true"
           allowFullScreen="true"
-          allow="geolocation; microphone; camera"
-          src={
-            location == "/career"
-              ? "https://form.jotform.com/240595114447053"
-              : "https://form.jotform.com/240595114447053"
-          }
-          frameBorder={0}
+          src="https://form.jotform.com/240595114447053"
           style={{
             width: "1px",
             minWidth: "100%",
             height: "100%",
             border: "none",
           }}
-          className=" w-full min-h-[1500px] md:min-h-[1200px]"
+          className="overflow-hidden w-full min-h-[1500px] md:min-h-[1200px]"
         ></iframe>
       </div>
     </div>
