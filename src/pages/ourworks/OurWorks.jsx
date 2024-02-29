@@ -59,6 +59,9 @@ import photo54 from "../../assets/products-main/54.png";
 import photo55 from "../../assets/products-main/55.png";
 import photo56 from "../../assets/products-main/56.png";
 import photo57 from "../../assets/products-main/57.png";
+import photo58 from "../../assets/products/otomat.png";
+import photo59 from "../../assets/products/tibbi.png";
+import photo60 from "../../assets/products/paslanmaz.png";
 
 import cover from "../../assets/2005.jpg";
 
@@ -129,6 +132,9 @@ const data = [
   { image: photo55 },
   { image: photo56 },
   { image: photo57 },
+  { image: photo58 },
+  { image: photo59 },
+  { image: photo60 }
 ];
 
 function OurWorks() {
