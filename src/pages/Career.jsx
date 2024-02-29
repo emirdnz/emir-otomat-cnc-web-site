@@ -51,8 +51,8 @@ function Career() {
           allow="geolocation; microphone; camera"
           src={
             location == "/career"
-              ? "https://form.jotform.com/240543893849975"
-              : "https://form.jotform.com/240543348653963"
+              ? "https://form.jotform.com/240595114447053"
+              : "https://form.jotform.com/240595114447053"
           }
           frameBorder={0}
           style={{
