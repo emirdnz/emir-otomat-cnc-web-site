@@ -139,7 +139,7 @@ function VisionMission() {
                 Endüstriyel alanda yüksek kaliteli CNC otomat makineleri ile endüstriyel yedek parça üretimi
                 ve tedariki ile müşterilerine katma değer sağlamayı amaçlar.
                 Misyonumuz, müşterilerimize uygun fiyatlı, yüksek performanslı
-                ve güvenilir endüstriyel yedek parçaları sunarak, onların üretkenliklerini
+                ve güvenilir endüstriyel yedek parçaları sunarak, müşterilerimizin üretkenliklerini
                 artırmalarına yardımcı olmaktır. Profesyonel ekibimiz ve güçlü
                 tedarik zincirimizle müşteri memnuniyetini en üst düzeye
                 çıkarmak ve sektöre öncülük etmek, firmamızın temel
