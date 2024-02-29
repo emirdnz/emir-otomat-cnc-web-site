@@ -26,8 +26,8 @@ function ContactUs() {
         <div className="lg:min-w-[424px] max-w-96 flex flex-col min-h-64 border-b-[1px] xl:border-x-[1px] p-8">
           <div className="text-3xl text-primary-blue my-5">Ofisimiz</div>
           <span className="">
-            İkitelli Osb Mahallesi İkitelli Demirciler Sanayi Sitesi, B6 Blok
-            134 Sokak, İkitelli Osb/Başakşehir/İstanbul
+            İkitelli Osb Mahallesi İkitelli Demirciler Sanayi Sitesi, B6 Blok Sokak
+            No: 134, İkitelli Osb/Başakşehir/İstanbul
           </span>
         </div>
         <div className="lg:min-w-[300px] max-w-96 flex flex-col min-h-64 border-b-[1px] xl:border-x-[1px] p-8">
@@ -62,7 +62,7 @@ function ContactUs() {
           <div className="text-3xl text-primary-blue my-5">Mail</div>
           <div>
             <a
-              href="mailto:info@emircncotomat.com"
+              href="mailto:info@emirotomatcnc.com"
               className="text-sm  text-gray-500 dark:text-white hover:underline"
             >
               <span className="flex items-center line-clamp-1 transition duration-700 ease-in-out hover:text-primary-blue">
@@ -82,7 +82,7 @@ function ContactUs() {
                   />
                 </svg>
                 <span className="line-clamp-1 text-ellipsis">
-                  info@emircncotomat.com
+                  info@emirotomatcnc.com
                 </span>
               </span>
             </a>

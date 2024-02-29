@@ -411,7 +411,7 @@ function Header() {
                 </a>
               </span>
               <a
-                href="mailto:info@emircncotomat.com"
+                href="mailto:info@emirotomatcnc.com"
                 className="text-sm  text-gray-500 dark:text-white hover:underline"
               >
                 <span className="flex items-center ml-2 line-clamp-1 transition duration-700 ease-in-out hover:text-primary-blue">
@@ -430,7 +430,7 @@ function Header() {
                     />
                   </svg>
                   <span className="line-clamp-1 text-ellipsis w-24 md:w-full">
-                    info@emircncotomat.com
+                    info@emirotomatcnc.com
                   </span>
                 </span>
               </a>

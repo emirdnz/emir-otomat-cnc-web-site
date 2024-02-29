@@ -25,9 +25,9 @@ function Footer() {
               </div>
               <div className=" w-52 text-gray-400 text-sm m-2 mb-0  hover:underline">
                 Mail:
-                <a href="mailto:info@emircncotomat.com">
+                <a href="mailto:info@emirotomatcnc.com">
                   <span className="text-white ml-2">
-                    info@emircncotomat.com
+                    info@emirotomatcnc.com
                   </span>
                 </a>
               </div>
