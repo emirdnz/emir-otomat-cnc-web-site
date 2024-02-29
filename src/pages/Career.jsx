@@ -85,7 +85,7 @@ function Career() {
             height: "100%",
             border: "none",
           }}
-          className="overflow-hidden w-full min-h-[1500px] md:min-h-[1200px]"
+          className="overflow-hidden w-full min-h-[1500px] md:min-h-[1300px]"
         ></iframe>
       </div>
     </div>
