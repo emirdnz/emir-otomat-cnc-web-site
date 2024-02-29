@@ -27,9 +27,9 @@ function AboutSection() {
               className="m-0 rounded-none flex justify-center md:justify-end bg-blue-gray-50 pr-5 pt-16 w-full h-full text-4xl text-primary-blue"
             >
               <h1 className="text-center md:text-end font-bold max-w-lg text-pretty">
-                EMİR OTOMAT CNC{" "}
-                <span className="text-gray-800 font-semibold text-pretty">
-                  Güvenilir Tedarikçiniz - İleri Teknoloji, Güçlü Çözümler
+              EMİR OTOMAT CNC{" "}
+                <span className="text-gray-800  font-semibold text-pretty leading-[50px] ">
+                  Güvenilir Tedarikçiniz <br /> İleri Teknoloji<br /> Güçlü Çözümler
                 </span>
                 <br />
                 <Link
