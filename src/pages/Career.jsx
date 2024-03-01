@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 
 import image from "../assets/career.jpg";
 
+import "./Career.css";
+
 function Career() {
   return (
     <div className="mt-10">
@@ -71,7 +73,7 @@ function Career() {
           </motion.div>
         </h1>
       </div>
-      <div>
+      <div className="jotform-form">
         <iframe
           id="JotFormIFrame-240543893849975"
           title="İş Başvuru Formu, CV, İnsan Kaynakları Formu"
