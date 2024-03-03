@@ -2,16 +2,19 @@ import {useState} from "react";
 import {  Typography, Button } from "@material-tailwind/react";
 import {Carousel} from "flowbite-react"
 
+import carousel1 from "../../../assets/Carousel-1.jpg";
+import carousel2 from "../../../assets/Carousel-2.jpg";
+
 function HomeCarousel() {
   const [data, setData] = useState([
     {
-      img: "https://emircncotomat.com/wp-content/uploads/2022/06/anasayfa-1.jpg",
+      img: carousel1,
       title: "Tecrübe",
       desc: "1986’DAN BERİ PROFESYONEL CNC OTOMAT TEDARİKÇİSİYİZ",
       alt: "imagealt",
     },
     {
-      img: "https://emircncotomat.com/wp-content/uploads/2023/02/industry-img-3.jpg",
+      img: carousel2,
       title: "Tecrübe",
       desc: "40 Yıllık Tecrübemizle Sizlere Hizmet Veriyoruz",
       alt: "imagealt",
@@ -34,7 +37,7 @@ function HomeCarousel() {
               alt={item.alt}
               className="h-full w-full object-cover"
             />
-            <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/50">
+            <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/60">
               <div className="w-3/4 text-center md:w-2/4">
                 <Typography
                   variant="h4"
