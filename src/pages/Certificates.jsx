@@ -38,7 +38,7 @@ function Certificates() {
             transition={{ ease: "easeInOut", duration: 1 }}
             className="w-full text-center"
           >
-            // <span className="text-black">Kalite Parkurumuz</span>
+            // <span className="text-black">Sertifikalar</span>
           </motion.div>
         </h1>
         <div className="h-96 w-full">
