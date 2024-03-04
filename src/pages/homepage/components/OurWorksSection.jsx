@@ -128,9 +128,7 @@ function OurWorksSection() {
             loop={true}
             modules={[Autoplay]}
             spaceBetween={10}
-            slidesPerView={slides}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
+            slidesPerView={slides}            
             className="w-full h-full p-2 pl-0 cursor-grab"
           >
             {works.map((work, i) => (

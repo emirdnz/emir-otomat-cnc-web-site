@@ -13,7 +13,6 @@ import { Link, useLocation } from "react-router-dom";
 
 function AboutSection() {
   const location = useLocation();
-  console.log("location", location);
 
   return (
     <>
