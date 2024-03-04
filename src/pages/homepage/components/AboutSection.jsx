@@ -16,7 +16,7 @@ function AboutSection() {
 
   return (
     <>
-      {location.pathname !== "/about" ? (
+      {location.pathname !== "/hakkimizda" ? (
         <section className="h-96 flex-col flex items-center justify-center w-full ">
           <Card className="h-full overflow-hidden flex flex-row justify-center w-full shadow-transparent rounded-none">
             <CardHeader
@@ -33,7 +33,7 @@ function AboutSection() {
                 <br />
                 <Link
                   className="text-primary-blue text-lg md:hidden"
-                  to="/about"
+                  to="/hakkimizda"
                 >
                   Devamı →
                 </Link>
@@ -49,7 +49,7 @@ function AboutSection() {
                 uzmanlığımızla, Emir Otomat CNC olarak müşteri isteklerine en
                 uygun çözümleri sunuyoruz.
               </Typography>
-              <Link className="text-primary-blue" to="/about">
+              <Link className="text-primary-blue" to="/hakkimizda">
                 {" "}
                 Devamı →
               </Link>
@@ -73,7 +73,7 @@ function AboutSection() {
                 <br />
                 <Link
                   className="text-primary-blue text-lg md:hidden"
-                  to="/about"
+                  to="/hakkimizda"
                 >
                   Devamı →
                 </Link>

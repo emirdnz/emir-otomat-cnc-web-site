@@ -38,39 +38,37 @@ const navListMenuItems = [
   [
     {
       title: "Ürünler",
-
       icon: SquaresPlusIcon,
-      link: "our-works",
+      link: "calismalarimiz",
     },
     {
       title: "Makine Parkurumuz",
-      description: "Meet and learn about our dedication",
       icon: UserGroupIcon,
-      link: "machines",
+      link: "makine-parkuru",
     },
   ],
   [
     {
       title: "Sertifikalar",
       icon: SquaresPlusIcon,
-      link: "certificates",
+      link: "sertifikalar",
     },
     {
       title: "Kalite Parkurumuz",
       icon: UserGroupIcon,
-      link: "quality",
+      link: "kalite",
     },
   ],
   [
     {
       title: "İş Başvuru Formu",
       icon: SquaresPlusIcon,
-      link: "career",
+      link: "kariyer",
     },
     {
       title: "Staj Başvuru Formu",
       icon: UserGroupIcon,
-      link: "internship",
+      link: "staj",
     },
   ],
 ];
@@ -147,7 +145,7 @@ function NavListMenu(props) {
 function NavList() {
   return (
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
-      <Link to="home" className="flex items-center mx-2">
+      <Link to="anasayfa" className="flex items-center mx-2">
         <Typography
           as="li"
           variant="h6"
@@ -157,7 +155,7 @@ function NavList() {
           Anasayfa
         </Typography>
       </Link>
-      <Link to="about" className="flex items-center mx-2">
+      <Link to="hakkimizda" className="flex items-center mx-2">
         <Typography
           as="li"
           variant="h6"
@@ -170,7 +168,7 @@ function NavList() {
       <NavListMenu data={navListMenuItems[0]} title="Çalışmalarımız" />
       <NavListMenu data={navListMenuItems[1]} title="Kalite" />
       <NavListMenu data={navListMenuItems[2]} title="Kariyer" />
-      <Link to="contactus" className="flex items-center mx-2">
+      <Link to="iletisim" className="flex items-center mx-2">
         <Typography
           as="li"
           variant="h6"
@@ -213,7 +211,7 @@ function Header() {
   //         Anasayfa
   //       </Typography>
   //     </Link>
-  //     <Link to="about" className="flex items-center mx-2">
+  //     <Link to="hakkimizda" className="flex items-center mx-2">
   //       <Typography
   //         as="li"
   //         variant="h6"
@@ -258,7 +256,7 @@ function Header() {
   //           </Link>
   //         </MenuItem>
   //         <MenuItem>
-  //           <Link to="machines" className="flex items-center mx-2">
+  //           <Link to="makine-parkuru" className="flex items-center mx-2">
   //             <Typography
   //               as="li"
   //               variant="h6"
@@ -306,7 +304,7 @@ function Header() {
   //           </Link>
   //         </MenuItem>
   //         <MenuItem>
-  //           <Link to="quality" className="flex items-center mx-2">
+  //           <Link to="kalite" className="flex items-center mx-2">
   //             <Typography
   //               as="li"
   //               variant="h6"
@@ -342,7 +340,7 @@ function Header() {
   //       </MenuHandler>
   //       <MenuList>
   //         <MenuItem>
-  //           <Link to="career" className="flex items-center mx-2">
+  //           <Link to="kalite" className="flex items-center mx-2">
   //             <Typography
   //               as="li"
   //               variant="h6"
@@ -368,7 +366,7 @@ function Header() {
   //       </MenuList>
   //     </Menu>
 
-  //     <Link to="contactus" className="flex items-center mx-2">
+  //     <Link to="iletisim" className="flex items-center mx-2">
   //       <Typography
   //         as="li"
   //         variant="h6"

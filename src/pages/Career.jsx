@@ -8,6 +8,8 @@ import image from "../assets/career.jpg";
 import "./Career.css";
 
 function Career() {
+  const location = window.location.pathname;
+
   return (
     <div className="mt-10">
       <div className="w-full">
@@ -18,7 +20,10 @@ function Career() {
             transition={{ ease: "easeInOut", duration: 1 }}
             className="w-full text-center"
           >
-            // <span className="text-black">Kariyer</span>
+            //{" "}
+            <span className="text-black">
+              {location == "/kariyer" ? "Kariyer" : "Staj"}
+            </span>
           </motion.div>
         </h1>
         <div className="h-96 w-full">
@@ -31,9 +36,9 @@ function Career() {
             <img src={image} alt="" />
           </div>
           <div className="m-10 md:my-10">
-            Sektördeki konumumuzu koruyarak, güncel teknolojilere
-            odaklanarak ve müşteri memnuniyetini ön planda tutarak markamızı
-            daha da ileri taşımak için birlikte çalışalım.
+            Sektördeki konumumuzu koruyarak, güncel teknolojilere odaklanarak ve
+            müşteri memnuniyetini ön planda tutarak markamızı daha da ileri
+            taşımak için birlikte çalışalım.
             <h3 className="text-sm font-bold my-4 w-full">
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
@@ -66,7 +71,7 @@ function Career() {
             className="w-full text-center"
           >
             <span className="text-black">
-              {location == "/career"
+              {location == "/kariyer"
                 ? "İş Başvuru Formu"
                 : "Staj Başvuru Formu"}
             </span>

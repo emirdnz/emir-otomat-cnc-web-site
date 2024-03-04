@@ -122,15 +122,15 @@ function App() {
           <>
             <Routes>
               <Route path="/*" element={<Homepage />} exact />
-              <Route path="/home" element={<Homepage />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/our-works" element={<OurWorks />} />
-              <Route path="/machines" element={<Machines />} />
-              <Route path="/certificates" element={<Certificates />} />
-              <Route path="/quality" element={<Quality />} />
-              <Route path="/career" element={<Career />} />
-              <Route path="/internship" element={<Career />} />
-              <Route path="/contactus" element={<ContactUs />} />
+              <Route path="/anasayfa" element={<Homepage />} />
+              <Route path="/hakkimizda" element={<About />} />
+              <Route path="/calismalarimiz" element={<OurWorks />} />
+              <Route path="/makine-parkuru" element={<Machines />} />
+              <Route path="/sertifikalar" element={<Certificates />} />
+              <Route path="/kalite" element={<Quality />} />
+              <Route path="/kariyer" element={<Career />} />
+              <Route path="/staj" element={<Career />} />
+              <Route path="/iletisim" element={<ContactUs />} />
             </Routes>
             <Footer />
           </>

@@ -41,13 +41,13 @@ function Footer() {
               </h2>
               <ul className="font-medium">
                 <li className="mb-4">
-                  <Link to="about" className="hover:underline text-xs">
+                  <Link to="hakkimizda" className="hover:underline text-xs">
                     Hakkımızda
                   </Link>
                 </li>
 
                 <li className="mb-4">
-                  <Link to="contactus" className="hover:underline text-xs">
+                  <Link to="iletisim" className="hover:underline text-xs">
                     İletişim
                   </Link>
                 </li>
@@ -59,23 +59,23 @@ function Footer() {
               </h2>
               <ul className="font-medium">
                 <li className="mb-4">
-                  <Link to="our-works" className="hover:underline text-xs ">
+                  <Link to="calismalarimiz" className="hover:underline text-xs ">
                     Çalışmalarımız
                   </Link>
                 </li>
 
                 <li className="mb-4">
-                  <Link to="certificates" className="hover:underline text-xs">
+                  <Link to="sertifikalar" className="hover:underline text-xs">
                     Sertifikalar
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <Link to="machines" className="hover:underline text-xs">
+                  <Link to="makine-parkuru" className="hover:underline text-xs">
                     Makine Parkurumuz
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <Link to="quality" className="hover:underline text-xs">
+                  <Link to="kalite" className="hover:underline text-xs">
                     Kalite Parkurumuz
                   </Link>
                 </li>
@@ -87,12 +87,12 @@ function Footer() {
               </h2>
               <ul className="font-medium">
                 <li className="mb-4">
-                  <Link to="career" className="hover:underline text-xs">
+                  <Link to="kariyer" className="hover:underline text-xs">
                     İş Başvuru
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <Link to="career" className="hover:underline text-xs">
+                  <Link to="staj" className="hover:underline text-xs">
                     Staj Başvuru
                   </Link>
                 </li>

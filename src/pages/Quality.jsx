@@ -68,7 +68,7 @@ function Quality() {
             </Typography>
           </CardBody>
           <CardFooter className="pt-0">
-            <Link to="/home" className="pb-2">
+            <Link to="/anasayfa" className="pb-2">
               <Button
                 className="normal-case text-md mb-2"
                 variant="gradient"
@@ -78,7 +78,7 @@ function Quality() {
                 Anasayfa
               </Button>
             </Link>
-            <Link to="/our-works" className="pb-2">
+            <Link to="/calismalarimiz" className="pb-2">
               <Button
                 className="normal-case text-md mb-2"
                 variant="gradient"
@@ -88,7 +88,7 @@ function Quality() {
                 Ürünler
               </Button>
             </Link>
-            <Link to="/machines">
+            <Link to="/makine-parkuru">
               <Button
                 className="normal-case text-md !bg-primary-blue"
                 variant="gradient"
