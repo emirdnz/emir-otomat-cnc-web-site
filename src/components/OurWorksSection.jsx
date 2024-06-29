@@ -1,16 +1,12 @@
 import { useEffect, useState } from "react";
-import {
-  Typography,
-  Dialog,
-  DialogBody,
-} from "@material-tailwind/react";
+import { Typography, Dialog, DialogBody } from "@material-tailwind/react";
 
-import pirinc from "../../../assets/products/pirinc.png";
-import otomat from "../../../assets/products/otomat.png";
-import tibbi from "../../../assets/products/tibbi.png";
-import aluminyum from "../../../assets/products/aluminyum.png";
-import paslanmaz from "../../../assets/products/paslanmaz.png";
-import yuksekKarbon from "../../../assets/products/yuksek-karbonlu-celik.png";
+import pirinc from "../assets/products/pirinc.png";
+import otomat from "../assets/products/otomat.png";
+import tibbi from "../assets/products/tibbi.png";
+import aluminyum from "../assets/products/aluminyum.png";
+import paslanmaz from "../assets/products/paslanmaz.png";
+import yuksekKarbon from "../assets/products/yuksek-karbonlu-celik.png";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -25,7 +21,7 @@ function OurWorksSection() {
   const [open, setOpen] = useState(false);
   const [selectedImg, setSelectedImg] = useState(null);
   const [slides, setSlides] = useState(window.innerWidth >= 1000 ? 2.5 : 1.5);
-  const [works, setWorks] = useState([
+  const [works] = useState([
     {
       img: pirinc,
       title: "Sarı (PİRİNÇ) Malzemeler",
@@ -88,14 +84,18 @@ function OurWorksSection() {
   return (
     <section className="h-full md:h-[38rem] w-full flex flex-col">
       <div
+        // eslint-disable-next-line react/no-unknown-property
         initial={{ opacity: 0, y: -40 }}
+        // eslint-disable-next-line react/no-unknown-property
         whileInView={{
           opacity: 1,
           transition: { duration: 1, ease: "easeInOut" },
           y: 0,
         }}
+        // eslint-disable-next-line react/no-unknown-property
         viewport={{ once: true }}
         className="flex justify-center items-center h-1/4 pt-4  md:py-6 md:mt-6 bg-blue-gray-50 w-full !leading-8"
+        autoPlay={autoplay}
       >
         <Typography
           variant="h1"
@@ -122,13 +122,14 @@ function OurWorksSection() {
         <div className="w-full md:w-1/2 h-5/6 md:h-full flex justify-center items-center">
           <Swiper
             autoplay={{
-              delay: 5000,
+              delay: open ? 1000000 : 5000,
               disableOnInteraction: false,
+              pauseOnMouseEnter : true,
             }}
             loop={true}
             modules={[Autoplay]}
             spaceBetween={10}
-            slidesPerView={slides}            
+            slidesPerView={slides}
             className="w-full h-full p-2 pl-0 cursor-grab"
           >
             {works.map((work, i) => (

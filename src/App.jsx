@@ -1,17 +1,17 @@
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import { Spinner } from "@material-tailwind/react";
 import "./App.css";
-import Header from "./componenets/Header";
+import Header from "./components/Header";
 import Homepage from "./pages/homepage/Homepage";
 import About from "./pages/about/About";
 import OurWorks from "./pages/ourworks/OurWorks";
 import Career from "./pages/Career";
 import Certificates from "./pages/Certificates";
-import Footer from "./componenets/Footer";
+import Footer from "./components/Footer";
 import ContactUs from "./pages/ContactUs";
 
-import ScrollToTop from "./componenets/ScrollToTop";
+import ScrollToTop from "./components/ScrollToTop";
 import Machines from "./pages/Machines";
 import Quality from "./pages/Quality";
 
@@ -104,8 +104,7 @@ function App() {
     },
   };
 
-  const [loading, setLoading] = useState(false);
-  const location = useLocation();
+  const [loading] = useState(false);
 
   return (
     <ThemeProvider value={theme}>

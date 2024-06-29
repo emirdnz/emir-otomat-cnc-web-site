@@ -1,33 +1,18 @@
-import React from "react";
-
-import { motion } from "framer-motion";
-
 import cover from "../assets/2003.jpg";
+import TitleComponent from "../components/TitleComponent";
 
 function ContactUs() {
   return (
     <div className="flex items-center justify-center flex-col my-10">
-      <div className="w-full">
-        <h1 className="text-2xl font-semibold mb-8 text-primary-blue w-full">
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ ease: "easeInOut", duration: 1 }}
-            className="w-full text-center"
-          >
-            // <span className="text-black">İletişim</span>
-          </motion.div>
-        </h1>
-        <div className="h-96 w-full">
-          <img className=" object-cover h-full w-full" src={cover} alt="" />
-        </div>
-      </div>
+      {/* title */}
+      <TitleComponent title="İletişim" cover={cover} />
+      {/* title */}
       <div className="flex flex-wrap mt-10 max-w-screen-xl">
         <div className="lg:min-w-[424px] max-w-96 flex flex-col min-h-64 border-b-[1px] xl:border-x-[1px] p-8">
           <div className="text-3xl text-primary-blue my-5">Ofisimiz</div>
           <span className="">
-            İkitelli Osb Mahallesi İkitelli Demirciler Sanayi Sitesi, B6 Blok Sokak
-            No: 134, İkitelli Osb/Başakşehir/İstanbul
+            İkitelli Osb Mahallesi İkitelli Demirciler Sanayi Sitesi, B6 Blok
+            Sokak No: 134, İkitelli Osb/Başakşehir/İstanbul
           </span>
         </div>
         <div className="lg:min-w-[300px] max-w-96 flex flex-col min-h-64 border-b-[1px] xl:border-x-[1px] p-8">
@@ -67,7 +52,6 @@ function ContactUs() {
             >
               <span className="flex items-center line-clamp-1 transition duration-700 ease-in-out hover:text-primary-blue">
                 <svg
-                  v
                   xmlns="http://www.w3.org/2000/svg"
                   fill="#427fda"
                   viewBox="0 0 24 24"

@@ -1,4 +1,3 @@
-import React from "react";
 import cover from "../assets/2006.jpg";
 
 import { motion } from "framer-motion";
@@ -6,30 +5,19 @@ import { motion } from "framer-motion";
 import image from "../assets/career.jpg";
 
 import "./Career.css";
+import TitleComponent from "../components/TitleComponent";
 
 function Career() {
   const location = window.location.pathname;
 
   return (
     <div className="mt-10">
-      <div className="w-full">
-        <h1 className="text-2xl font-semibold mb-8 text-primary-blue w-full">
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ ease: "easeInOut", duration: 1 }}
-            className="w-full text-center"
-          >
-            //{" "}
-            <span className="text-black">
-              {location == "/kariyer" ? "Kariyer" : "Staj"}
-            </span>
-          </motion.div>
-        </h1>
-        <div className="h-96 w-full">
-          <img className=" object-cover h-full w-full" src={cover} alt="" />
-        </div>
-      </div>
+      {/* title */}
+      <TitleComponent
+        title={location == "/kariyer" ? "Kariyer" : "Staj"}
+        cover={cover}
+      />
+      {/* title */}
       <div className="flex justify-center ">
         <div className=" max-w-screen-lg flex justify-center items-center">
           <div className="max-w-[480px] hidden md:block">
@@ -82,7 +70,8 @@ function Career() {
         <iframe
           id="JotFormIFrame-240543893849975"
           title="İş Başvuru Formu, CV, İnsan Kaynakları Formu"
-          onload="window.parent.scrollTo(0,0)"
+          onLoad="window.parent.scrollTo(0,0)"
+          // eslint-disable-next-line react/no-unknown-property
           allowTransparency="true"
           allowFullScreen="true"
           src="https://form.jotform.com/240595114447053"

@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import OurWorksContainer from "../../container/OurWorksContainer";
 
-import { motion, useScroll } from "framer-motion";
+import cover from "../../assets/2005.jpg";
 
 import photo1 from "../../assets/products-main/1.png";
 import photo2 from "../../assets/products-main/2.png";
@@ -63,17 +63,6 @@ import photo58 from "../../assets/products/otomat.png";
 import photo59 from "../../assets/products/tibbi.png";
 import photo60 from "../../assets/products/paslanmaz.png";
 
-import cover from "../../assets/2005.jpg";
-
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  Typography,
-  Dialog,
-  DialogBody,
-} from "@material-tailwind/react";
-import WorkCard from "./components/WorkCard";
 const data = [
   { image: photo1 },
   { image: photo2 },
@@ -134,41 +123,13 @@ const data = [
   { image: photo57 },
   { image: photo58 },
   { image: photo59 },
-  { image: photo60 }
+  { image: photo60 },
 ];
 
 function OurWorks() {
-  const [selectedImg, setSelectedImg] = useState(null);
-  const [open, setOpen] = useState(false);
-
-  const handleOpen = (e) => {
-    if (e.target) {
-      setSelectedImg(e.target.currentSrc);
-    }
-
-    setOpen((cur) => !cur);
-  };
-
   return (
     <section className="mt-10">
-      <div className="w-full">
-        <h1 className="text-2xl font-semibold mb-8 text-primary-blue w-full">
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ ease: "easeInOut", duration: 1 }}
-            className="w-full text-center"
-          >
-            // <span className="text-black">Çalışmalarımız</span>
-          </motion.div>
-        </h1>
-        <div className="h-96 w-full">
-          <img className="object-cover h-full w-full" src={cover} alt="" />
-        </div>
-      </div>
-      <section className="w-full mx-auto flex justify-center my-10">
-        <WorkCard data={data} />
-      </section>
+      <OurWorksContainer data={data} cover={cover} />
     </section>
   );
 }

@@ -11,7 +11,7 @@ import photo5 from "../assets/machines/5.jpg";
 import photo6 from "../assets/machines/6.jpg";
 import photo7 from "../assets/machines/7.jpg";
 
-import { motion } from "framer-motion";
+import TitleComponent from "../components/TitleComponent";
 
 function Machines() {
   const data = [
@@ -53,21 +53,9 @@ function Machines() {
 
   return (
     <section className="flex items-center justify-center flex-col my-10">
-      <div className="w-full">
-        <h1 className="text-2xl font-semibold mb-8 text-primary-blue w-full">
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ ease: "easeInOut", duration: 1 }}
-            className="w-full text-center"
-          >
-            // <span className="text-black">Makine Parkurumuz</span>
-          </motion.div>
-        </h1>
-        <div className="h-96 w-full">
-          <img className=" object-cover h-full w-full" src={cover} alt="" />
-        </div>
-      </div>
+      {/* title */}
+      <TitleComponent title="Makine Parkurumuz" cover={cover} />
+      {/* title */}
       <div className="grid gap-4 max-w-4xl mt-10">
         <div onClick={(e) => handleOpen(e)}>
           <img

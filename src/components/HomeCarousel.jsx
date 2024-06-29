@@ -1,12 +1,12 @@
-import {useState} from "react";
-import {  Typography, Button } from "@material-tailwind/react";
-import {Carousel} from "flowbite-react"
+import { useState } from "react";
+import { Typography } from "@material-tailwind/react";
+import { Carousel } from "flowbite-react";
 
-import carousel1 from "../../../assets/Carousel-1.jpg";
-import carousel2 from "../../../assets/Carousel-2.jpg";
+import carousel1 from "../assets/Carousel-1.jpg";
+import carousel2 from "../assets/Carousel-2.jpg";
 
 function HomeCarousel() {
-  const [data, setData] = useState([
+  const [data] = useState([
     {
       img: carousel1,
       title: "Tecrübe",
@@ -29,7 +29,13 @@ function HomeCarousel() {
 
   return (
     <section id="carousel">
-      <Carousel className="h-[30rem]" loop={true} autoplaydelay={1000} aut={5000} pauseOnHover={true}>
+      <Carousel
+        className="h-[30rem]"
+        loop={true}
+        autoplaydelay={1000}
+        aut={5000}
+        pauseOnHover={true}
+      >
         {data.map((item, index) => (
           <div key={index} className="relative h-full w-full">
             <img
