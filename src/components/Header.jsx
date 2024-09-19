@@ -53,11 +53,7 @@ const navListMenuItems = [
       icon: SquaresPlusIcon,
       link: "sertifikalar",
     },
-    {
-      title: "Kalite Parkurumuz",
-      icon: UserGroupIcon,
-      link: "kalite",
-    },
+    
   ],
   [
     {
@@ -77,7 +73,7 @@ function NavListMenu(props) {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const renderItems = props.data.map(
-    ({ icon, title, description, link }, key) => (
+    ({ icon, title, descripton, link }, key) => (
       <Link to={link} key={key}>
         <List className="gap-2 rounded-lg">
           <div>

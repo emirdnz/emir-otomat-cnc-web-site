@@ -1,22 +1,26 @@
 import { useState } from "react";
 
+import { motion } from "framer-motion";
+
 import cover from "../assets/2008.jpg";
+import certificate1 from "../assets/certificates/9001.jpg";
+import certificate2 from "../assets/certificates/14001.jpg";
+import certificate3 from "../assets/certificates/10002.jpg";
+import certificate4 from "../assets/certificates/31000.jpg";
 
-import { Link } from "react-router-dom";
+const data = [
+  { image: certificate1, title: "TS EN ISO 9001:2015" },
+  { image: certificate2, title: "ISO 14001:2015" },
+  { image: certificate3, title: "TS ISO 10002:2018" },
+  { image: certificate4, title: "ISO 31000:2009" },
+];
 
-import {
-  Button,
-  Dialog,
-  Card,
-  CardBody,
-  CardFooter,
-  Typography,
-} from "@material-tailwind/react";
+import { Dialog, DialogBody } from "@material-tailwind/react";
 import TitleComponent from "../components/TitleComponent";
 
 function Certificates() {
-  const [open, setOpen] = useState(true);
-  const [setSelectedImg] = useState(null);
+  const [open, setOpen] = useState(false);
+  const [selectedImg, setSelectedImg] = useState(null);
 
   const handleOpen = (e) => {
     if (e.target) {
@@ -25,20 +29,80 @@ function Certificates() {
 
     setOpen((cur) => !cur);
   };
+
   return (
     <section className="flex items-center justify-center flex-col my-10">
       {/* title */}
       <TitleComponent title="Sertifikalar" cover={cover} />
       {/* title */}
-      <div className="flex flex-col items-center justify-center h-[30vh] px-4">
+
+      {/* <div className="flex flex-col items-center justify-center h-[30vh] px-4">
         <h1 className="text-4xl font-bold text-gray-800 mb-4">
           Yapım Aşamasında
         </h1>
         <p className="text-gray-600 text-lg mb-8">
           Yakın zamanda tekrar kontrol ediniz.
         </p>
-      </div>
-      <Dialog
+      </div> */}
+
+      <section className="mt-10">
+        <section className="h-full md:max-w-screen-xl flex-col flex items-center justify-center w-full">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-5">
+            {data.map(({ image }, index) => (
+              <motion.div
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration:
+                      index % 4 == 0
+                        ? 1.8
+                        : index % 4 == 1
+                        ? 1.4
+                        : index % 4 == 2
+                        ? 1.1
+                        : 0.9,
+                    ease: "easeInOut",
+                  },
+                }}
+                viewport={{ once: true }}
+                className=" border-2 rounded-lg hover:cursor-pointer"
+                onClick={(e) => handleOpen(e)}
+                key={index}
+              >
+                <img
+                  className=" hover:bg-blue-gray-100 transition-color duration-1000 h-96 sm:h-[30rem] md:h-[30rem] w-full max-w-full rounded-lg object-cover object-center"
+                  src={image}
+                  alt="gallery-photo"
+                />
+                <h1>
+                  <p className="text-center text-lg font-semibold text-gray-800">
+                    {data[index].title}
+                  </p>
+                </h1>
+              </motion.div>
+            ))}
+          </div>
+        </section>
+
+        <Dialog
+          className="flex items-center justify-center transition-all duration-500"
+          size="md"
+          open={open}
+          handler={handleOpen}
+        >
+          <DialogBody className="">
+            <img
+              alt="nature"
+              className="rounded-lg object-contain"
+              src={selectedImg}
+            />
+          </DialogBody>
+        </Dialog>
+      </section>
+
+      {/* <Dialog
         size="xs"
         open={open}
         handler={handleOpen}
@@ -87,7 +151,7 @@ function Certificates() {
             </Link>
           </CardFooter>
         </Card>
-      </Dialog>
+      </Dialog> */}
     </section>
   );
 }
