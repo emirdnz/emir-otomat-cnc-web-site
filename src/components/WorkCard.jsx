@@ -1,10 +1,6 @@
 import { useState } from "react";
 
 import {
-  Card,
-  CardHeader,
-  CardBody,
-  Typography,
   Dialog,
   DialogBody,
 } from "@material-tailwind/react";
@@ -48,12 +44,12 @@ function WorkCard(props) {
                 },
               }}
               viewport={{ once: true }}
-              className=" border-2 rounded-lg "
+              className="hover:border-gray-500 border-2 rounded-lg transition-all duration-500 cursor-pointer"
               onClick={(e) => handleOpen(e)}
               key={index}
             >
               <img
-                className=" hover:bg-blue-gray-100 transition-color duration-1000 h-80 w-full max-w-full rounded-lg object-cover object-center"
+                className="transition-color duration-1000 h-80 w-full max-w-full rounded-lg p-8 object-scale-down object-center"
                 src={image}
                 alt="gallery-photo"
               />
@@ -71,7 +67,7 @@ function WorkCard(props) {
         <DialogBody className="">
           <img
             alt="nature"
-            className="rounded-lg object-contain"
+            className="rounded-lg object-contain max-h-[90vh]"
             src={selectedImg}
           />
         </DialogBody>
