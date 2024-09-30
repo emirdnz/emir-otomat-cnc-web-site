@@ -1,14 +1,14 @@
 import { useState } from "react";
+import PropTypes from 'prop-types';
 
 import {
   Dialog,
   DialogBody,
 } from "@material-tailwind/react";
 
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 
 function WorkCard(props) {
-  const { scrollYProgress } = useScroll();
 
   const [open, setOpen] = useState(false);
   const [selectedImg, setSelectedImg] = useState(null);
@@ -75,5 +75,14 @@ function WorkCard(props) {
     </>
   );
 }
+
+WorkCard.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      image: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
+
 
 export default WorkCard;

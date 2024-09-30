@@ -49,9 +49,9 @@ import photo44 from "../../assets/products-main/44.jpg";
 import photo45 from "../../assets/products-main/45.jpg";
 import photo46 from "../../assets/products-main/46.jpg";
 import photo47 from "../../assets/products-main/47.png";
-import photo48 from "../../assets/products-main/48.jpg";
+// import photo48 from "../../assets/products-main/48.jpg";
 import photo49 from "../../assets/products-main/49.jpg";
-import photo50 from "../../assets/products-main/50.png";
+// import photo50 from "../../assets/products-main/50.png";
 import photo51 from "../../assets/products-main/51.jpg";
 import photo52 from "../../assets/products-main/52.jpg";
 import photo53 from "../../assets/products-main/53.png";
@@ -82,7 +82,7 @@ import photo77 from "../../assets/products-main/77.jpg";
 import photo78 from "../../assets/products-main/78.png";
 import photo79 from "../../assets/products-main/79.png";
 import photo80 from "../../assets/products-main/80.jpg";
-import photo81 from "../../assets/products-main/81.jpg";
+// import photo81 from "../../assets/products-main/81.jpg";
 import photo82 from "../../assets/products-main/82.jpg";
 import photo83 from "../../assets/products-main/83.jpg";
 import photo84 from "../../assets/products-main/84.jpg";
@@ -138,7 +138,7 @@ import photo133 from "../../assets/products-main/133.png";
 import photo134 from "../../assets/products-main/134.png";
 import photo135 from "../../assets/products-main/135.jpg";
 import photo136 from "../../assets/products-main/136.jpg";
-import photo137 from "../../assets/products-main/137.png";
+// import photo137 from "../../assets/products-main/137.png";
 import photo138 from "../../assets/products-main/138.jpg";
 import photo139 from "../../assets/products-main/139.jpg";
 import photo140 from "../../assets/products-main/140.jpg";
@@ -150,7 +150,7 @@ import photo145 from "../../assets/products-main/145.png";
 
 import photo158 from "../../assets/products/otomat.png";
 import photo159 from "../../assets/products/tibbi.png";
-import photo160 from "../../assets/products/paslanmaz.png";
+// import photo160 from "../../assets/products/paslanmaz.png";
 
 const data = [
   { image: photo6 },
