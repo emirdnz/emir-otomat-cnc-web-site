@@ -34,12 +34,12 @@ function WorkCard(props) {
                 transition: {
                   duration:
                     index % 4 == 0
-                      ? 1.8
+                      ? 0.55
                       : index % 4 == 1
-                      ? 1.4
+                      ? 0.50
                       : index % 4 == 2
-                      ? 1.1
-                      : 0.9,
+                      ? 0.45
+                      : 0.4,
                   ease: "easeInOut",
                 },
               }}
