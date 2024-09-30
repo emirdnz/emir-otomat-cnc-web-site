@@ -200,9 +200,9 @@ const data = [
   { image: photo45 },
   { image: photo46 },
   { image: photo47 },
-  { image: photo48 },
+  // { image: photo48 },
   { image: photo49 },
-  { image: photo50 },
+  // { image: photo50 },
   { image: photo51 },
   { image: photo52 },
   { image: photo53 },
@@ -233,7 +233,7 @@ const data = [
   { image: photo78 },
   { image: photo79 },
   { image: photo80 },
-  { image: photo81 },
+  // { image: photo81 },
   { image: photo82 },
   { image: photo83 },
   { image: photo84 },
@@ -301,7 +301,7 @@ const data = [
 
   { image: photo158 },
   { image: photo159 },
-  { image: photo160 },
+  // { image: photo160 },
 ];
 
 function OurWorks() {
