@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 import logo from "../../public/logo2.png";
@@ -59,7 +58,7 @@ function Footer() {
               </h2>
               <ul className="font-medium">
                 <li className="mb-4">
-                  <Link to="calismalarimiz" className="hover:underline text-xs ">
+                  <Link to="calismalarimiz/urunler" className="hover:underline text-xs ">
                     Çalışmalarımız
                   </Link>
                 </li>
@@ -70,15 +69,15 @@ function Footer() {
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <Link to="makine-parkuru" className="hover:underline text-xs">
+                  <Link to="calismalarimiz/makine-parkuru" className="hover:underline text-xs">
                     Makine Parkurumuz
                   </Link>
                 </li>
-                <li className="mb-4">
+                {/* <li className="mb-4">
                   <Link to="kalite" className="hover:underline text-xs">
                     Kalite Parkurumuz
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div>

@@ -65,7 +65,7 @@ function Quality() {
                 Anasayfa
               </Button>
             </Link>
-            <Link to="/calismalarimiz" className="pb-2">
+            <Link to="/calismalarimiz/urunler" className="pb-2">
               <Button
                 className="normal-case text-md mb-2"
                 variant="gradient"
@@ -75,7 +75,7 @@ function Quality() {
                 Ürünler
               </Button>
             </Link>
-            <Link to="/makine-parkuru">
+            <Link to="/calismalarimiz/makine-parkuru">
               <Button
                 className="normal-case text-md !bg-primary-blue"
                 variant="gradient"

@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 function OurWorksContainer({ data, cover }) {
   return (
     <>
-      <TitleComponent title="Çalışmalarımız" cover={cover} />
+      <TitleComponent title="Ürünler" cover={cover} />
       <section className="w-full mx-auto flex justify-center my-10">
         <WorkCard data={data} />
       </section>

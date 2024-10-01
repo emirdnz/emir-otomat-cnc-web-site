@@ -123,10 +123,10 @@ function App() {
               <Route path="/*" element={<Homepage />} exact />
               <Route path="/anasayfa" element={<Homepage />} />
               <Route path="/hakkimizda" element={<About />} />
-              <Route path="/calismalarimiz" element={<OurWorks />} />
-              <Route path="/makine-parkuru" element={<Machines />} />
+              <Route path="/calismalarimiz/urunler" element={<OurWorks />} />
+              <Route path="/calismalarimiz/makine-parkuru" element={<Machines />} />
               <Route path="/sertifikalar" element={<Certificates />} />
-              <Route path="/kalite" element={<Quality />} />
+              {/* <Route path="/kalite" element={<Quality />} /> */}
               <Route path="/kariyer" element={<Career />} />
               <Route path="/staj" element={<Career />} />
               <Route path="/iletisim" element={<ContactUs />} />

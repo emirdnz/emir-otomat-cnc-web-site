@@ -1,13 +1,8 @@
-import React from "react";
 import {
   Card,
   CardHeader,
   CardBody,
-  CardFooter,
   Typography,
-  Avatar,
-  Tooltip,
-  Button,
 } from "@material-tailwind/react";
 import { Link, useLocation } from "react-router-dom";
 
@@ -45,7 +40,7 @@ function AboutSection() {
                 color="gray"
                 className="mb-3 font-normal overflow-scroll no-scrollbar max-w-lg font-montserrat text-base md:text-lg lg:text-lg"
               >
-                İleri teknolojiyle donatılmış 1986'dan beri sektördeki
+                İleri teknolojiyle donatılmış 1986&rsquo;dan beri sektördeki
                 uzmanlığımızla, Emir Otomat CNC olarak müşteri isteklerine en
                 uygun çözümleri sunuyoruz.
               </Typography>

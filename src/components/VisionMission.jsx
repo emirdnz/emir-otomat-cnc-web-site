@@ -19,7 +19,7 @@ function VisionMission() {
       }, 20000);
     }
     setCheck(false);
-  }, [select]);
+  }, [select,check]);
 
   return (
     <>

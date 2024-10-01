@@ -13,22 +13,12 @@ import {
   Menu,
   MenuHandler,
   MenuList,
-  MenuItem,
 } from "@material-tailwind/react";
 import {
   ChevronDownIcon,
-  Bars3Icon,
-  XMarkIcon,
 } from "@heroicons/react/24/outline";
 import {
-  Bars4Icon,
-  GlobeAmericasIcon,
-  NewspaperIcon,
-  PhoneIcon,
-  RectangleGroupIcon,
   SquaresPlusIcon,
-  SunIcon,
-  TagIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
 
@@ -39,12 +29,12 @@ const navListMenuItems = [
     {
       title: "Ürünler",
       icon: SquaresPlusIcon,
-      link: "calismalarimiz",
+      link: "calismalarimiz/urunler",
     },
     {
       title: "Makine Parkurumuz",
       icon: UserGroupIcon,
-      link: "makine-parkuru",
+      link: "calismalarimiz/makine-parkuru",
     },
   ],
   [
@@ -252,7 +242,7 @@ function Header() {
   //           </Link>
   //         </MenuItem>
   //         <MenuItem>
-  //           <Link to="makine-parkuru" className="flex items-center mx-2">
+  //           <Link to="calismalarimiz/makine-parkuru" className="flex items-center mx-2">
   //             <Typography
   //               as="li"
   //               variant="h6"
