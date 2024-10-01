@@ -3,13 +3,12 @@ import { useState } from "react";
 import cover from "../assets/2007.jpg";
 import { Dialog, DialogBody } from "@material-tailwind/react";
 
-import photo1 from "../assets/machines/1.jpg";
-import photo2 from "../assets/machines/2.jpg";
-import photo3 from "../assets/machines/3.jpg";
-import photo4 from "../assets/machines/4.jpg";
-import photo5 from "../assets/machines/5.jpg";
-import photo6 from "../assets/machines/6.jpg";
-import photo7 from "../assets/machines/7.jpg";
+import photo1 from "../assets/machines/1.png";
+import photo2 from "../assets/machines/2.png";
+import photo3 from "../assets/machines/3.png";
+import photo4 from "../assets/machines/4.png";
+import photo5 from "../assets/machines/5.png";
+import photo6 from "../assets/machines/6.png";
 
 import TitleComponent from "../components/TitleComponent";
 
@@ -24,6 +23,7 @@ function Machines() {
     {
       imgelink: photo3,
     },
+
     {
       imgelink: photo4,
     },
@@ -34,9 +34,7 @@ function Machines() {
     {
       imgelink: photo6,
     },
-    {
-      imgelink: photo7,
-    },
+    
   ];
 
   const [active, setActive] = useState(photo1);
@@ -52,25 +50,25 @@ function Machines() {
   };
 
   return (
-    <section className="flex items-center justify-center flex-col my-10">
+    <section className="flex items-center justify-center flex-col my-10 ">
       {/* title */}
       <TitleComponent title="Makine Parkurumuz" cover={cover} />
       {/* title */}
       <div className="grid gap-4 max-w-4xl mt-10">
         <div onClick={(e) => handleOpen(e)}>
           <img
-            className="h-auto w-full max-w-full rounded-lg object-cover object-center md:h-[480px]"
+            className="h-auto w-full max-w-full rounded-lg object-contain object-center md:h-[480px]"
             src={active}
             alt=""
           />
         </div>
-        <div className="grid grid-cols-8 gap-2">
+        <div className="grid grid-cols-6 gap-2 px-2">
           {data.map(({ imgelink }, index) => (
-            <div className="flex justify-center" key={index}>
+            <div className="flex justify-center " key={index}>
               <img
                 onClick={() => setActive(imgelink)}
                 src={imgelink}
-                className="h-20 max-w-full cursor-pointer rounded-lg object-cover object-center"
+                className="h-20 w-32 cursor-pointer rounded-lg object-contain object-center border-2 hover:border-gray-400"
                 alt="gallery-image"
               />
             </div>
@@ -81,7 +79,7 @@ function Machines() {
         <DialogBody>
           <img
             alt="nature"
-            className="h-[48rem] w-full rounded-lg object-cover object-center"
+            className="max-h-[90vh] w-full rounded-lg object-contain object-center"
             src={selectedImg}
           />
         </DialogBody>
