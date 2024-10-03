@@ -134,7 +134,7 @@ import photo129 from "../../assets/products-main/129.jpg";
 import photo130 from "../../assets/products-main/130.jpg";
 import photo131 from "../../assets/products-main/131.jpg";
 import photo132 from "../../assets/products-main/132.jpg";
-import photo133 from "../../assets/products-main/133.png";
+import photo133 from "../../assets/products-main/133.webp";
 import photo134 from "../../assets/products-main/134.png";
 import photo135 from "../../assets/products-main/135.jpg";
 import photo136 from "../../assets/products-main/136.jpg";
