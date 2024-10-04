@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
-import { useState } from "react";
+import { useState ,useEffect} from "react";
 import { Spinner } from "@material-tailwind/react";
+import { useTranslation } from "react-i18next";
 import "./App.css";
 import Header from "./components/Header";
 import Homepage from "./pages/homepage/Homepage";
@@ -13,11 +14,20 @@ import ContactUs from "./pages/ContactUs";
 
 import ScrollToTop from "./components/ScrollToTop";
 import Machines from "./pages/Machines";
-import Quality from "./pages/Quality";
+// import Quality from "./pages/Quality";
 
 import { ThemeProvider } from "@material-tailwind/react";
 
 function App() {
+
+  const { i18n } = useTranslation();
+
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("language");
+    if (savedLanguage) {
+      i18n.changeLanguage(savedLanguage); // Set the language from localStorage on mount
+    }
+  }, [i18n]);
 
   const theme = {
     dialog: {

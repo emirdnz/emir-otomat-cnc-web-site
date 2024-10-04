@@ -1,0 +1,60 @@
+{
+  "title": "About Us",
+  "carouselData": [
+    {
+      "title": "Experience",
+      "desc": "We have been a professional CNC lathe supplier since 1986"
+    },
+    {
+      "title": "Experience",
+      "desc": "We serve you with our 40 years of experience"
+    }
+  ],
+  "aboutSection": {
+    "title": "EMIR OTOMAT CNC",
+    "subtitle": "Your Reliable Supplier\nAdvanced Technology\nPowerful Solutions",
+    "description1": "Since 1986, equipped with advanced technology, we offer the most suitable solutions for customer needs as Emir Otomat CNC.",
+    "description2": "Our company, founded in 1986, continues its services with professional work in the sector.",
+    "description3": "Since our establishment, we have continued to be a <strong>professional supplier to leading companies</strong> in the industry.",
+    "description4": "Our company has always maintained production quality and machine lines with the most up-to-date technologies, alongside our professional team, from past to present.",
+    "description5": "With our <strong>Index, Revolver, CNC Automatic</strong> machines, we continue to be your supplier, while also serving as a supplier to sectors such as <strong>Furniture Industry, Household Appliances, Medical Equipment, Lighting Parts, Automotive Parts, Air Conditioning Parts, Natural Gas Parts, and Defense Industry</strong>."
+  },
+  "continue": "Continue →",
+  "aboutUs": "About Us",
+  "experienceSection": {
+    "title": "From Start to Finish",
+    "subtitle": "Quality",
+    "item1": "ISO 9001 certified, <br /> AS 9100 / ISO 13485 compliant",
+    "item2": "Tolerance <br /> +/- 0.0002″",
+    "item3": "Material certificate <br /> available",
+    "item4": "Quick solutions <br /> and logistics process"
+  },
+  "ourWorksSection": {
+    "title": "Our Works",
+    "description": "We produce special solutions for various sectors such as Furniture Industry, Home Appliances, Medical Supplies, Lighting Parts, Automotive Parts, Air Conditioning Parts, Natural Gas Parts, and Defense Industry.",
+    "work1": {
+      "title": "Yellow (BRASS) Materials",
+      "desc": "Description"
+    },
+    "work2": {
+      "title": "Automat Materials",
+      "desc": "Description"
+    },
+    "work3": {
+      "title": "Plastic Materials",
+      "desc": "Description"
+    },
+    "work4": {
+      "title": "Aluminum Materials",
+      "desc": "Description"
+    },
+    "work5": {
+      "title": "Stainless Materials",
+      "desc": "Description"
+    },
+    "work6": {
+      "title": "High Carbon Steel",
+      "desc": "Description"
+    }
+  }
+}

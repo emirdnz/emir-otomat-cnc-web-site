@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
 
+import { useTranslation } from "react-i18next";
+
 import React from "react";
 import {
   Navbar,
@@ -14,13 +16,8 @@ import {
   MenuHandler,
   MenuList,
 } from "@material-tailwind/react";
-import {
-  ChevronDownIcon,
-} from "@heroicons/react/24/outline";
-import {
-  SquaresPlusIcon,
-  UserGroupIcon,
-} from "@heroicons/react/24/solid";
+import { ChevronDownIcon } from "@heroicons/react/24/outline";
+import { SquaresPlusIcon, UserGroupIcon } from "@heroicons/react/24/solid";
 
 import logo from "../../public/logo.png";
 
@@ -43,7 +40,6 @@ const navListMenuItems = [
       icon: SquaresPlusIcon,
       link: "sertifikalar",
     },
-    
   ],
   [
     {
@@ -185,185 +181,13 @@ function Header() {
     });
   }, []);
 
-  // const navList = (
-  //   <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-2">
-  //     <Link to="home" className="flex items-center mx-2">
-  //       <Typography
-  //         as="li"
-  //         variant="h6"
-  //         color="blue-gray"
-  //         className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
-  //       >
-  //         Anasayfa
-  //       </Typography>
-  //     </Link>
-  //     <Link to="hakkimizda" className="flex items-center mx-2">
-  //       <Typography
-  //         as="li"
-  //         variant="h6"
-  //         color="blue-gray"
-  //         className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
-  //       >
-  //         Hakkımızda
-  //       </Typography>
-  //     </Link>
-  //     <Menu className=" hidden lg:block" allowHover>
-  //       <MenuHandler>
-  //         <Typography
-  //           as="li"
-  //           variant="h6"
-  //           color="blue-gray"
-  //           className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue hover:fill-primary-blue mx-2"
-  //         >
-  //           Çalışmalarımız
-  //           {/* <svg
-  //               xmlns="http://www.w3.org/2000/svg"
-  //               width={20}
-  //               height={20}
-  //               className="ml-1"
-  //               viewBox="0 0 50 50"
-  //             >
-  //               <path d="M15.5 4.4C9.5 7.2 6.8 10 4.1 16 .5 23.9 2.2 34.3 8.3 40.9 11.6 44.5 19.8 48 25 48c5.2 0 13.4-3.5 16.7-7.1 3.4-3.7 6.3-11 6.3-15.9 0-5.2-3.5-13.4-7.1-16.7C37.2 4.9 29.9 2 25 2c-2.7 0-6.5 1-9.5 2.4zm18 1.5c12.8 5.8 16.4 22.3 7.2 32.8-10.1 11.5-28.3 8.8-34.8-5.2C-2 16.4 16.3-1.9 33.5 5.9z" />
-  //               <path d="M14 21.8c0 .4 2.5 3.2 5.5 6.2l5.5 5.5 5.7-5.7c3.1-3.2 5.4-6.1 5-6.5-.4-.4-3 1.5-5.7 4.2l-5 4.9-4.8-4.7c-4.6-4.6-6.2-5.6-6.2-3.9z" />
-  //             </svg> */}
-  //         </Typography>
-  //       </MenuHandler>
-  //       <MenuList>
-  //         <MenuItem>
-  //           <Link to="our-works" className="flex items-center mx-2">
-  //             <Typography
-  //               as="li"
-  //               variant="h6"
-  //               color="blue-gray"
-  //               className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
-  //             >
-  //               Ürünler
-  //             </Typography>
-  //           </Link>
-  //         </MenuItem>
-  //         <MenuItem>
-  //           <Link to="calismalarimiz/makine-parkuru" className="flex items-center mx-2">
-  //             <Typography
-  //               as="li"
-  //               variant="h6"
-  //               color="blue-gray"
-  //               className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
-  //             >
-  //               Makine Parkurumuz
-  //             </Typography>
-  //           </Link>
-  //         </MenuItem>
-  //       </MenuList>
-  //     </Menu>
-  //     <Menu className=" hidden lg:block" allowHover>
-  //       <MenuHandler>
-  //         <Typography
-  //           as="li"
-  //           variant="h6"
-  //           color="blue-gray"
-  //           className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue hover:fill-primary-blue mx-2"
-  //         >
-  //           Kalite
-  //           {/* <svg
-  //               xmlns="http://www.w3.org/2000/svg"
-  //               width={20}
-  //               height={20}
-  //               className="ml-1"
-  //               viewBox="0 0 50 50"
-  //             >
-  //               <path d="M15.5 4.4C9.5 7.2 6.8 10 4.1 16 .5 23.9 2.2 34.3 8.3 40.9 11.6 44.5 19.8 48 25 48c5.2 0 13.4-3.5 16.7-7.1 3.4-3.7 6.3-11 6.3-15.9 0-5.2-3.5-13.4-7.1-16.7C37.2 4.9 29.9 2 25 2c-2.7 0-6.5 1-9.5 2.4zm18 1.5c12.8 5.8 16.4 22.3 7.2 32.8-10.1 11.5-28.3 8.8-34.8-5.2C-2 16.4 16.3-1.9 33.5 5.9z" />
-  //               <path d="M14 21.8c0 .4 2.5 3.2 5.5 6.2l5.5 5.5 5.7-5.7c3.1-3.2 5.4-6.1 5-6.5-.4-.4-3 1.5-5.7 4.2l-5 4.9-4.8-4.7c-4.6-4.6-6.2-5.6-6.2-3.9z" />
-  //             </svg> */}
-  //         </Typography>
-  //       </MenuHandler>
-  //       <MenuList>
-  //         <MenuItem>
-  //           <Link to="certificates" className="flex items-center mx-2">
-  //             <Typography
-  //               as="li"
-  //               variant="h6"
-  //               color="blue-gray"
-  //               className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
-  //             >
-  //               Sertifikalar
-  //             </Typography>
-  //           </Link>
-  //         </MenuItem>
-  //         <MenuItem>
-  //           <Link to="kalite" className="flex items-center mx-2">
-  //             <Typography
-  //               as="li"
-  //               variant="h6"
-  //               color="blue-gray"
-  //               className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
-  //             >
-  //               Kalite Parkurumuz
-  //             </Typography>
-  //           </Link>
-  //         </MenuItem>
-  //       </MenuList>
-  //     </Menu>
-  //     <Menu className=" hidden lg:block" allowHover>
-  //       <MenuHandler>
-  //         <Typography
-  //           as="li"
-  //           variant="h6"
-  //           color="blue-gray"
-  //           className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue hover:fill-primary-blue mx-2"
-  //         >
-  //           Kariyer
-  //           {/* <svg
-  //               xmlns="http://www.w3.org/2000/svg"
-  //               width={20}
-  //               height={20}
-  //               className="ml-1"
-  //               viewBox="0 0 50 50"
-  //             >
-  //               <path d="M15.5 4.4C9.5 7.2 6.8 10 4.1 16 .5 23.9 2.2 34.3 8.3 40.9 11.6 44.5 19.8 48 25 48c5.2 0 13.4-3.5 16.7-7.1 3.4-3.7 6.3-11 6.3-15.9 0-5.2-3.5-13.4-7.1-16.7C37.2 4.9 29.9 2 25 2c-2.7 0-6.5 1-9.5 2.4zm18 1.5c12.8 5.8 16.4 22.3 7.2 32.8-10.1 11.5-28.3 8.8-34.8-5.2C-2 16.4 16.3-1.9 33.5 5.9z" />
-  //               <path d="M14 21.8c0 .4 2.5 3.2 5.5 6.2l5.5 5.5 5.7-5.7c3.1-3.2 5.4-6.1 5-6.5-.4-.4-3 1.5-5.7 4.2l-5 4.9-4.8-4.7c-4.6-4.6-6.2-5.6-6.2-3.9z" />
-  //             </svg> */}
-  //         </Typography>
-  //       </MenuHandler>
-  //       <MenuList>
-  //         <MenuItem>
-  //           <Link to="kalite" className="flex items-center mx-2">
-  //             <Typography
-  //               as="li"
-  //               variant="h6"
-  //               color="blue-gray"
-  //               className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
-  //             >
-  //               İş Başvuru Formu
-  //             </Typography>
-  //           </Link>
-  //         </MenuItem>
-  //         <MenuItem>
-  //           <Link to="internship" className="flex items-center mx-2">
-  //             <Typography
-  //               as="li"
-  //               variant="h6"
-  //               color="blue-gray"
-  //               className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
-  //             >
-  //               Staj Başvuru Formu
-  //             </Typography>
-  //           </Link>
-  //         </MenuItem>
-  //       </MenuList>
-  //     </Menu>
+  const { i18n } = useTranslation();
 
-  //     <Link to="iletisim" className="flex items-center mx-2">
-  //       <Typography
-  //         as="li"
-  //         variant="h6"
-  //         color="blue-gray"
-  //         className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
-  //       >
-  //         İletişim
-  //       </Typography>
-  //     </Link>
-  //   </ul>
-  // );
+  const handleLanguageChange = (lang) => {
+    i18n.changeLanguage(lang);
+    localStorage.setItem("language", lang); // Save language to localStorage
+    window.location.reload(); // Refresh the page after changing the language
+  };
 
   return (
     <>
@@ -444,6 +268,21 @@ function Header() {
         </div>
       </nav>
       <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-3 py-3">
+        <div>
+          <button
+            className="text-sm  text-gray-500 dark:text-white hover:underline"
+            onClick={() => handleLanguageChange("tr")}
+            style={{ marginRight: "10px" }}
+          >
+            TR
+          </button>
+          <button
+            className="text-sm  text-gray-500 dark:text-white hover:underline"
+            onClick={() => handleLanguageChange("en")}
+          >
+            EN
+          </button>
+        </div>
         <div className="flex items-center max-w-screen-xl mx-auto justify-between text-blue-gray-900">
           <Link
             to="/"
@@ -498,57 +337,6 @@ function Header() {
           <NavList />
         </Collapse>
       </Navbar>
-      {/* <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-3 py-3">
-        <div className="flex items-center max-w-screen-xl mx-auto justify-between text-blue-gray-900">
-          <Link
-            to="/"
-            className="mr-4 cursor-pointer  font-medium flex items-center space-x-3 rtl:space-x-reverse"
-          >
-            <img src={logo} className="h-16" alt="Logo" />
-          </Link>
-          <div className="flex items-center gap-4">
-            <div className="hidden lg:block">{navList}</div>
-            <IconButton
-              variant="text"
-              className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-              ripple={false}
-              onClick={() => setOpenNav(!openNav)}
-            >
-              {openNav ? (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  className="h-6 w-6"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              ) : (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              )}
-            </IconButton>
-          </div>
-        </div>
-        <Collapse open={openNav}>{navList}</Collapse>
-      </Navbar> */}
     </>
   );
 }

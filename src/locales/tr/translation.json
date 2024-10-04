@@ -1,0 +1,60 @@
+{
+  "title": "Hakkımızda",
+  "carouselData": [
+    {
+      "title": "Tecrübe",
+      "desc": "1986’dan beri profesyonel CNC otomat tedarikçisiyiz"
+    },
+    {
+      "title": "Tecrübe",
+      "desc": "40 yıllık tecrübemizle sizlere hizmet veriyoruz"
+    }
+  ],
+  "aboutSection": {
+    "title": "EMİR OTOMAT CNC",
+    "subtitle": "Güvenilir Tedarikçiniz\nİleri Teknoloji\nGüçlü Çözümler",
+    "description1": "İleri teknolojiyle donatılmış 1986’dan beri sektördeki uzmanlığımızla, Emir Otomat CNC olarak müşteri isteklerine en uygun çözümleri sunuyoruz.",
+    "description2": "1986 Yılında kurulan firmamız sektörde profesyonel çalışmaları ile hizmetine devam etmektedir.",
+    "description3": "Firmamız kurulduğundan beri sektörde <strong>lider firmalara profesyonel tedarikçi</strong> olmaya devam etmektedir.",
+    "description4": "Firmamız her zaman üretimle birlikte en güncel teknolojiler ile makina parkurlarını ve üretim kalitesini her zaman profesyonel ekibimiz ile geçmişten bugüne devam ettirmektedir.",
+    "description5": "Firmamız <strong>İndex, Revolver, CNC Otomat</strong> makinalarımız ile tedarikçiniz yolunda üretimlere devam ettirmekle birlikte <strong>Mobilya Sektörü, Ev Aletleri, Tıbbi Malzemeler, Aydınlatma Parçaları, Otomotiv Parçaları, Klima Parçaları, Doğalgaz Parçaları Ve Savunma Sanayisi</strong> sektörlerine tedarikçi olmaktadır."
+  },
+  "continue": "Devamı →",
+  "aboutUs": "Hakkımızda",
+  "experienceSection": {
+    "title": "Başlangıçtan Sona",
+    "subtitle": "Kalite",
+    "item1": "ISO 9001 sertifikalı, <br /> AS 9100 / ISO 13485 uyumlu",
+    "item2": "Tolerans <br /> +/- 0.0002″",
+    "item3": "Malzeme sertifikası <br /> mevcut",
+    "item4": "Hızlı çözüm <br /> ve lojistik süreç"
+  },
+  "ourWorksSection": {
+    "title": "Çalışmalarımız",
+    "description": "Mobilya Sektörü, Ev Aletleri, Tıbbi Malzemeler, Aydınlatma Parçaları, Otomotiv Parçaları, Klima Parçaları, Doğalgaz Parçaları ve Savunma Sanayisi gibi çeşitli sektörlere özel çözümler üretiyoruz.",
+    "work1": {
+      "title": "Sarı (PİRİNÇ) Malzemeler",
+      "desc": "Açıklama"
+    },
+    "work2": {
+      "title": "Otomat Malzemeleri",
+      "desc": "Açıklama"
+    },
+    "work3": {
+      "title": "Plastik Malzemeler",
+      "desc": "Açıklama"
+    },
+    "work4": {
+      "title": "Alüminyum Malzemeler",
+      "desc": "Açıklama"
+    },
+    "work5": {
+      "title": "Paslanmaz Malzemeler",
+      "desc": "Açıklama"
+    },
+    "work6": {
+      "title": "Yüksek Karbonlu Çelik",
+      "desc": "Açıklama"
+    }
+  }
+}

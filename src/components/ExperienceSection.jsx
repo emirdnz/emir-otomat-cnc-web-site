@@ -1,6 +1,8 @@
 import { Typography } from "@material-tailwind/react";
+import { useTranslation,Trans } from "react-i18next";
 
 function ExperienceSection() {
+  const { t } = useTranslation();
   return (
     <>
       <section className="h-full md:h-[30rem] flex flex-col items-center justify-center my-16 md:my-0">
@@ -11,8 +13,8 @@ function ExperienceSection() {
               color="gray"
               className="mb-4 text-2xl md:text-3xl lg:text-4xl font-montserrat text-end font-light"
             >
-              Başlangıçtan Sona <br />{" "}
-              <span className="font-semibold text-primary-blue">Kalite</span>
+              {t('experienceSection.title')} <br />{" "}
+              <span className="font-semibold text-primary-blue">{t('experienceSection.subtitle')}</span>
             </Typography>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:flex md:flex-row md:item-center md:h-full md:border-y-2">
@@ -45,8 +47,7 @@ function ExperienceSection() {
               <div className="mt-2">
                 <h3>
                   <span>
-                    ISO 9001 sertifikalı, <br />
-                    AS 9100 / ISO 13485 uyumlu{" "}
+                  <Trans i18nKey="experienceSection.item1" />
                   </span>
                 </h3>
               </div>
@@ -66,9 +67,7 @@ function ExperienceSection() {
               <div className="mt-1">
                 <h3>
                   <span>
-                    Tolerans
-                    <br />
-                    +/- 0.0002″
+                  <Trans i18nKey="experienceSection.item2" />
                   </span>
                 </h3>
               </div>
@@ -92,8 +91,7 @@ function ExperienceSection() {
               <div className="mt-2">
                 <h3>
                   <span>
-                    Malzeme sertifikası <br />
-                    mevcut
+                  <Trans i18nKey="experienceSection.item3" />
                   </span>
                 </h3>
               </div>
@@ -115,9 +113,7 @@ function ExperienceSection() {
               <div className="mt-2">
                 <h3>
                   <span>
-                    Hızlı çözüm
-                    <br />
-                    ve lojistik süreç
+                  <Trans i18nKey="experienceSection.item4" />
                   </span>
                 </h3>
               </div>

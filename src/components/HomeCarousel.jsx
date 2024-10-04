@@ -1,31 +1,14 @@
-import { useState } from "react";
 import { Typography } from "@material-tailwind/react";
 import { Carousel } from "flowbite-react";
+import { useTranslation } from "react-i18next";
 
 import carousel1 from "../assets/Carousel-1.jpg";
 import carousel2 from "../assets/Carousel-2.jpg";
 
 function HomeCarousel() {
-  const [data] = useState([
-    {
-      img: carousel1,
-      title: "Tecrübe",
-      desc: "1986’DAN BERİ PROFESYONEL CNC OTOMAT TEDARİKÇİSİYİZ",
-      alt: "imagealt",
-    },
-    {
-      img: carousel2,
-      title: "Tecrübe",
-      desc: "40 Yıllık Tecrübemizle Sizlere Hizmet Veriyoruz",
-      alt: "imagealt",
-    },
-    // {
-    //   img: "https://emircncotomat.com/wp-content/uploads/2022/03/01.jpg",
-    //   title: "The Beauty of Nature",
-    //   desc: "It is not so much for its beauty that the forest",
-    //   alt: "imagealt",
-    // },
-  ]);
+  const { t } = useTranslation();
+  const images = [carousel1, carousel2]
+  const data = t('carouselData', { returnObjects: true });
 
   return (
     <section id="carousel">
@@ -39,7 +22,7 @@ function HomeCarousel() {
         {data.map((item, index) => (
           <div key={index} className="relative h-full w-full">
             <img
-              src={item.img}
+              src={images[index]}
               alt={item.alt}
               className="h-full w-full object-cover"
             />

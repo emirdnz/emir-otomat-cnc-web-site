@@ -5,11 +5,13 @@ import History from "../components/History";
 
 import AboutSection from "../components/AboutSection";
 import TitleComponent from "../components/TitleComponent";
+import { useTranslation } from "react-i18next";
 
 function AboutContainer({ cover }) {
+  const { t } = useTranslation();
   return (
     <>
-      <TitleComponent title="Hakkımızda" cover={cover} />
+      <TitleComponent title={t('title')} cover={cover} />
       <AboutSection />
       <History />
       <VisionMission />
