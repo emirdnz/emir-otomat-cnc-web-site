@@ -202,19 +202,21 @@ function Header() {
           <div>
             <div>
               <button
-                className={`text-sm  text-gray-500 dark:text-white hover:underline ${
-                  langStorage === "tr" ? "text-primary-blue" : ""
+                className={`text-sm  text-gray-500 dark:text-white  ${
+                  langStorage === "tr" ? "text-primary-blue" : "hover:underline"
                 }`}
                 onClick={() => handleLanguageChange("tr")}
                 style={{ marginRight: "10px" }}
+                disabled={langStorage === "tr"}
               >
                 TR
               </button>
               <button
-                className={`text-sm  text-gray-500 dark:text-white hover:underline ${
-                  langStorage === "en" ? "text-primary-blue" : ""
+                className={`text-sm  text-gray-500 dark:text-white  ${
+                  langStorage === "en" ? "text-primary-blue" : "hover:underline"
                 }`}
                 onClick={() => handleLanguageChange("en")}
+                disabled={langStorage === "en"}
               >
                 EN
               </button>
