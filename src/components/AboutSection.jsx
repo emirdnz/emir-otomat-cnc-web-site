@@ -26,7 +26,7 @@ function AboutSection() {
               <h1 className="text-center md:text-end font-bold max-w-lg text-pretty">
                 {t("aboutSection.title")}<br/>
                 <span className="text-gray-800  font-semibold text-pretty leading-[50px] ">
-                  {t("aboutSection.subtitle")}
+                 <Trans i18nKey="aboutSection.subtitle"></Trans> 
                 </span>
                 <br />
                 <Link

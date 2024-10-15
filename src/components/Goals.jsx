@@ -1,7 +1,10 @@
+import { useTranslation } from 'react-i18next';
 import { motion } from "framer-motion";
 import { Typography } from "@material-tailwind/react";
 
 function Goals() {
+  const { t } = useTranslation();
+
   return (
     <>
       <section className="h-full md:h-[30rem] flex flex-col items-center justify-center">
@@ -22,7 +25,7 @@ function Goals() {
               className="mb-4 text-2xl md:text-3xl lg:text-4xl font-montserrat text-end font-light"
             >
               <span className="font-semibold text-primary-blue">
-                Hedeflerimiz
+                {t('goals.title')}
               </span>
             </Typography>
           </motion.div>
@@ -40,11 +43,10 @@ function Goals() {
                     viewport={{ once: true }}
                   >
                     <div className="leading-10 group-hover:text-primary-blue group-hover:text-lg group-hover:font-extrabold transition-all ease-in-out duration-500">
-                      Uygun Fiyat
+                      {t('goals.pricing.title')}
                     </div>
-                    <div className="group-hover:font-semibold transition-all ease-in-out duration-500 ">
-                      Piyasalara uygun fiyat politikamız, müşterilerimize
-                      rekabet avantajı sağlar.
+                    <div className="group-hover:font-semibold transition-all ease-in-out duration-500">
+                      {t('goals.pricing.description')}
                     </div>
                   </motion.div>
                 </h3>
@@ -63,11 +65,10 @@ function Goals() {
                     viewport={{ once: true }}
                   >
                     <div className="leading-10 group-hover:text-primary-blue group-hover:text-lg group-hover:font-extrabold transition-all ease-in-out duration-500">
-                      Kalite
+                      {t('goals.quality.title')}
                     </div>
-                    <div className=" group-hover:font-semibold transition-all ease-in-out duration-500 ">
-                      Malzeme kalitemiz, global standartlara uygun olarak
-                      sertifikalandırılmıştır.
+                    <div className="group-hover:font-semibold transition-all ease-in-out duration-500">
+                      {t('goals.quality.description')}
                     </div>
                   </motion.div>
                 </h3>
@@ -86,11 +87,10 @@ function Goals() {
                     viewport={{ once: true }}
                   >
                     <div className="leading-10 group-hover:text-primary-blue group-hover:text-lg group-hover:font-extrabold transition-all ease-in-out duration-500">
-                      Memnuniyet
+                      {t('goals.satisfaction.title')}
                     </div>
-                    <div className=" group-hover:font-semibold transition-all ease-in-out duration-500 ">
-                      Müşteri memnuniyeti, en önemli çalışma prensiplerimizden
-                      biridir.
+                    <div className="group-hover:font-semibold transition-all ease-in-out duration-500">
+                      {t('goals.satisfaction.description')}
                     </div>
                   </motion.div>
                 </h3>

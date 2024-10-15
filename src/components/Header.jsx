@@ -24,31 +24,31 @@ import logo from "../../public/logo.png";
 const navListMenuItems = [
   [
     {
-      title: "Ürünler",
+      title: "products",
       icon: SquaresPlusIcon,
       link: "calismalarimiz/urunler",
     },
     {
-      title: "Makine Parkurumuz",
+      title: "machine_park",
       icon: UserGroupIcon,
       link: "calismalarimiz/makine-parkuru",
     },
   ],
   [
     {
-      title: "Sertifikalar",
+      title: "certificates",
       icon: SquaresPlusIcon,
       link: "sertifikalar",
     },
   ],
   [
     {
-      title: "İş Başvuru Formu",
+      title: "job_application",
       icon: SquaresPlusIcon,
       link: "kariyer",
     },
     {
-      title: "Staj Başvuru Formu",
+      title: "internship_application",
       icon: UserGroupIcon,
       link: "staj",
     },
@@ -56,19 +56,20 @@ const navListMenuItems = [
 ];
 
 function NavListMenu(props) {
+  const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const renderItems = props.data.map(
     ({ icon, title, descripton, link }, key) => (
       <Link to={link} key={key}>
-        <List className="gap-2 rounded-lg">
+        <List className="gap-1 rounded-lg">
           <div>
             <Typography
               variant="h6"
               color="blue-gray"
-              className="flex items-center text-sm font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
+              className="p-0 flex items-center text-sm font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
             >
-              {title}
+              {t(`nav.${title}`)}
             </Typography>
           </div>
         </List>
@@ -82,7 +83,7 @@ function NavListMenu(props) {
         open={isMenuOpen}
         handler={setIsMenuOpen}
         offset={{ mainAxis: 20 }}
-        placement="top"
+        placement="bottom"
         allowHover={true}
       >
         <MenuHandler>
@@ -90,7 +91,7 @@ function NavListMenu(props) {
             as="li"
             variant="h6"
             color="blue-gray"
-            className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
+            className="p-0 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
           >
             <ListItem
               className="flex items-center gap-2 py-2 pr-4"
@@ -125,6 +126,7 @@ function NavListMenu(props) {
 }
 
 function NavList() {
+  const { t } = useTranslation();
   return (
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
       <Link to="anasayfa" className="flex items-center mx-2">
@@ -132,9 +134,9 @@ function NavList() {
           as="li"
           variant="h6"
           color="blue-gray"
-          className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
+          className="p-0 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
         >
-          Anasayfa
+          {t("nav.home")}
         </Typography>
       </Link>
       <Link to="hakkimizda" className="flex items-center mx-2">
@@ -142,22 +144,22 @@ function NavList() {
           as="li"
           variant="h6"
           color="blue-gray"
-          className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
+          className="p-0 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
         >
-          Hakkımızda
+          {t("nav.about")}
         </Typography>
       </Link>
-      <NavListMenu data={navListMenuItems[0]} title="Çalışmalarımız" />
-      <NavListMenu data={navListMenuItems[1]} title="Kalite" />
-      <NavListMenu data={navListMenuItems[2]} title="Kariyer" />
+      <NavListMenu data={navListMenuItems[0]} title={t("nav.works")} />
+      <NavListMenu data={navListMenuItems[1]} title={t("nav.quality")} />
+      <NavListMenu data={navListMenuItems[2]} title={t("nav.career")} />
       <Link to="iletisim" className="flex items-center mx-2">
         <Typography
           as="li"
           variant="h6"
           color="blue-gray"
-          className="p-1 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
+          className="p-0 font-bold font-montserrat transition duration-700 ease-in-out hover:text-primary-blue"
         >
-          İletişim
+          {t("nav.contact")}
         </Typography>
       </Link>
     </List>
@@ -165,6 +167,9 @@ function NavList() {
 }
 
 function Header() {
+  const [langStorage, setLangStorage] = useState(
+    localStorage.getItem("language")
+  );
   const [openNav, setOpenNav] = useState(false);
   const [openWorks, setOpenWorks] = useState(false);
   const [openQuality, setOpenQuality] = useState(false);
@@ -184,16 +189,37 @@ function Header() {
   const { i18n } = useTranslation();
 
   const handleLanguageChange = (lang) => {
+    //TODO: disable button when language is already selected
+    window.location.reload(); // Refresh the page after changing the language
     i18n.changeLanguage(lang);
     localStorage.setItem("language", lang); // Save language to localStorage
-    window.location.reload(); // Refresh the page after changing the language
   };
 
   return (
     <>
       <nav className=" border-b-2 border-slate-200 bg-slate-100 dark:bg-gray-900">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-2 leading-8">
-          <div></div>
+          <div>
+            <div>
+              <button
+                className={`text-sm  text-gray-500 dark:text-white hover:underline ${
+                  langStorage === "tr" ? "text-primary-blue" : ""
+                }`}
+                onClick={() => handleLanguageChange("tr")}
+                style={{ marginRight: "10px" }}
+              >
+                TR
+              </button>
+              <button
+                className={`text-sm  text-gray-500 dark:text-white hover:underline ${
+                  langStorage === "en" ? "text-primary-blue" : ""
+                }`}
+                onClick={() => handleLanguageChange("en")}
+              >
+                EN
+              </button>
+            </div>
+          </div>
           <div className="flex items-center space-x-6 rtl:space-x-reverse">
             <div className="flex items-center text-primary-blue">
               <span className="text-sm  text-gray-500 dark:text-white hover:underline">
@@ -268,21 +294,6 @@ function Header() {
         </div>
       </nav>
       <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-3 py-3">
-        <div>
-          <button
-            className="text-sm  text-gray-500 dark:text-white hover:underline"
-            onClick={() => handleLanguageChange("tr")}
-            style={{ marginRight: "10px" }}
-          >
-            TR
-          </button>
-          <button
-            className="text-sm  text-gray-500 dark:text-white hover:underline"
-            onClick={() => handleLanguageChange("en")}
-          >
-            EN
-          </button>
-        </div>
         <div className="flex items-center max-w-screen-xl mx-auto justify-between text-blue-gray-900">
           <Link
             to="/"

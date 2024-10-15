@@ -1,22 +1,28 @@
 import cover from "../assets/2003.jpg";
 import TitleComponent from "../components/TitleComponent";
+import { useTranslation } from "react-i18next";
 
 function ContactUs() {
+  const { t } = useTranslation();
+
   return (
     <div className="flex items-center justify-center flex-col my-10">
       {/* title */}
-      <TitleComponent title="İletişim" cover={cover} />
+      <TitleComponent title={t("contactUs.title")} cover={cover} />
       {/* title */}
       <div className="flex flex-wrap mt-10 max-w-screen-xl">
         <div className="lg:min-w-[424px] max-w-96 flex flex-col min-h-64 border-b-[1px] xl:border-x-[1px] p-8">
-          <div className="text-3xl text-primary-blue my-5">Ofisimiz</div>
+          <div className="text-3xl text-primary-blue my-5">
+            {t("contactUs.office")}
+          </div>
           <span className="">
-            İkitelli Osb Mahallesi İkitelli Demirciler Sanayi Sitesi, B6 Blok
-            Sokak No: 134, İkitelli Osb/Başakşehir/İstanbul
+            {t("contactUs.address")}
           </span>
         </div>
         <div className="lg:min-w-[300px] max-w-96 flex flex-col min-h-64 border-b-[1px] xl:border-x-[1px] p-8">
-          <div className="text-3xl text-primary-blue my-5">Tel No</div>
+          <div className="text-3xl text-primary-blue my-5">
+            {t("contactUs.phone")}
+          </div>
           <div className="flex flex-row items-center">
             <a
               href="tel:02126711740"
@@ -35,7 +41,7 @@ function ContactUs() {
                 />
               </svg>
               <span className="line-clamp-1 min-w-26 mr-1">
-                +90 (212) 671 17 40
+                {t("contactUs.phoneNumber")}
               </span>
             </a>
           </div>
@@ -44,7 +50,9 @@ function ContactUs() {
           className="lg:min-w-[300px] max-w-96 flex flex-col min-h-64
          border-b-[1px] xl:border-x-[1px] p-8"
         >
-          <div className="text-3xl text-primary-blue my-5">Mail</div>
+          <div className="text-3xl text-primary-blue my-5">
+            {t("contactUs.email")}
+          </div>
           <div>
             <a
               href="mailto:info@emirotomatcnc.com"
@@ -66,7 +74,7 @@ function ContactUs() {
                   />
                 </svg>
                 <span className="line-clamp-1 text-ellipsis">
-                  info@emirotomatcnc.com
+                  {t("contactUs.emailAddress")}
                 </span>
               </span>
             </a>
@@ -78,7 +86,7 @@ function ContactUs() {
         height={400}
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.0634952086625!2d28.8058756!3d41.0676047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa56cdfc65fcf%3A0x2ed9bd14688ece58!2sEmir%20Otomat%20CNC!5e0!3m2!1str!2str!4v1708778990915!5m2!1str!2str"
+        src={t("contactUs.mapUrl")}
         style={{
           border: 0,
         }}

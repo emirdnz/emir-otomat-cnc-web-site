@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { useTranslation } from "react-i18next";
+
 import { motion } from "framer-motion";
 
 import cover from "../assets/2008.jpg";
@@ -30,10 +32,12 @@ function Certificates() {
     setOpen((cur) => !cur);
   };
 
+  const { t } = useTranslation();
+
   return (
     <section className="flex items-center justify-center flex-col my-10">
       {/* title */}
-      <TitleComponent title="Sertifikalar" cover={cover} />
+      <TitleComponent title={t("certificates")} cover={cover} />
       {/* title */}
 
       {/* <div className="flex flex-col items-center justify-center h-[30vh] px-4">

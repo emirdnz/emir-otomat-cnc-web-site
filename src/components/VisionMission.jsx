@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { useTranslation  } from "react-i18next";
 import {
   Card,
   CardHeader,
@@ -20,6 +21,8 @@ function VisionMission() {
     }
     setCheck(false);
   }, [select,check]);
+
+  const { t } = useTranslation();
 
   return (
     <>
@@ -47,9 +50,9 @@ function VisionMission() {
                     : "decoration-blue-gray-50"
                 }`}
               >
-                Vizyon
+                {t("visionmission.vision")}
               </motion.span>{" "}
-              ve{" "}
+              {t("visionmission.and")}{" "}
               <motion.span
                 initial={{ opacity: 0 }}
                 whileInView={{
@@ -65,7 +68,7 @@ function VisionMission() {
                     : "decoration-blue-gray-50"
                 }`}
               >
-                Misyon
+                {t("visionmission.mission")}
               </motion.span>
             </h1>
           </CardHeader>
@@ -89,9 +92,9 @@ function VisionMission() {
                     : "decoration-blue-gray-50"
                 }`}
               >
-                Vizyon
+                {t("visionmission.vision")}
               </motion.span>{" "}
-              ve{" "}
+              {t("visionmission.and")}{" "}
               <motion.span
                 initial={{ opacity: 0 }}
                 whileInView={{
@@ -107,7 +110,7 @@ function VisionMission() {
                     : "decoration-blue-gray-50"
                 }`}
               >
-                Misyon
+                {t("visionmission.mission")}
               </motion.span>
             </Typography>
             <Typography
@@ -120,30 +123,16 @@ function VisionMission() {
                   select == "vision" ? " opacity-100" : "invisible opacity-0 "
                 } transition-all duration-[1500ms] ease-in-out`}
               >
-                <div className="text-primary-blue font-light ">Vizyonumuz</div>
-                Sektörde öncü bir marka olarak tanınan, global standartlarda
-                kaliteli ürünleri ve hizmetleri ile müşteri memnuniyetini her
-                zaman ön planda tutan bir kuruluştur. En güncel teknolojileri
-                sürekli olarak takip ederek, sürekli yenilenen ve gelişen
-                endüstriyel dünyada liderliği sürdürmek ve müşterilerine
-                sürdürülebilir çözümler sunmak hedefimizdir. Müşterilerimize
-                değer katma anlayışımızla sektörde uzun vadeli ve sağlam bir
-                varlık olma yolunda ilerliyoruz.
+                <div className="text-primary-blue font-light ">{t("visionmission.ourVision")}</div>
+                {t("visionmission.visionDesc")}
               </div>
               <div
                 className={`absolute left-5 right-5 md:left-0 md:right-0 mx-auto md:max-w-3xl md:text-xl/6  ${
                   select == "mission" ? " opacity-100" : "invisible opacity-0 "
                 } transition-all duration-[1500ms] ease-in-out`}
               >
-                <div className="text-primary-blue font-light ">Misyonumuz</div>
-                Endüstriyel alanda yüksek kaliteli CNC otomat makineleri ile endüstriyel yedek parça üretimi
-                ve tedariki ile müşterilerine katma değer sağlamayı amaçlar.
-                Misyonumuz, müşterilerimize uygun fiyatlı, yüksek performanslı
-                ve güvenilir endüstriyel yedek parçaları sunarak, müşterilerimizin üretkenliklerini
-                artırmalarına yardımcı olmaktır. Profesyonel ekibimiz ve güçlü
-                tedarik zincirimizle müşteri memnuniyetini en üst düzeye
-                çıkarmak ve sektöre öncülük etmek, firmamızın temel
-                prensiplerindendir.
+                <div className="text-primary-blue font-light ">{t("visionmission.ourMission")}</div>
+                {t("visionmission.missionDesc")}
               </div>
             </Typography>
           </CardBody>

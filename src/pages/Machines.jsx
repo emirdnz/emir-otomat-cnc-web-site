@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import cover from "../assets/2007.jpg";
 import { Dialog, DialogBody } from "@material-tailwind/react";
@@ -13,6 +14,8 @@ import photo6 from "../assets/machines/6.png";
 import TitleComponent from "../components/TitleComponent";
 
 function Machines() {
+  const { t } = useTranslation();
+
   const data = [
     {
       imgelink: photo1,
@@ -23,18 +26,15 @@ function Machines() {
     {
       imgelink: photo3,
     },
-
     {
       imgelink: photo4,
     },
     {
       imgelink: photo5,
     },
-
     {
       imgelink: photo6,
     },
-    
   ];
 
   const [active, setActive] = useState(photo1);
@@ -52,7 +52,7 @@ function Machines() {
   return (
     <section className="flex items-center justify-center flex-col my-10 ">
       {/* title */}
-      <TitleComponent title="Makine Parkurumuz" cover={cover} />
+      <TitleComponent title={t('machines.title')} cover={cover} />
       {/* title */}
       <div className="grid gap-4 max-w-4xl mt-10">
         <div onClick={(e) => handleOpen(e)}>
@@ -78,7 +78,7 @@ function Machines() {
       <Dialog size="xl" open={open} handler={handleOpen}>
         <DialogBody>
           <img
-            alt="nature"
+            alt={t('machines.dialogAlt')}
             className="max-h-[90vh] w-full rounded-lg object-contain object-center"
             src={selectedImg}
           />

@@ -1,6 +1,8 @@
-
+import { useTranslation } from 'react-i18next';
 
 function History() {
+  const { t } = useTranslation();
+
   return (
     <div className="md:w-1/2 border-b-[1px]">
       <ol className="relative border-s border-gray-200 dark:border-gray-700 pt-20 ml-4">
@@ -10,7 +12,7 @@ function History() {
             1986
           </time>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-            Deniz Otomat Otomotiv Limited Şirketi olarak Unkapanı’nda kuruldu.
+            {t('history.1986')}
           </h3>
         </li>
         <li className="mb-10 ms-4 group">
@@ -19,9 +21,7 @@ function History() {
             2004
           </time>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-            İkitelli Demirciler Sanayi Sitesi'ne taşındık ve şirketimizin unvanı
-            "GÖRKEM OTOMAT OTOMOTİV VE ENDÜSTRİYEL YAN SANAYİ TİCARET LİMİTED
-            ŞİRKETİ" olarak değiştirildi.
+            {t('history.2004')}
           </h3>
         </li>
         <li className="mb-10 ms-4 group">
@@ -30,7 +30,7 @@ function History() {
             2013
           </time>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-            Firmamızda Endüstri 4.0 teknolojisini entegre ettik.
+            {t('history.2013')}
           </h3>
         </li>
         <li className="mb-10 ms-4 group">
@@ -39,7 +39,7 @@ function History() {
             2014
           </time>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-            Makina parkurumuza CNC Otomat Makinalarını ekledik.
+            {t('history.2014')}
           </h3>
         </li>
         <li className="mb-10 ms-4 group">
@@ -48,7 +48,7 @@ function History() {
             2018
           </time>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-            ISO 9001:2015 Uluslararası Standart Kalite Sertifikasını edindik.
+            {t('history.2018')}
           </h3>
         </li>
         <li className="pb-16 ms-4 group">
@@ -57,8 +57,7 @@ function History() {
             2021
           </time>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-            Firma ve unvan değişikliğine gittik ve şirketimizin yeni adı "EMİR
-            OTOMAT CNC MAKİNA SANAYİ VE TİCARET LİMİTED ŞİRKETİ" oldu.
+            {t('history.2021')}
           </h3>
         </li>
       </ol>

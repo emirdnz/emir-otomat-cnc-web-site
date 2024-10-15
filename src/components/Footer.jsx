@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 
+import { useTranslation, Trans } from "react-i18next";
+
 import logo from "../../public/logo2.png";
 
 function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className=" bg-[#232a34] text-white">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 lg:px-0">
@@ -13,20 +17,19 @@ function Footer() {
             </a>
             <div>
               <div className=" w-52 opacity-45 text-sm m-2 mt-5">
-                İkitelli Osb Mahallesi <br /> B6 Blok 134 Sokak,
-                Başakşehir/İstanbul
+                <Trans i18nKey="footer.address"></Trans>
               </div>
               <div className=" w-52 text-gray-400 text-sm mx-2 hover:underline">
                 Tel:
                 <a href="tel:02126711740">
-                  <span className="text-white ml-2">+90 (212) 671 17 40</span>
+                  <span className="text-white ml-2">{t("footer.tel")}</span>
                 </a>
               </div>
               <div className=" w-52 text-gray-400 text-sm m-2 mb-0  hover:underline">
                 Mail:
                 <a href="mailto:info@emirotomatcnc.com">
                   <span className="text-white ml-2">
-                    info@emirotomatcnc.com
+                    {t("footer.email")}
                   </span>
                 </a>
               </div>
@@ -36,41 +39,47 @@ function Footer() {
           <div className="grid grid-cols-3 gap-8 md:gap-6 md:grid-cols-3">
             <div className="border-r-2 pr-6 border-opacity-40 border-[#7f8b9c]">
               <h2 className="mb-6 text-md font-semibold  pb-1 border-b-2 border-primary-blue">
-                KURUMSAL
+              {t("footer.corporate")}
               </h2>
               <ul className="font-medium">
                 <li className="mb-4">
                   <Link to="hakkimizda" className="hover:underline text-xs">
-                    Hakkımızda
+                  {t("footer.about")}
                   </Link>
                 </li>
 
                 <li className="mb-4">
                   <Link to="iletisim" className="hover:underline text-xs">
-                    İletişim
+                  {t("footer.contact")}
                   </Link>
                 </li>
               </ul>
             </div>
             <div className="border-r-2 pr-6 border-opacity-40 border-[#7f8b9c]">
               <h2 className="mb-6 text-md font-semibold  pb-1 border-b-2 border-primary-blue">
-                ÜRETİM
+              {t("footer.production")}
               </h2>
               <ul className="font-medium">
                 <li className="mb-4">
-                  <Link to="calismalarimiz/urunler" className="hover:underline text-xs ">
-                    Çalışmalarımız
+                  <Link
+                    to="calismalarimiz/urunler"
+                    className="hover:underline text-xs "
+                  >
+                    {t("footer.ourWorks")}
                   </Link>
                 </li>
 
                 <li className="mb-4">
                   <Link to="sertifikalar" className="hover:underline text-xs">
-                    Sertifikalar
+                  {t("footer.certificates")}
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <Link to="calismalarimiz/makine-parkuru" className="hover:underline text-xs">
-                    Makine Parkurumuz
+                  <Link
+                    to="calismalarimiz/makine-parkuru"
+                    className="hover:underline text-xs"
+                  >
+                   {t("footer.machinePark")}
                   </Link>
                 </li>
                 {/* <li className="mb-4">
@@ -82,17 +91,17 @@ function Footer() {
             </div>
             <div>
               <h2 className="mb-6 text-md font-semibold  pb-1 border-b-2 border-primary-blue">
-                KARİYER
+              {t("footer.career")}
               </h2>
               <ul className="font-medium">
                 <li className="mb-4">
                   <Link to="kariyer" className="hover:underline text-xs">
-                    İş Başvuru
+                  {t("footer.jobApplication")}
                   </Link>
                 </li>
                 <li className="mb-4">
                   <Link to="staj" className="hover:underline text-xs">
-                    Staj Başvuru
+                  {t("footer.internshipApplication")}
                   </Link>
                 </li>
               </ul>

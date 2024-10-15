@@ -1,20 +1,19 @@
 import cover from "../assets/2006.jpg";
-
 import { motion } from "framer-motion";
-
 import image from "../assets/career.jpg";
-
 import "./Career.css";
 import TitleComponent from "../components/TitleComponent";
+import { useTranslation } from "react-i18next";
 
 function Career() {
+  const { t } = useTranslation();
   const location = window.location.pathname;
 
   return (
     <div className="mt-10">
       {/* title */}
       <TitleComponent
-        title={location == "/kariyer" ? "Kariyer" : "Staj"}
+        title={location === "/kariyer" ? t("career.title") : t("career.internshipTitle")}
         cover={cover}
       />
       {/* title */}
@@ -24,9 +23,7 @@ function Career() {
             <img src={image} alt="" />
           </div>
           <div className="m-10 md:my-10">
-            Sektördeki konumumuzu koruyarak, güncel teknolojilere odaklanarak ve
-            müşteri memnuniyetini ön planda tutarak markamızı daha da ileri
-            taşımak için birlikte çalışalım.
+            {t("career.description")}
             <h3 className="text-sm font-bold my-4 w-full">
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
@@ -35,18 +32,14 @@ function Career() {
                 className="w-full"
               >
                 <span className="text-black">
-                  Çalışma arkadaşlarımızda aradığımız özellikler
+                  {t("career.qualitiesTitle")}
                 </span>
               </motion.div>
             </h3>
-            Yeniliklere açık, araştırmacı bir ruha sahip, düzenli çalışmayı
-            benimseyen ve takım odaklı çalışma anlayışında olan çalışma
-            arkadaşları arıyoruz.
+            {t("career.qualitiesDescription")}
             <br />
             <br />
-            Eğer siz de bu niteliklere sahipseniz ve ekibimize katılmak
-            istiyorsanız, aşağıdaki formu doldurarak iş veya staj başvurusunda
-            bulunubilirsiniz.
+            {t("career.applyDescription")}
           </div>
         </div>
       </div>
@@ -59,9 +52,9 @@ function Career() {
             className="w-full text-center"
           >
             <span className="text-black">
-              {location == "/kariyer"
-                ? "İş Başvuru Formu"
-                : "Staj Başvuru Formu"}
+              {location === "/kariyer"
+                ? t("career.jobFormTitle")
+                : t("career.internshipFormTitle")}
             </span>
           </motion.div>
         </h1>
@@ -69,7 +62,7 @@ function Career() {
       <div className="jotform-form">
         <iframe
           id="JotFormIFrame-240543893849975"
-          title="İş Başvuru Formu, CV, İnsan Kaynakları Formu"
+          title={t("career.jobFormTitle")}
           onLoad="window.parent.scrollTo(0,0)"
           // eslint-disable-next-line react/no-unknown-property
           allowTransparency="true"
