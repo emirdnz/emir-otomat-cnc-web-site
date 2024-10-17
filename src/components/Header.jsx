@@ -200,27 +200,25 @@ function Header() {
       <nav className=" border-b-2 border-slate-200 bg-slate-100 dark:bg-gray-900">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-2 leading-8">
           <div>
-            <div>
-              <button
-                className={`text-sm  text-gray-500 dark:text-white  ${
-                  langStorage === "tr" ? "text-primary-blue" : "hover:underline"
-                }`}
-                onClick={() => handleLanguageChange("tr")}
-                style={{ marginRight: "10px" }}
-                disabled={langStorage === "tr"}
-              >
-                TR
-              </button>
-              <button
-                className={`text-sm  text-gray-500 dark:text-white  ${
-                  langStorage === "en" ? "text-primary-blue" : "hover:underline"
-                }`}
-                onClick={() => handleLanguageChange("en")}
-                disabled={langStorage === "en"}
-              >
-                EN
-              </button>
-            </div>
+            <button
+              className={`text-sm  text-gray-500 dark:text-white  ${
+                langStorage === "tr" ? "text-primary-blue" : "hover:underline"
+              }`}
+              onClick={() => handleLanguageChange("tr")}
+              style={{ marginRight: "10px" }}
+              disabled={langStorage === "tr"}
+            >
+              TR
+            </button>
+            <button
+              className={`text-sm  text-gray-500 dark:text-white  ${
+                langStorage === "en" ? "text-primary-blue" : "hover:underline"
+              }`}
+              onClick={() => handleLanguageChange("en")}
+              disabled={langStorage === "en"}
+            >
+              EN
+            </button>
           </div>
           <div className="flex items-center space-x-6 rtl:space-x-reverse">
             <div className="flex items-center text-primary-blue">

@@ -17,7 +17,7 @@
     "description2": "Our company, founded in 1986, continues its services with professional work in the sector.",
     "description3": "Since our establishment, we have continued to be a <strong>professional supplier to leading companies</strong> in the industry.",
     "description4": "Our company has always maintained production quality and machine lines with the most up-to-date technologies, alongside our professional team, from past to present.",
-    "description5": "With our <strong>Index, Revolver, CNC Automatic</strong> machines, we continue to be your supplier, while also serving as a supplier to sectors such as <strong>Furniture Industry, Household Appliances, Medical Equipment, Lighting Parts, Automotive Parts, Air Conditioning Parts, Natural Gas Parts, and Defense Industry</strong>."
+    "description5": "With our <strong>Index, Revolver, CNC Lathe MACHINES </strong>, we continue to be your supplier, while also serving as a supplier to sectors such as <strong>Furniture Industry, Household Appliances, Medical Equipment, Lighting Parts, Automotive Parts, Air Conditioning Parts, Natural Gas Parts, and Defense Industry</strong>."
   },
   "continue": "Continue →",
   "aboutUs": "About Us",
@@ -37,7 +37,7 @@
       "desc": "Description"
     },
     "work2": {
-      "title": "Automat Materials",
+      "title": "Free-cutting Steel",
       "desc": "Description"
     },
     "work3": {
@@ -61,9 +61,10 @@
     "1986": "Established as Deniz Otomat Otomotiv Limited Company in Unkapanı.",
     "2004": "We moved to İkitelli Demirciler Industrial Site and the company's name was changed to \"GÖRKEM OTOMAT OTOMOTİV VE ENDÜSTRİYEL YAN SANAYİ TİCARET LİMİTED ŞİRKETİ\".",
     "2013": "We integrated Industry 4.0 technology into our company.",
-    "2014": "We added CNC Otomat Machines to our machinery.",
+    "2014": "We added CNC Lathe Machines to our machinery.",
     "2018": "We obtained the ISO 9001:2015 International Standard Quality Certificate.",
-    "2021": "We changed the company name to \"EMİR OTOMAT CNC MAKİNA SANAYİ VE TİCARET LİMİTED ŞİRKETİ\"."
+    "2021": "We changed the company name to \"EMİR OTOMAT CNC MAKİNA SANAYİ VE TİCARET LİMİTED ŞİRKETİ\".",
+    "2024": "We obtained ISO 14001:2015, TS ISO 10002:2018, and ISO 31000:2009 certifications, achieving international standards in environmental management, customer satisfaction, and risk management."
   },
   "visionmission": {
     "vision": "Vision",
@@ -72,7 +73,7 @@
     "mission": "Mission",
     "ourMission": "Our Mission",
     "visionDesc": "Recognized as a leading brand in the industry, we are a company that prioritizes customer satisfaction with high-quality products and services at global standards. Our goal is to continuously follow the latest technologies, maintain leadership in an ever-evolving industrial world, and offer sustainable solutions to our customers. We aim to be a long-term and solid presence in the industry with our approach of adding value to our customers.",
-    "missionDesc": "We aim to add value to our customers by producing and supplying high-quality industrial spare parts with CNC automatic machines. Our mission is to provide our customers with affordable, high-performance, and reliable industrial spare parts to help them increase their productivity. Maximizing customer satisfaction with our professional team and strong supply chain is one of the core principles of our company."
+    "missionDesc": "We aim to add value to our customers by producing and supplying high-quality industrial spare parts. Our mission is to provide our customers with affordable, high-performance, and reliable industrial spare parts to help them increase their productivity. Maximizing customer satisfaction with our professional team and strong supply chain is one of the core principles of our company."
   },
   "goals": {
     "title": "Our Goals",

@@ -50,7 +50,7 @@ function Certificates() {
       </div> */}
 
       <section className="mt-10">
-        <section className="h-full md:max-w-screen-xl flex-col flex items-center justify-center w-full">
+        <section className="h-full md:max-w-screen-xl flex-col flex items-center justify-center w-full md:mt-10 md:mb-16 transition-all duration-1000">
           <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-5">
             {data.map(({ image }, index) => (
               <motion.div

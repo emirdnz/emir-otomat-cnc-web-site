@@ -51,13 +51,22 @@ function History() {
             {t('history.2018')}
           </h3>
         </li>
-        <li className="pb-16 ms-4 group">
+        <li className="mb-10 ms-4 group">
           <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
           <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500 group-hover:text-light-blue-700 transition-all duration-500 group-hover:font-semibold">
             2021
           </time>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
             {t('history.2021')}
+          </h3>
+        </li>
+        <li className="pb-16 ms-4 group">
+          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+          <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500 group-hover:text-light-blue-700 transition-all duration-500 group-hover:font-semibold">
+            2024
+          </time>
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+            {t('history.2024')}
           </h3>
         </li>
       </ol>
