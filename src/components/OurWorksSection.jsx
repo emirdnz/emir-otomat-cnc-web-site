@@ -7,7 +7,7 @@ import otomat from "../assets/products/otomat.png";
 import tibbi from "../assets/products/tibbi.png";
 import aluminyum from "../assets/products/aluminyum.png";
 import paslanmaz from "../assets/products/paslanmaz.png";
-import yuksekKarbon from "../assets/products/yuksek-karbonlu-celik.png";
+import yuksekKarbon from "../assets/products/yuksek-karbonlu-celik.webp";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
