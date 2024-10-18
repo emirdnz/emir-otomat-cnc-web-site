@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from "react-i18next";
 
 function History() {
   const { t } = useTranslation();
@@ -12,7 +12,7 @@ function History() {
             1986
           </time>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-            {t('history.1986')}
+            <Trans i18nKey="history.1986" />
           </h3>
         </li>
         <li className="mb-10 ms-4 group">
@@ -21,7 +21,7 @@ function History() {
             2004
           </time>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-            {t('history.2004')}
+            <Trans i18nKey="history.2004" />
           </h3>
         </li>
         <li className="mb-10 ms-4 group">
@@ -30,7 +30,7 @@ function History() {
             2013
           </time>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-            {t('history.2013')}
+            <Trans i18nKey="history.2013" />
           </h3>
         </li>
         <li className="mb-10 ms-4 group">
@@ -39,7 +39,7 @@ function History() {
             2014
           </time>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-            {t('history.2014')}
+            <Trans i18nKey="history.2014" />
           </h3>
         </li>
         <li className="mb-10 ms-4 group">
@@ -48,7 +48,7 @@ function History() {
             2018
           </time>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-            {t('history.2018')}
+            <Trans i18nKey="history.2018" />
           </h3>
         </li>
         <li className="mb-10 ms-4 group">
@@ -57,7 +57,7 @@ function History() {
             2021
           </time>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-            {t('history.2021')}
+            <Trans i18nKey="history.2021" />
           </h3>
         </li>
         <li className="pb-16 ms-4 group">
@@ -66,7 +66,8 @@ function History() {
             2024
           </time>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-            {t('history.2024')}
+            {t("history.2024")}
+            <Trans i18nKey="history.2024" />
           </h3>
         </li>
       </ol>

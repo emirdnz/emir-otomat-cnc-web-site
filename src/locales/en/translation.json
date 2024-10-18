@@ -24,7 +24,7 @@
   "experienceSection": {
     "title": "From Start to Finish",
     "subtitle": "Quality",
-    "item1": "ISO 9001 certified, <br /> AS 9100 / ISO 13485 compliant",
+    "item1": "TS EN ISO 9001 certified, <br />ISO 14001 / TS ISO 10002 ",
     "item2": "Tolerance <br /> +/- 0.0002″",
     "item3": "Material certificate <br /> available",
     "item4": "Quick solutions <br /> and logistics process"
@@ -58,12 +58,12 @@
     }
   },
   "history": {
-    "1986": "Established as Deniz Otomat Otomotiv Limited Company in Unkapanı.",
-    "2004": "We moved to İkitelli Demirciler Industrial Site and the company's name was changed to \"GÖRKEM OTOMAT OTOMOTİV VE ENDÜSTRİYEL YAN SANAYİ TİCARET LİMİTED ŞİRKETİ\".",
+    "1986": "Established as <strong><i>Deniz Automat Automotive Limited Company</i> </strong> in Unkapanı.",
+    "2004": "We moved to İkitelli Demirciler Industrial Site and the company's name was changed to \"<strong><i>GÖRKEM AUTOMAT AUTOMOTIVE AND INDUSTRIAL SUB-INDUSTRY TRADE LIMITED COMPANY</i></strong>\".",
     "2013": "We integrated Industry 4.0 technology into our company.",
     "2014": "We added CNC Lathe Machines to our machinery.",
     "2018": "We obtained the ISO 9001:2015 International Standard Quality Certificate.",
-    "2021": "We changed the company name to \"EMİR OTOMAT CNC MAKİNA SANAYİ VE TİCARET LİMİTED ŞİRKETİ\".",
+    "2021": "We changed the company name to \"<strong><i>EMIR AUTOMAT CNC MACHINERY INDUSTRY AND TRADE LIMITED COMPANY</i></strong>\".",
     "2024": "We obtained ISO 14001:2015, TS ISO 10002:2018, and ISO 31000:2009 certifications, achieving international standards in environmental management, customer satisfaction, and risk management."
   },
   "visionmission": {

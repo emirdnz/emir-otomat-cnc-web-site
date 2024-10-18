@@ -16,15 +16,15 @@
     "description1": "İleri teknolojiyle donatılmış 1986’dan beri sektördeki uzmanlığımızla, Emir Otomat CNC olarak müşteri isteklerine en uygun çözümleri sunuyoruz.",
     "description2": "1986 Yılında kurulan firmamız sektörde profesyonel çalışmaları ile hizmetine devam etmektedir.",
     "description3": "Firmamız kurulduğundan beri sektörde <strong>lider firmalara profesyonel tedarikçi</strong> olmaya devam etmektedir.",
-    "description4": "Firmamız her zaman üretimle birlikte en güncel teknolojiler ile makina parkurlarını ve üretim kalitesini her zaman profesyonel ekibimiz ile geçmişten bugüne devam ettirmektedir.",
-    "description5": "Firmamız <strong>İndex, Revolver, CNC Otomat</strong> makinalarımız ile tedarikçiniz yolunda üretimlere devam ettirmekle birlikte <strong>Mobilya Sektörü, Ev Aletleri, Tıbbi Malzemeler, Aydınlatma Parçaları, Otomotiv Parçaları, Klima Parçaları, Doğalgaz Parçaları Ve Savunma Sanayisi</strong> sektörlerine tedarikçi olmaktadır."
+    "description4": "Firmamız her zaman üretimle birlikte en güncel teknolojiler ile makine parkurlarını ve üretim kalitesini her zaman profesyonel ekibimiz ile geçmişten bugüne devam ettirmektedir.",
+    "description5": "Firmamız <strong>İndex, Revolver, CNC Otomat</strong> makinelerimiz ile tedarikçiniz yolunda üretimlere devam ettirmekle birlikte <strong>Mobilya Sektörü, Ev Aletleri, Tıbbi Malzemeler, Aydınlatma Parçaları, Otomotiv Parçaları, Klima Parçaları, Doğalgaz Parçaları Ve Savunma Sanayisi</strong> sektörlerine tedarikçi olmaktadır."
   },
   "continue": "Devamı →",
   "aboutUs": "Hakkımızda",
   "experienceSection": {
     "title": "Başlangıçtan Sona",
     "subtitle": "Kalite",
-    "item1": "ISO 9001 sertifikalı, <br /> AS 9100 / ISO 13485 uyumlu",
+    "item1": "TS EN ISO 9001 sertifikalı, <br /> ISO 14001 / TS ISO 10002 ",
     "item2": "Tolerans <br /> +/- 0.0002″",
     "item3": "Malzeme sertifikası <br /> mevcut",
     "item4": "Hızlı çözüm <br /> ve lojistik süreç"
@@ -58,12 +58,12 @@
     }
   },
   "history": {
-    "1986": "Deniz Otomat Otomotiv Limited Şirketi olarak Unkapanı’nda kuruldu.",
-    "2004": "İkitelli Demirciler Sanayi Sitesi'ne taşındık ve şirketimizin unvanı \"GÖRKEM OTOMAT OTOMOTİV VE ENDÜSTRİYEL YAN SANAYİ TİCARET LİMİTED ŞİRKETİ\" olarak değiştirildi.",
+    "1986": "<strong><i>Deniz Otomat Otomotiv Limited Şirketi</i></strong> olarak Unkapanı’nda kuruldu.",
+    "2004": "İkitelli Demirciler Sanayi Sitesi'ne taşındık ve şirketimizin unvanı \"<strong><i>GÖRKEM OTOMAT OTOMOTİV VE ENDÜSTRİYEL YAN SANAYİ TİCARET LİMİTED ŞİRKETİ</i></strong>\" olarak değiştirildi.",
     "2013": "Firmamızda Endüstri 4.0 teknolojisini entegre ettik.",
-    "2014": "Makina parkurumuza CNC Otomat Makinalarını ekledik.",
+    "2014": "Makine parkurumuza CNC Otomat Makinalarını ekledik.",
     "2018": "ISO 9001:2015 Uluslararası Standart Kalite Sertifikasını edindik.",
-    "2021": "Firma ve unvan değişikliğine gittik ve şirketimizin yeni adı \"EMİR OTOMAT CNC MAKİNA SANAYİ VE TİCARET LİMİTED ŞİRKETİ\" oldu.",
+    "2021": "Firma ve unvan değişikliğine gittik ve şirketimizin yeni adı \"<strong><i>EMİR OTOMAT CNC MAKİNA SANAYİ VE TİCARET LİMİTED ŞİRKETİ</i></strong>\" oldu.",
     "2024": "ISO 14001:2015, TS ISO 10002:2018 ve ISO 31000:2009 sertifikalarını alarak çevre yönetimi, müşteri memnuniyeti ve risk yönetiminde uluslararası standartlara ulaştık."
   },
   "visionmission": {
