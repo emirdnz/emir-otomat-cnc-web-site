@@ -202,7 +202,7 @@ function Header() {
           <div>
             <button
               className={`text-sm  text-gray-500 dark:text-white  ${
-                langStorage === "tr" ? "text-primary-blue" : "hover:underline"
+                langStorage === "tr" ? "text-primary-blue font-bold" : "hover:underline hover:font-bold"
               }`}
               onClick={() => handleLanguageChange("tr")}
               style={{ marginRight: "10px" }}
@@ -212,7 +212,7 @@ function Header() {
             </button>
             <button
               className={`text-sm  text-gray-500 dark:text-white  ${
-                langStorage === "en" ? "text-primary-blue" : "hover:underline"
+                langStorage === "en" ? "text-primary-blue font-bold" : "hover:underline"
               }`}
               onClick={() => handleLanguageChange("en")}
               disabled={langStorage === "en"}
