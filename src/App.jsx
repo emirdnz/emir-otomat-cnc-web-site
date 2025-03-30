@@ -11,6 +11,7 @@ import Career from "./pages/Career";
 import Certificates from "./pages/Certificates";
 import Footer from "./components/Footer";
 import ContactUs from "./pages/ContactUs";
+import QuotePage from "./pages/QuotePage";
 
 import ScrollToTop from "./components/ScrollToTop";
 import Machines from "./pages/Machines";
@@ -140,6 +141,7 @@ function App() {
               <Route path="/kariyer" element={<Career />} />
               <Route path="/staj" element={<Career />} />
               <Route path="/iletisim" element={<ContactUs />} />
+              <Route path="/quote" element={<QuotePage />} />
             </Routes>
             <Footer />
           </>
