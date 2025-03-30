@@ -9,7 +9,7 @@ lerna-debug.log*
 
 
 
-src/pages/ProductionProcessSection.jsx
+src/components/ProductionProcessSection.jsx
 src/pages/QuotePage.jsx
 node_modules
 dist
