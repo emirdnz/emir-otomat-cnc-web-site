@@ -9,8 +9,6 @@ lerna-debug.log*
 
 
 
-src/components/ProductionProcessSection.jsx
-src/pages/QuotePage.jsx
 node_modules
 dist
 dist-ssr
