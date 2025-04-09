@@ -113,10 +113,10 @@ function Footer() {
           <span className="text-sm  sm:text-center ">
             © 2025{" "}
             <a
-              href="https://emircncotomat.com/"
+              href="https://emirotomatcnc.com/"
               className="hover:underline text-xs"
             >
-              EMİR OTOMAT CNC
+              EMİR OTOMAT CNC MAKINA SANAYI VE TICARET LIMITED SIRKETI
             </a>
           </span>
           <div className="flex mt-4 items-center justify-center sm:mt-0">
