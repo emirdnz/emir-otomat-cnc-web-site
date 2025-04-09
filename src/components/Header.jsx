@@ -26,7 +26,7 @@ const navListMenuItems = [
     {
       title: "products",
       icon: SquaresPlusIcon,
-      link: "../pages/ourworks/OurWorks",
+      link: "calismalarimiz/urunler",
     },
     {
       title: "machine_park",
