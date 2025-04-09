@@ -26,7 +26,7 @@ const navListMenuItems = [
     {
       title: "products",
       icon: SquaresPlusIcon,
-      link: "calismalarimiz/urunler",
+      link: "../pages/ourworks/OurWorks",
     },
     {
       title: "machine_park",
@@ -61,7 +61,7 @@ function NavListMenu(props) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const renderItems = props.data.map(
     ({ icon, title, descripton, link }, key) => (
-      <Link to={link} key={key}>
+      <Link to={`/${link}`} key={key}>
         <List className="gap-1 rounded-lg">
           <div>
             <Typography
@@ -129,7 +129,7 @@ function NavList() {
   const { t } = useTranslation();
   return (
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
-      <Link to="anasayfa" className="flex items-center mx-2">
+      <Link to="/anasayfa" className="flex items-center mx-2">
         <Typography
           as="li"
           variant="h6"
@@ -139,7 +139,7 @@ function NavList() {
           {t("nav.home")}
         </Typography>
       </Link>
-      <Link to="hakkimizda" className="flex items-center mx-2">
+      <Link to="/hakkimizda" className="flex items-center mx-2">
         <Typography
           as="li"
           variant="h6"
@@ -152,7 +152,7 @@ function NavList() {
       <NavListMenu data={navListMenuItems[0]} title={t("nav.works")} />
       <NavListMenu data={navListMenuItems[1]} title={t("nav.quality")} />
       <NavListMenu data={navListMenuItems[2]} title={t("nav.career")} />
-      <Link to="iletisim" className="flex items-center mx-2">
+      <Link to="/iletisim" className="flex items-center mx-2">
         <Typography
           as="li"
           variant="h6"

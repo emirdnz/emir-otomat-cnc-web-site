@@ -80,29 +80,33 @@ function OurWorksSection() {
 
   return (
     <section className="h-full md:h-[38rem] w-full flex flex-col">
-      <div
-        className="flex justify-center items-center h-1/4 pt-4 md:py-6 md:mt-6 bg-blue-gray-50 w-full !leading-8"
-      >
+      {/* Başlık Bölümü */}
+      <div className="flex justify-center items-center h-1/4 pt-4 md:py-6 md:mt-6 bg-blue-gray-50 w-full !leading-8">
         <Typography
           variant="h1"
           color="gray"
-          className="text-2xl md:text-3xl lg:text-4xl font-montserrat text-end font-light"
+          className="text-2xl md:text-3xl lg:text-4xl font-montserrat text-center font-light"
         >
           <span className="font-semibold text-primary-blue">
             {t("ourWorksSection.title")}
           </span>
         </Typography>
       </div>
-      <section className="h-3/4 flex flex-col md:flex-row items-center justify-center bg-blue-gray-50">
-        <div className="w-full md:w-1/2 flex flex-col items-center md:items-end text-center md:text-end md:pr-5">
+
+      {/* İçerik Bölümü */}
+      <section className="h-3/4 flex flex-col md:flex-row bg-blue-gray-50 px-4 md:px-8">
+        {/* Sol Container (Yazı Bölümü) */}
+        <div className="w-full md:w-1/2 flex flex-col items-end text-end pr-4 mt-24">
           <Typography
             variant="h6"
-            className="hidden text-xl md:flex justify-end max-w-lg h-full w-full font-montserrat "
+            className="text-xl md:text-2xl max-w-lg font-montserrat leading-relaxed"
           >
             {t("ourWorksSection.description")}
           </Typography>
         </div>
-        <div className="w-full md:w-1/2 h-5/6 md:h-full flex justify-center items-center">
+
+        {/* Sağ Container (Slider Bölümü) */}
+        <div className="w-full md:w-1/2 h-full flex justify-center items-center">
           <Swiper
             autoplay={{
               delay: open ? 1000000 : 5000,
@@ -111,22 +115,22 @@ function OurWorksSection() {
             }}
             loop={true}
             modules={[Autoplay]}
-            spaceBetween={10}
+            spaceBetween={20}
             slidesPerView={slides}
-            className="w-full h-full p-2 pl-0 cursor-grab"
+            className="w-full h-full p-4 cursor-grab"
           >
             {works.map((work, i) => (
               <SwiperSlide
-                className="bg-white h-full rounded-md"
+                className="bg-white h-full rounded-md shadow-md"
                 key={i}
               >
                 <img
-                  className="h-full w-full object-cover"
+                  className="h-3/4 w-full object-cover rounded-t-md"
                   src={work.img}
                   onClick={(e) => handleOpen(e)}
                   alt={work.desc}
                 />
-                <div className="relative bottom-10 md:bottom-14 leading-3 md:leading-4 font-bold md:font-extrabold mx-3 overflow-hidden line-clamp-1 text-black text-center">
+                <div className="p-2 text-black text-center font-semibold text-sm md:text-base">
                   {work.title}
                 </div>
               </SwiperSlide>
@@ -134,6 +138,8 @@ function OurWorksSection() {
           </Swiper>
         </div>
       </section>
+
+      {/* Dialog Bölümü */}
       <Dialog
         className="flex items-center justify-center duration-700"
         open={open}
