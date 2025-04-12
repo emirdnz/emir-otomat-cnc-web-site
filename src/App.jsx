@@ -11,11 +11,11 @@ import Career from "./pages/Career";
 import Certificates from "./pages/Certificates";
 import Footer from "./components/Footer";
 import ContactUs from "./pages/ContactUs";
-//import QuotePage from "./pages/QuotePage";
+
 
 import ScrollToTop from "./components/ScrollToTop";
 import Machines from "./pages/Machines";
-// import Quality from "./pages/Quality";
+
 
 import { ThemeProvider } from "@material-tailwind/react";
 

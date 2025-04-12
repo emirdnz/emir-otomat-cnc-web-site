@@ -5,6 +5,7 @@ import OurWorksSection from "../components/OurWorksSection";
 import IndustriesSection from "../components/IndustriesSection";
 //import ProductionProcessSection from "../components/ProductionProcessSection";
 import Header from "../components/Header";
+import OnlineProcess from "../components/OnlineProcess";
 
 function HomepageContainer() {
   return (
@@ -17,6 +18,8 @@ function HomepageContainer() {
       <IndustriesSection />
       {/* About Section */}
       <AboutSection />
+      {/* Production Process Section */}
+      <OnlineProcess />
       {/* Experience Section */}
       <ExperienceSection />
       {/* OurWorks Section */}
